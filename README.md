@@ -7,3 +7,16 @@ There are configs for
 - TMUX
 - Neovim
 - ZSH
+
+To setup the configs on your machine, install GNU Stow:
+
+```bash
+sudo apt install stow
+```
+
+After which, you can then run the stow command to place them in their respective
+folders in your $HOME directory.
+
+```bash
+stow nvim tmux zsh
+```
