@@ -21,6 +21,8 @@ mason_lspconfig.setup({
 		"sumneko_lua",
 		"rust_analyzer",
 		"solc",
+		"gopls",
+		"clangd",
 	},
 })
 
@@ -30,5 +32,7 @@ mason_null_ls.setup({
 		"black",
 		"stylua",
 		"eslint_d",
+		"gofumpt",
+		"goimports",
 	},
 })

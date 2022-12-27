@@ -13,6 +13,9 @@ null_ls.setup({
 		formatting.black,
 		formatting.rustfmt,
 		formatting.stylua,
+		formatting.clang_format,
+		formatting.gofumpt,
+		formatting.goimports,
 
 		diagnostics.eslint_d.with({
 			condition = function(utils)
