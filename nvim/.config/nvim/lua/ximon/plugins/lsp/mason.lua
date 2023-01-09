@@ -21,8 +21,6 @@ mason_lspconfig.setup({
 		"sumneko_lua",
 		"rust_analyzer",
 		"solc",
-		"gopls",
-		"clangd",
 	},
 })
 
