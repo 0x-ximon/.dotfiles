@@ -39,6 +39,8 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = nvim_lsp.default_capabilities()
+capabilities.offsetEncoding = { "utf-16" }
+
 local signs = { Error = " ", Warn = " ", Hint = "ﴞ ", Info = " " }
 for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
