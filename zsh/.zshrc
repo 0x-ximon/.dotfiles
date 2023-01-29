@@ -136,3 +136,5 @@ unset __conda_setup
 
 # Solana Setup
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
+
+export PATH="$PATH:/home/simon/.foundry/bin"
