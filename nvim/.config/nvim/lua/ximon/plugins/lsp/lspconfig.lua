@@ -79,6 +79,12 @@ lspconfig["clangd"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["elixirls"].setup({
+	cmd = { "elixir-ls" },
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
