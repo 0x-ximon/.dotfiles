@@ -3,7 +3,7 @@ if not status then
 	print("Lspsaga not working")
 end
 
-lspsaga.init_lsp_saga({
+lspsaga.setup({
 	move_in_saga = { prev = "<C-k>", next = "<C-j>" },
 
 	finder_action_keys = {
