@@ -51,7 +51,7 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 	use("goolord/alpha-nvim")
 	use("m4xshen/smartcolumn.nvim")
-	use("xiyaowong/virtcolumn.nvim")
+	-- use("xiyaowong/virtcolumn.nvim")
 
 	-- Essential
 	use("tpope/vim-surround")
