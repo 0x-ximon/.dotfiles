@@ -15,6 +15,7 @@ require("ximon.plugins.nvim-cmp")
 require("ximon.plugins.autopairs")
 require("ximon.plugins.gitsigns")
 require("ximon.plugins.alpha")
+require("ximon.plugins.smart-column")
 
 -- LSP Imports
 require("ximon.plugins.lsp.lspsaga")

@@ -12,6 +12,7 @@ opt.autoindent = true
 
 -- Line Wrapping
 opt.wrap = false
+opt.colorcolumn = "80"
 
 -- Search Settings
 opt.ignorecase = true
