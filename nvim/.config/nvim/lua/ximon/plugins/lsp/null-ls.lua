@@ -10,7 +10,9 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	sources = {
 		formatting.prettier,
-		formatting.black,
+		formatting.black.with({
+			extra_args = { "--line-length", "79" },
+		}),
 		formatting.rustfmt,
 		formatting.stylua,
 		formatting.clang_format,
