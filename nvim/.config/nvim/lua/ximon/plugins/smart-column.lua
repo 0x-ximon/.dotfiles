@@ -3,4 +3,6 @@ if not status then
 	print("We need smartcolumn to work")
 end
 
-smartcolumn.setup()
+smartcolumn.setup({
+	colorcolumn = 81,
+})
