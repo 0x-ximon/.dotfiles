@@ -11,7 +11,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier,
 		formatting.black.with({
-			extra_args = { "--line-length", "79" },
+			extra_args = { "--line-length", "80" },
 		}),
 		formatting.rustfmt,
 		formatting.stylua,
