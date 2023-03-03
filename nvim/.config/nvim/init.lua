@@ -1,4 +1,4 @@
-require("ximon.plugins-setup")
+require("ximon.lazy")
 
 -- Core Imports
 require("ximon.core.options")
