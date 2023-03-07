@@ -3,4 +3,4 @@ if not status then
 	print("Alpha isn't installed")
 end
 
-alpha.setup(require("alpha.themes.startify").config)
+alpha.setup(require("alpha.themes.dashboard").config)
