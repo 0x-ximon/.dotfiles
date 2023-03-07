@@ -138,3 +138,4 @@ unset __conda_setup
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 
 export PATH="$PATH:/home/simon/.foundry/bin"
+PATH=$PATH:~/.config/emacs/bin
