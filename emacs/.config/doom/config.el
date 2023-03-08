@@ -81,10 +81,11 @@
   :config
   )
 
-(map! :nv ";e" 'neotree-toggle )
+(map!
+    :nv "C-k"   'windmove-up
+    :nv "C-h"   'windmove-left
+    :nv "C-j"   'windmove-down
+    :nv "C-l"   'windmove-right
+    :nv ";e"    'neotree-toggle
+)
 
-;; (map! "C-h" #'windmove-left
-;;       "C-l" #'windmove-right
-;;       "C-k" #'windmove-up
-;;       "C-j" #'windmove-down
-;;       )
