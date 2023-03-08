@@ -1,129 +1,139 @@
 {
+  // Core settings
+  "git.autofetch": true,
   "files.autoSave": "onFocusChange",
+  "settingsSync.ignoredExtensions": [],
+
+  // Editor settings
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.lineNumbers": "relative",
   "editor.cursorStyle": "underline",
+
+  "editor.inlineSuggest.enabled": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "Օ": true
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Window settings
   "window.confirmBeforeClose": "always",
+
+  // Workbench settings
+  "workbench.colorTheme": "Brogrammer",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
     "statusBar.noFolderBackground": "#1E90FF",
     "statusBar.debuggingBackground": "#00ff00",
     "[Brogrammer]": {
-      "statusBar.background": "#1A1A1A",
-      "statusBar.noFolderBackground": "#1E90FF",
-      "statusBar.debuggingBackground": "#00ff00",
       "editor.background": "#000000",
+      "sideBar.background": "#111111",
+      "statusBar.background": "#1A1A1A",
       "activityBar.background": "#000000",
-      "sideBar.background": "#111111"
+      "statusBar.noFolderBackground": "#1E90FF",
+      "statusBar.debuggingBackground": "#00ff00"
     }
   },
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[html]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true
-  },
-  "[solidity]": {
-    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
-    "editor.formatOnSave": true
-  },
-  "[rust]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "extensions.autoUpdate": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "github.copilot.inlineSuggest.enable": true,
-  "git.autofetch": true,
-  "[typescriptreact]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
+  // Terminal settings
+  "terminal.integrated.inheritEnv": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "workbench.editor.untitled.hint": "hidden",
-  "settingsSync.ignoredExtensions": [],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "python.formatting.provider": "black",
-  "editor.lineNumbers": "relative",
-  "workbench.iconTheme": "vscode-icons",
-  "editor.unicodeHighlight.allowedCharacters": {
-    "Օ": true
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code",
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+
+  // Language specific settings
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
   },
+
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
   },
 
-  "Lua.diagnostics.globals": ["vim"],
-  "liveServer.settings.donotVerifyTags": true,
-  "editor.formatOnSave": true,
-  "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code",
-  "editor.fontLigatures": true,
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
-  "julia.symbolCacheDownload": true,
-  "julia.enableTelemetry": true,
+
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
   "[julia]": {
     "editor.defaultFormatter": "julialang.language-julia"
   },
-  "gitlens.codeLens.enabled": false,
-  "rust-analyzer.lens.implementations.enable": false,
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
+
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
+
+  "[css]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+
+  // Extensions settings
+  "go.gopath": "~/.go",
   "vim.enableNeovim": true,
-  "grammarly.files.include": [
-    "**/*.md",
-    "**/readme.md",
-    "**/README.md",
-    "**/*.txt"
-  ],
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": true,
     "markdown": true
   },
-  "vim.neovimConfigPath": "~/.config/nvim.init.lua",
-  "vim.neovimPath": "/usr/bin/nvim",
-  "go.gopath": "~/.go",
-  "solidity.telemetry": false,
-  "redhat.telemetry.enabled": true,
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "workbench.colorTheme": "Brogrammer",
-  "css.enabledLanguages": ["html"],
+  "solidity.telemetry": true,
+  "grammarly.files.include": [
+    "**/*.md",
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt"
+  ],
+
+  "julia.enableTelemetry": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "extensions.autoUpdate": false,
   "html.format.wrapLineLength": 80,
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
-  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
-  "terminal.integrated.inheritEnv": false
+  "redhat.telemetry.enabled": true,
+
+  "css.enabledLanguages": ["html"],
+  "vim.neovimPath": "/usr/bin/nvim",
+  "julia.symbolCacheDownload": true,
+  "gitlens.codeLens.enabled": false,
+  "Lua.diagnostics.globals": ["vim"],
+
+  "liveServer.settings.donotVerifyTags": true,
+  "github.copilot.inlineSuggest.enable": true,
+  "rust-analyzer.lens.implementations.enable": false
 }
