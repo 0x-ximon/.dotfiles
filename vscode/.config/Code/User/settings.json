@@ -100,40 +100,44 @@
   },
 
   // Extensions settings
+  // -- Languages
   "go.gopath": "~/.go",
-  "vim.enableNeovim": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": true
-  },
   "solidity.telemetry": true,
-  "grammarly.files.include": [
-    "**/*.md",
-    "**/readme.md",
-    "**/README.md",
-    "**/*.txt"
-  ],
-
   "julia.enableTelemetry": true,
+  "html.format.wrapLineLength": 80,
+  "css.enabledLanguages": ["html"],
+
+  "julia.symbolCacheDownload": true,
+  "Lua.diagnostics.globals": ["vim"],
+  "rust-analyzer.lens.implementations.enable": false,
+
+  // -- Vim settings
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/bin/nvim",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
     }
   ],
+
+  // -- Utilities
   "extensions.autoUpdate": false,
-  "html.format.wrapLineLength": 80,
   "redhat.telemetry.enabled": true,
-
-  "css.enabledLanguages": ["html"],
-  "vim.neovimPath": "/usr/bin/nvim",
-  "julia.symbolCacheDownload": true,
   "gitlens.codeLens.enabled": false,
-  "Lua.diagnostics.globals": ["vim"],
-
   "liveServer.settings.donotVerifyTags": true,
   "github.copilot.inlineSuggest.enable": true,
-  "rust-analyzer.lens.implementations.enable": false
+
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true
+  },
+  "grammarly.files.include": [
+    "**/*.md",
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt"
+  ]
 }
