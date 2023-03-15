@@ -89,3 +89,4 @@
     :nv ";e"    'neotree-toggle
 )
 
+(evil-define-key 'normal neotree-mode-map (kbd "c") 'neotree-create-node)
