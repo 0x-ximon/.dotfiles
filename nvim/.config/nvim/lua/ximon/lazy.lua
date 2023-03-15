@@ -42,7 +42,11 @@ local plugins = {
 	"szw/vim-maximizer",
 	"nvim-lualine/lualine.nvim",
 	"goolord/alpha-nvim",
-	"m4xshen/smartcolumn.nvim",
+	{
+
+		"m4xshen/smartcolumn.nvim",
+		opts = {},
+	},
 
 	-- Essential
 	"tpope/vim-surround",
