@@ -83,7 +83,7 @@ lspconfig["elixirls"].setup({
 lspconfig["sqlls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	single_file_support = true,
+	root_dir = lspconfig.util.root_pattern(".sqlintrc.json"),
 })
 
 lspconfig["lua_ls"].setup({
