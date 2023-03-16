@@ -54,6 +54,10 @@
     "editor.defaultFormatter": "sumneko.lua"
   },
 
+  "[sql]": {
+    "editor.defaultFormatter": "ms-mssql.mssql"
+  },
+
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
