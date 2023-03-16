@@ -27,10 +27,10 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
 	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts)
 
-	keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
-	keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+	keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts)
+	keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
+	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
+	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts)
 end
 
 local capabilities = nvim_lsp.default_capabilities()
@@ -78,6 +78,12 @@ lspconfig["elixirls"].setup({
 	cmd = { "elixir-ls" },
 	capabilities = capabilities,
 	on_attach = on_attach,
+})
+
+lspconfig["sqlls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	single_file_support = true,
 })
 
 lspconfig["lua_ls"].setup({
