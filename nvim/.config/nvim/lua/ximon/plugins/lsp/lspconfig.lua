@@ -91,7 +91,7 @@ lspconfig["solidity"].setup({
 	on_attach = on_attach,
 	cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
 	filetypes = { "solidity" },
-	root_dir = lspconfig.util.find_git_ancestor,
+	root_dir = lspconfig.util.root_pattern(".prettierrc"),
 	single_file_support = true,
 })
 

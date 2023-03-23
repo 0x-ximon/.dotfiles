@@ -9,7 +9,10 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
-		formatting.prettier,
+		formatting.prettier.with({
+			-- Don't forget to install the "prettier-plugin-solidity".
+			extra_filetypes = { "solidity" },
+		}),
 		formatting.black.with({
 			extra_args = { "--line-length", "80" },
 		}),
