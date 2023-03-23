@@ -86,6 +86,15 @@ lspconfig["sqlls"].setup({
 	root_dir = lspconfig.util.root_pattern(".sqlintrc.json"),
 })
 
+lspconfig["solidity"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+	filetypes = { "solidity" },
+	root_dir = lspconfig.util.find_git_ancestor,
+	single_file_support = true,
+})
+
 lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
