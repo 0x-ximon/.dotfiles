@@ -41,3 +41,6 @@ keymap.set("n", ";e", ":Neotree toggle<CR>")
 -- Telescope Mappings
 keymap.set("n", ";f", ":Telescope find_files<CR>")
 keymap.set("n", ";r", ":Telescope live_grep<CR>")
+
+-- Neocolum Mappings
+keymap.set("n", ";c", ":ToggleNeoColumn<cr>")

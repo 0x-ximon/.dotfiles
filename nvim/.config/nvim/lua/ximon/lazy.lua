@@ -43,8 +43,7 @@ local plugins = {
 	"nvim-lualine/lualine.nvim",
 	"goolord/alpha-nvim",
 	{
-
-		"m4xshen/smartcolumn.nvim",
+		"ecthelionvi/NeoColumn.nvim",
 		opts = {},
 	},
 
