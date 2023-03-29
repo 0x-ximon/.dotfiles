@@ -38,6 +38,7 @@ local plugins = {
 			"MunifTanjim/nui.nvim",
 		},
 	},
+	"rcarriga/nvim-notify",
 	"christoomey/vim-tmux-navigator",
 	"szw/vim-maximizer",
 	"nvim-lualine/lualine.nvim",
