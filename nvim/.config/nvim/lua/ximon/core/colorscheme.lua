@@ -4,7 +4,8 @@ if not status then
 end
 
 github_theme.setup({
-	theme_style = "dark_default",
 	transparent = true,
 	dark_float = true,
 })
+
+vim.cmd.colorscheme("github_dark")
