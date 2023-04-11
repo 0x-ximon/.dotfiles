@@ -62,7 +62,7 @@ lspsaga.setup({
 
 	ui = {
 		-- This option only works in Neovim 0.9
-		title = false,
+		title = true,
 		-- Border type can be single, double, rounded, solid, shadow.
 		border = "single",
 		winblend = 0,
