@@ -4,8 +4,16 @@ if not status then
 end
 
 github_theme.setup({
-	transparent = true,
-	dark_float = true,
+	options = {
+		transparent = true,
+	},
+
+	darken = {
+		floats = true,
+		sidebars = {
+			enable = true,
+		},
+	},
 })
 
 vim.cmd.colorscheme("github_dark")
