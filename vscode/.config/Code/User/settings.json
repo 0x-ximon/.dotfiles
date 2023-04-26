@@ -90,6 +90,16 @@
     "editor.defaultFormatter": "julialang.language-julia"
   },
 
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
   "[html]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "vscode.html-language-features"
