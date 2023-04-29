@@ -24,6 +24,7 @@
   // Workbench settings
   "workbench.colorTheme": "Brogrammer",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.panel.defaultLocation": "right",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
     "statusBar.background": "#1A1A1A",
@@ -36,8 +37,7 @@
       "activityBar.background": "#000000",
       "statusBar.noFolderBackground": "#1E90FF",
       "statusBar.debuggingBackground": "#00ff00"
-    },
-    "workbench.panel.defaultLocation": "right"
+    }
   },
 
   // Terminal settings
