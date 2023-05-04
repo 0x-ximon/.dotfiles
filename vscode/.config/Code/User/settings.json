@@ -87,10 +87,6 @@
     "editor.formatOnType": true
   },
 
-  "[julia]": {
-    "editor.defaultFormatter": "julialang.language-julia"
-  },
-
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.selectionHighlight": false,
