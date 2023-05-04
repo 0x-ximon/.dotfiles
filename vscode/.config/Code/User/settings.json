@@ -136,6 +136,12 @@
       "after": ["<Esc>"]
     }
   ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [";", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
 
   // -- Utilities
   "extensions.autoUpdate": false,
