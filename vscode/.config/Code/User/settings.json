@@ -5,6 +5,7 @@
   "settingsSync.ignoredExtensions": [],
 
   // Editor settings
+  "editor.rulers": [80],
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
