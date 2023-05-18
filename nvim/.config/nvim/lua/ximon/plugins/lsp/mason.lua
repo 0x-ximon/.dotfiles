@@ -18,9 +18,6 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		"tsserver",
 		"pyright",
-		"lua_ls",
-		"rust_analyzer",
-		"solc",
 	},
 })
 
@@ -28,9 +25,6 @@ mason_null_ls.setup({
 	ensure_installed = {
 		"prettier",
 		"black",
-		"stylua",
 		"eslint_d",
-		"gofumpt",
-		"goimports",
 	},
 })
