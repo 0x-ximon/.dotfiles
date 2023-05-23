@@ -76,6 +76,7 @@ local plugins = {
 	{ "glepnir/lspsaga.nvim", branch = "main" },
 	"jose-elias-alvarez/typescript.nvim",
 	"onsails/lspkind.nvim",
+	"akinsho/flutter-tools.nvim",
 
 	-- Formatting & Linting
 	"jose-elias-alvarez/null-ls.nvim",

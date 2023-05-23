@@ -80,11 +80,6 @@ lspconfig["elixirls"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["dartls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 lspconfig["sqlls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,

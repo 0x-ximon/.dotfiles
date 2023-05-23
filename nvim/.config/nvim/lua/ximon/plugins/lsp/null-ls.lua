@@ -22,6 +22,7 @@ null_ls.setup({
 		formatting.gofumpt,
 		formatting.goimports,
 		formatting.sql_formatter,
+		formatting.dart_format,
 
 		diagnostics.eslint_d.with({
 			condition = function(utils)
