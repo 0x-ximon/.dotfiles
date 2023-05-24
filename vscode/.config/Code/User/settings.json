@@ -127,6 +127,7 @@
   // -- Vim settings
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/bin/nvim",
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
