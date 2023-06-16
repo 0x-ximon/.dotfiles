@@ -29,14 +29,8 @@ null_ls.setup({
 				return utils.root_has_file(".eslintrc.js")
 			end,
 		}),
-		diagnostics.pylint.with({
-			condition = function(utils)
-				return utils.root_has_file(".pylintrc")
-			end,
-			diagnostics_postprocess = function(diagnostic)
-				diagnostic.code = diagnostic.message_id
-			end,
-		}),
+		diagnostics.mypy,
+		diagnostics.ruff,
 	},
 
 	on_attach = function(current_client, bufnr)
