@@ -61,6 +61,7 @@
   },
 
   "[cpp]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
@@ -84,8 +85,7 @@
   },
 
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
 
   "[dart]": {
@@ -116,13 +116,16 @@
   // -- Languages
   "go.gopath": "~/.go",
   "solidity.telemetry": true,
-  "julia.enableTelemetry": true,
   "html.format.wrapLineLength": 80,
   "css.enabledLanguages": ["html"],
-
-  "julia.symbolCacheDownload": true,
   "Lua.diagnostics.globals": ["vim"],
+
+  "rust-analyzer.inlayHints.renderColons": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.lens.implementations.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
 
   // -- Vim settings
   "vim.enableNeovim": true,
@@ -155,7 +158,7 @@
     "markdown": true
   },
   "grammarly.files.include": [
-    "**/*.md",
+    "**/article.md",
     "**/readme.md",
     "**/README.md",
     "**/*.txt"
