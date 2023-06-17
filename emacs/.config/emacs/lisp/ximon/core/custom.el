@@ -1,8 +1,8 @@
 (custom-set-variables
- '(ispell-dictionary nil)
- '(wakatime-cli-path "/usr/local/bin/wakatime"))
+    '(ispell-dictionary nil)
+    '(wakatime-cli-path "/usr/local/bin/wakatime")
+)
 
-(custom-set-faces
- )
+(custom-set-faces)
 
 (provide 'custom)

@@ -16,4 +16,3 @@
 (require 'wakatime)
 (require 'neotree)
 (require 'grammarly)
-

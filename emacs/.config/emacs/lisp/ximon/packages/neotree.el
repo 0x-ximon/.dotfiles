@@ -1,7 +1,9 @@
 (use-package all-the-icons
-  :if (display-graphic-p))
+    :if (display-graphic-p)
+)
 
 (use-package neotree
-    :ensure t)
+    :ensure t
+)
 
 (provide 'neotree)
