@@ -47,6 +47,17 @@ local plugins = {
 		event = "VimEnter",
 		opts = function()
 			local dashboard = require("alpha.themes.dashboard")
+
+			local logo = [[
+     _                     
+(_|   |_/o             
+  |   |      _  _  _   
+  |   |  |  / |/ |/ |  
+   \_/   |_/  |  |  |_/
+			]]
+
+			dashboard.section.header.val = vim.split(logo, "\n")
+
 			dashboard.section.buttons.val = {
 				dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
 				dashboard.button("n", " " .. " New file", ":ene <BAR> startinsert <CR>"),

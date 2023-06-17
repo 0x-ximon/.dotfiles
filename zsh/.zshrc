@@ -107,9 +107,10 @@ source $ZSH/oh-my-zsh.sh
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Configuration aliases
-alias zshconfig="nvim ~/.zshrc"
-alias tmuxconfig="nvim ~/.tmux.conf"
-alias nvimconfig="nvim ~/.config/nvim/"
+alias zshconfig="nvim ~/.dotfiles/zsh/.zshrc"
+alias tmuxconfig="nvim ~/.dotfiles/tmux/.tmux.conf"
+alias nvimconfig="nvim ~/.dotfiles/nvim/.config/nvim/"
+alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
 
 # Helper aliases
 alias solc="solcjs"
@@ -139,7 +140,6 @@ unset __conda_setup
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 
 export PATH="$PATH:/home/simon/.foundry/bin"
-PATH=$PATH:~/.config/emacs/bin
 if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init -)"
 fi
