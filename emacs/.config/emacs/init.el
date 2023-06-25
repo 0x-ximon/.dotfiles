@@ -1,10 +1,13 @@
+(add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/ftplugin/")
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/")
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/core/")
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/")
+(add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/lsp/")
 
+(require 'org-config)
 (require 'straight)
 
-(require 'custom)
+(require 'settings) 
 (require 'options)
 (require 'keymaps)
 (require 'colorscheme)
@@ -14,5 +17,6 @@
 (require 'evil)
 (require 'neotree)
 (require 'wakatime)
-(require 'neotree)
+(require 'lsp-mode-config)
 (require 'grammarly)
+(require 'org-superstar)

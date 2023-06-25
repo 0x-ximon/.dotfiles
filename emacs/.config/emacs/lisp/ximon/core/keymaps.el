@@ -6,9 +6,8 @@
 ;;     :nv ";e"    'neotree-toggle
 ;; )
 
-;; (evil-define-key 'normal neotree-mode-map (kbd "a") 'neotree-create-node)
-;; (evil-define-key 'normal neotree-mode-map (kbd "d") 'neotree-delete-node)
-
+;; (define-key 'normal neotree-mode-map (kbd "a") 'neotree-create-node)
+;; (define-key 'normal neotree-mode-map (kbd "d") 'neotree-delete-node)
 
 (provide 'keymaps)
 

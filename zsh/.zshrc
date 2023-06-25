@@ -119,7 +119,8 @@ alias solc="solcjs"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 . "$HOME/.cargo/env"
-export PATH="$PATH:/home/simon/go/bin"
+export GOPATH=$HOME/.go
+export PATH="$PATH:/home/simon/.go/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
