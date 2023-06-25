@@ -10,7 +10,7 @@
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.lineNumbers": "relative",
-  "editor.cursorStyle": "underline",
+  "editor.cursorStyle": "line",
 
   "editor.inlineSuggest.enabled": true,
   "editor.unicodeHighlight.allowedCharacters": {
@@ -21,9 +21,15 @@
 
   // Window settings
   "window.confirmBeforeClose": "always",
+  "workbench.autoDetectColorScheme": true,
+  "workbench.colorTheme": "GitHub Light",
 
-  // Workbench settings
-  "workbench.colorTheme": "Brogrammer",
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": false,
+
+  "workbench.preferredDarkColorTheme": "Brogrammer",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+
   "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
   "workbench.editor.untitled.hint": "hidden",
@@ -36,6 +42,14 @@
       "sideBar.background": "#111111",
       "statusBar.background": "#1A1A1A",
       "activityBar.background": "#000000",
+      "statusBar.noFolderBackground": "#1E90FF",
+      "statusBar.debuggingBackground": "#00ff00"
+    },
+    "[GitHub Light]": {
+      "editor.background": "#ffffff",
+      "sideBar.background": "#eeeeee",
+      "statusBar.background": "#eaeaea",
+      "activityBar.background": "#ffffff",
       "statusBar.noFolderBackground": "#1E90FF",
       "statusBar.debuggingBackground": "#00ff00"
     }
