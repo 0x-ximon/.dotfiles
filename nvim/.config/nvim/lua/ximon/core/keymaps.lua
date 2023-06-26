@@ -43,4 +43,8 @@ keymap.set("n", ";f", ":Telescope find_files<CR>")
 keymap.set("n", ";r", ":Telescope live_grep<CR>")
 
 -- Neocolum Mappings
-keymap.set("n", ";c", ":ToggleNeoColumn<cr>")
+keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
+
+-- Switching Colorschemes
+keymap.set("n", ";l", ":colorscheme github_light<CR>")
+keymap.set("n", ";d", ":colorscheme github_dark<CR>")

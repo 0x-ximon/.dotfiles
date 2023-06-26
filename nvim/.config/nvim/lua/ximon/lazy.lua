@@ -22,7 +22,7 @@ local plugins = {
 	"williamboman/mason.nvim",
 
 	-- Interface
-	{ "projekt0n/github-nvim-theme", version = "v0.0.x" },
+	{ "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = function()
