@@ -16,7 +16,7 @@ github_theme.setup({
 
 -- TODO: Find a better way to switch the colorschemes based on the system
 -- settings.
-if time.hour >= 7 and time.hour < 21 then
+if time.hour >= 7 and time.hour < 19 then
 	vim.cmd("set background=light")
 	vim.cmd("colorscheme github_light")
 else
