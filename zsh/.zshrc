@@ -146,3 +146,5 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 export PATH="$PATH:/home/simon/.flutter/bin"
+export PATH="$PATH:/home/simon/.android_sdk/cmdline-tools/latest/bin"
+export PATH="$PATH:/home/simon/.android_sdk/emulator"
