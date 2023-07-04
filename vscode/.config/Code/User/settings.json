@@ -22,7 +22,7 @@
   // Window settings
   "window.confirmBeforeClose": "always",
   "workbench.autoDetectColorScheme": true,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Brogrammer",
 
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": false,
@@ -34,9 +34,6 @@
   "workbench.panel.defaultLocation": "right",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#1A1A1A",
-    "statusBar.noFolderBackground": "#1E90FF",
-    "statusBar.debuggingBackground": "#00ff00",
     "[Brogrammer]": {
       "editor.background": "#000000",
       "sideBar.background": "#111111",
@@ -50,8 +47,8 @@
       "sideBar.background": "#eeeeee",
       "statusBar.background": "#eaeaea",
       "activityBar.background": "#ffffff",
-      "statusBar.noFolderBackground": "#1E90FF",
-      "statusBar.debuggingBackground": "#00ff00"
+      "statusBar.noFolderBackground": "#AEE7F8",
+      "statusBar.debuggingBackground": "#ABF1BC"
     }
   },
 
@@ -176,5 +173,4 @@
     "**/readme.md",
     "**/README.md",
     "**/*.txt"
-  ]
 }
