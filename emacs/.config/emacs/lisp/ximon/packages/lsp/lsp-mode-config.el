@@ -1,12 +1,12 @@
 (use-package lsp-mode
-  :init
-  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  (setq lsp-keymap-prefix "C-c l")
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (org-mode . lsp-grammarly)
-         ;; if you want which-key integration
-         (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp)
+             :init
+             ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+             (setq lsp-keymap-prefix "C-c l")
+             :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+                    (org-mode . lsp-grammarly)
+                    ;; if you want which-key integration
+                    (lsp-mode . lsp-enable-which-key-integration))
+             :commands lsp)
 
 ;; optionally
 ;; (use-package lsp-ui :commands lsp-ui-mode)
@@ -22,7 +22,7 @@
 
 ;; optional if you want which-key integration
 (use-package which-key
-    :config
-    (which-key-mode))
+             :config
+             (which-key-mode))
 
 (provide 'lsp-mode-config)

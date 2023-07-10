@@ -1,5 +1,5 @@
 (use-package evil
-    :ensure t)
+             :ensure t)
 
 (evil-mode 1)
 
