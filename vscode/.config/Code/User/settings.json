@@ -21,10 +21,8 @@
 
   // Window settings
   "window.confirmBeforeClose": "always",
-  "workbench.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Brogrammer",
-
   "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "GitHub Light",
   "window.autoDetectHighContrast": false,
 
   "workbench.preferredDarkColorTheme": "Brogrammer",
@@ -173,4 +171,5 @@
     "**/readme.md",
     "**/README.md",
     "**/*.txt"
+  ]
 }
