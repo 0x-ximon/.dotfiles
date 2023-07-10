@@ -12,6 +12,7 @@
 (require 'keymaps)
 (require 'colorscheme)
 
+(require 'helpful)
 (require 'doom-dashboard)
 (require 'doom-modeline)
 (require 'evil)
