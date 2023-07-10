@@ -10,4 +10,3 @@
 ;; (define-key 'normal neotree-mode-map (kbd "d") 'neotree-delete-node)
 
 (provide 'keymaps)
-

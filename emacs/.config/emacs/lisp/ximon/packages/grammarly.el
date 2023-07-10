@@ -5,4 +5,3 @@
                                   (lsp))))  ; or lsp-deferred
 
 (provide 'grammarly)
-

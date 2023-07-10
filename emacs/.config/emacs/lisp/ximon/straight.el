@@ -1,15 +1,11 @@
 (defvar bootstrap-version)
 
 (let 
-  (
-   (bootstrap-file
+  ((bootstrap-file
      (expand-file-name 
-       "straight/repos/straight.el/bootstrap.el" user-emacs-directory
-       )
-     )
+       "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
 
-   (bootstrap-version 5)
-   )
+   (bootstrap-version 5))
 
   (unless 
     (file-exists-p bootstrap-file)
@@ -21,12 +17,9 @@
         'inhibit-cookies
         )
       (goto-char (point-max))
-      (eval-print-last-sexp)
-      )
-    )
+      (eval-print-last-sexp)))
 
-  (load bootstrap-file nil 'nomessage)
-  )
+  (load bootstrap-file nil 'nomessage))
 
 ;; Configure use-package to use straight-use-package
 (straight-use-package 'use-package)

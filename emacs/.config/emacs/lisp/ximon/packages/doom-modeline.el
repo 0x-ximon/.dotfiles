@@ -10,5 +10,4 @@
   (set-face-attribute 'mode-line nil :family "Noto Sans" :height 120))
 (set-face-attribute 'mode-line-inactive nil :family "Noto Sans" :height 120)
 
-
 (provide 'doom-modeline)

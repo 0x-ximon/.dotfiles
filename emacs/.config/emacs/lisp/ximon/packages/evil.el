@@ -4,4 +4,3 @@
 (evil-mode 1)
 
 (provide 'evil)
-
