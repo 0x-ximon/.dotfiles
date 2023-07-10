@@ -1,7 +1,6 @@
 (use-package doom-modeline
              :ensure     t
-             :hook   (after-init . doom-modeline-mode)
-             )
+             :hook   (after-init . doom-modeline-mode))
 
 (setq doom-modeline-buffer-file-name 'file-name)
 
