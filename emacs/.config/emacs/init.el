@@ -22,3 +22,4 @@
 (require 'lsp-mode-config)
 (require 'grammarly)
 (require 'org-superstar)
+(require 'git-gutter-config)
