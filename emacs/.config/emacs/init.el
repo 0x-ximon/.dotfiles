@@ -17,6 +17,7 @@
 (require 'doom-modeline)
 (require 'evil)
 (require 'neotree)
+(require 'magit)
 (require 'wakatime)
 (require 'lsp-mode-config)
 (require 'grammarly)
