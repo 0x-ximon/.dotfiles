@@ -1,12 +1,20 @@
 (use-package evil
-             :ensure t)
+             :ensure t
+             :init
+             (setq evil-want-keybinding nil)
+             :config
+             (evil-mode 1))
+
+(use-package evil-collection
+             :after evil
+             :ensure t
+             :config
+             (evil-collection-init))
 
 (use-package evil-escape
-             :ensure t)
-
-(evil-mode 1)
-(evil-escape-mode 1)
-
+             :ensure t
+             :config
+             (evil-escape-mode 1))
 
 ;; ;; set leader key in all states
 ;; (evil-set-leader nil (kbd "C-SPC"))
