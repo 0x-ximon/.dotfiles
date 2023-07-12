@@ -6,6 +6,7 @@
 
 (require 'org-config)
 (require 'straight)
+(require 'lang-modes)
 
 (require 'settings) 
 (require 'options)
@@ -15,6 +16,7 @@
 (require 'helpful)
 (require 'doom-dashboard)
 (require 'doom-modeline)
+(require 'good-scroll)
 (require 'evil)
 (require 'neotree)
 (require 'magit)
