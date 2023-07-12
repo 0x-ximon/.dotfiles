@@ -10,7 +10,6 @@
 
 (require 'settings) 
 (require 'options)
-(require 'keymaps)
 (require 'colorscheme)
 
 (require 'helpful)

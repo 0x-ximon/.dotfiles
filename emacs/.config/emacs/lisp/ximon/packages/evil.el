@@ -24,16 +24,14 @@
              (require 'evil-org-agenda)
              (evil-org-agenda-set-keys))
 
-;; ;; set leader key in all states
-;; (evil-set-leader nil (kbd "C-SPC"))
-;;
-;; ;; set leader key in normal state
-;; (evil-set-leader 'normal (kbd "SPC"))
-;;
-;; ;; set local leader
-;; (evil-set-leader 'normal "," t)
-
-(setq-default evil-escape-key-sequence "jk")
 (setq-default evil-escape-delay 0.2)
+(evil-set-leader 'normal (kbd "SPC"))
+(setq-default evil-escape-key-sequence "jk")
+(define-key evil-normal-state-map ";e" 'neotree-toggle)
+
+(define-key evil-normal-state-map (kbd "C-k") 'windmove-up)
+(define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
+(define-key evil-normal-state-map (kbd "C-j") 'windmove-down)
+(define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 
 (provide 'evil)
