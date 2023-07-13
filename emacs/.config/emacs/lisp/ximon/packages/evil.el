@@ -34,4 +34,6 @@
 (define-key evil-normal-state-map (kbd "C-j") 'windmove-down)
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 
+(define-key evil-normal-state-map (kbd "<leader>ca") 'lsp-execute-code-action)
+
 (provide 'evil)
