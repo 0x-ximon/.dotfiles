@@ -4,7 +4,6 @@
 (use-package neotree
              :ensure t)
 
-;; (define-key evil-normal-state-map neotree-mode-map (kbd "a") 'neotree-create-node)
-;; (define-key evil-normal-state-map neotree-mode-map (kbd "d") 'neotree-delete-node)
+(set-display-table-slot standard-display-table 'truncation 32)
 
 (provide 'neotree)
