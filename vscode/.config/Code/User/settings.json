@@ -22,7 +22,7 @@
   // Window settings
   "window.confirmBeforeClose": "always",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Brogrammer",
   "window.autoDetectHighContrast": false,
 
   "workbench.preferredDarkColorTheme": "Brogrammer",
@@ -118,7 +118,8 @@
   },
 
   "[solidity]": {
-    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity",
+    "editor.formatOnSave": true
   },
 
   // Extensions settings
