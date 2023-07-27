@@ -17,6 +17,10 @@
 (setq mouse-wheel-follow-mouse 't) 
 (setq scroll-step 1) 
 
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+(setq create-lockfiles nil)
+
 (dolist 
   (mode 
     '(
