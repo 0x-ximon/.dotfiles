@@ -13,6 +13,7 @@
 (require 'colorscheme)
 
 (require 'helpful)
+(require 'evil-terminal-cursor)
 (require 'doom-dashboard)
 (require 'doom-modeline)
 (require 'good-scroll)
