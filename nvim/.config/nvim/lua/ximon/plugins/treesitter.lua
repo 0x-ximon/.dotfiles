@@ -24,10 +24,11 @@ treesitter.setup({
 		"lua",
 		"vim",
 		"dockerfile",
+		"sql",
 	},
 
 	indent = {
 		enable = true,
-		disable = { "python" },
+		disable = { "python", "dart" },
 	},
 })

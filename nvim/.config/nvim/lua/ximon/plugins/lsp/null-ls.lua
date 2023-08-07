@@ -21,7 +21,10 @@ null_ls.setup({
 		formatting.clang_format,
 		formatting.gofumpt,
 		formatting.goimports,
-		formatting.sql_formatter,
+		formatting.sqlfluff.with({
+			extra_args = { "--dialect", "postgres" },
+		}),
+		formatting.sqlfmt,
 		formatting.dart_format,
 
 		diagnostics.eslint_d.with({
