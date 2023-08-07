@@ -7,6 +7,12 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
 
+-- Navigation Keymaps
+keymap.set("n", "H", "^")
+keymap.set("n", "L", "$")
+keymap.set("n", "K", "{")
+keymap.set("n", "J", "}")
+
 -- Window size Mappings
 keymap.set("n", "<C-Left>", ":vertical resize +1<CR>")
 keymap.set("n", "<C-Right>", ":vertical resize -1<CR>")
