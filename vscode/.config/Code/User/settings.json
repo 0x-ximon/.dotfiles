@@ -70,7 +70,6 @@
   },
 
   "[cpp]": {
-    "editor.tabSize": 2,
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
@@ -130,6 +129,12 @@
   "css.enabledLanguages": ["html"],
   "Lua.diagnostics.globals": ["vim"],
 
+  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.clang_format_fallbackStyle": "Chromium",
+  "C_Cpp.clang_format_style": "{BasedOnStyle: Chromium, IndentWidth: 4}",
+
   "rust-analyzer.inlayHints.renderColons": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.lens.implementations.enable": false,
@@ -163,9 +168,11 @@
 
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": true,
-    "markdown": true
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
+    "cpp": false
   },
   "grammarly.files.include": [
     "**/article.md",
