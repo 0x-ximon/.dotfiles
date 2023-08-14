@@ -142,6 +142,9 @@
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
 
+  "zig.zls.enabled": true,
+  "zig.zls.path": "/home/simon/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+
   // -- Vim settings
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/bin/nvim",
