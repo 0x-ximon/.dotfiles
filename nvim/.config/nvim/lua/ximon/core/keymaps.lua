@@ -36,7 +36,8 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") -- Go to Next Tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- Go to Previous Tab
 
 -- Terminal Keymaps
-keymap.set("n", ";t", ":terminal<CR>")
+keymap.set("n", ";t", ":vs | te<CR>")
+keymap.set("t", "jk", "<C-\\><C-n>")
 
 -- Vim Maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
