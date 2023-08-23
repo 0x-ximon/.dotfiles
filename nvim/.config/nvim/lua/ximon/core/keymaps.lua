@@ -13,6 +13,11 @@ keymap.set("n", "L", "$")
 keymap.set("n", "K", "{")
 keymap.set("n", "J", "}")
 
+keymap.set("v", "H", "^")
+keymap.set("v", "L", "$")
+keymap.set("v", "K", "{")
+keymap.set("v", "J", "}")
+
 -- Window size Mappings
 keymap.set("n", "<C-Left>", ":vertical resize +1<CR>")
 keymap.set("n", "<C-Right>", ":vertical resize -1<CR>")
