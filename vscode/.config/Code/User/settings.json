@@ -149,6 +149,7 @@
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/bin/nvim",
   "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -159,6 +160,35 @@
     {
       "before": [";", "e"],
       "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["?"],
+      "commands": ["editor.action.showHover"]
     }
   ],
 

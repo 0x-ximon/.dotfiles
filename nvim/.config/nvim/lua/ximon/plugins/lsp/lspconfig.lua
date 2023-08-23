@@ -18,8 +18,8 @@ local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
 	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
-	keymap.set("n", "gD", "<cmd>Lspsaga peek_definition<CR>", opts)
-	keymap.set("n", "gd", "<Cmd>Lspsaga goto_definition<CR>", opts)
+	keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts)
+	keymap.set("n", "gD", "<Cmd>Lspsaga goto_definition<CR>", opts)
 	keymap.set("n", "gt", "<cmd>Lspsaga goto_type_definition<CR>", opts)
 
 	keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
