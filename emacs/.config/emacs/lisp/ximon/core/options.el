@@ -20,6 +20,7 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 (setq create-lockfiles nil)
+(setq warning-minimum-level :emergency)
 
 (dolist 
   (mode 
