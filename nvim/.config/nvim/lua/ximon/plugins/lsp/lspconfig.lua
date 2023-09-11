@@ -80,9 +80,15 @@ lspconfig["clangd"].setup({
 })
 
 lspconfig["elixirls"].setup({
-	cmd = { "elixir-ls" },
+	cmd = { "/home/simon/.local/share/nvim/mason/packages/elixir-ls/language_server.sh" },
 	capabilities = capabilities,
 	on_attach = on_attach,
+})
+
+lspconfig["dartls"].setup({
+	cmd = { "/home/simon/.flutter/bin/dart", "language-server", "--protocol=lsp" },
+	on_attach = on_attach,
+	root_dir = lspconfig.util.root_pattern("pubspec.yaml"),
 })
 
 lspconfig["sqlls"].setup({
