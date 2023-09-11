@@ -196,7 +196,6 @@
   "extensions.autoUpdate": false,
   "redhat.telemetry.enabled": true,
   "gitlens.codeLens.enabled": false,
-  "liveServer.settings.donotVerifyTags": true,
   "github.copilot.inlineSuggest.enable": true,
 
   "github.copilot.enable": {
@@ -204,7 +203,7 @@
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "yaml": false,
+    "yaml": true,
     "cpp": false
   },
   "grammarly.files.include": [
