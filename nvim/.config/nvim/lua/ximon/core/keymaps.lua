@@ -5,6 +5,7 @@ local keymap = vim.keymap
 -- General Keymaps
 keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("n", "U", "<C-r>")
 keymap.set("n", "x", '"_x')
 
 -- Navigation Keymaps
