@@ -216,8 +216,7 @@
   "snyk.advanced.cliPath": "/home/simon/.local/share/snyk-ls/snyk-linux",
   "snyk.trustedFolders": [
     "/home/simon/Projects/Personal",
-    "/home/simon/Projects/Articles",
-    "/home/simon/.dotfiles"
+    "/home/simon/Projects/Articles"
   ],
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
