@@ -22,7 +22,7 @@
   // Window settings
   "window.confirmBeforeClose": "always",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Brogrammer",
+  "workbench.colorTheme": "GitHub Light",
   "window.autoDetectHighContrast": false,
 
   "workbench.preferredDarkColorTheme": "Brogrammer",
@@ -65,11 +65,11 @@
     "editor.defaultFormatter": "sumneko.lua"
   },
 
-  "[sql]": {
-    "editor.defaultFormatter": "ms-mssql.mssql"
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
-  "[cpp]": {
+  "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
@@ -217,8 +217,5 @@
   "snyk.trustedFolders": [
     "/home/simon/Projects/Personal",
     "/home/simon/Projects/Articles"
-  ],
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  ]
 }
