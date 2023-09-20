@@ -30,6 +30,20 @@ local plugins = {
 		end,
 	},
 	{
+		"f-person/auto-dark-mode.nvim",
+		config = {
+			update_interval = 1000,
+			set_dark_mode = function()
+				vim.api.nvim_set_option("background", "dark")
+				vim.cmd("colorscheme github_dark_tritanopia")
+			end,
+			set_light_mode = function()
+				vim.api.nvim_set_option("background", "light")
+				vim.cmd("colorscheme github_light_tritanopia")
+			end,
+		},
+	},
+	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
 		dependencies = {
