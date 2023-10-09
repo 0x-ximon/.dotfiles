@@ -115,23 +115,17 @@ alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export GOPATH=$HOME/.go
-export PATH="$PATH:/home/simon/.go/bin"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/simon/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/simon/.miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/simon/.miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/simon/.miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+export PATH="/home/simon/.local/bin:$PATH"
+
+export PATH="$PATH:/home/simon/.go/bin"
+export GOPATH=$HOME/.go
+
+export PATH="$PATH:/usr/local/go/bin"
+source "$HOME/.cargo/env"
 
 # Solana Setup
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
@@ -141,9 +135,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init -)"
 fi
 
+export PATH="$PATH:/home/simon/multiversx-sdk"
+
 export PATH="$PATH:/home/simon/.flutter/bin"
 export PATH="$PATH:/home/simon/.android_sdk/cmdline-tools/latest/bin"
 export PATH="$PATH:/home/simon/.android_sdk/emulator"
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export PATH="$PATH:/home/simon/.firebase/bin"
+export PATH="$PATH:/home/simon/.pub-cache/bin"
