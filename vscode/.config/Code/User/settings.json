@@ -124,7 +124,7 @@
   // Extensions settings
   // -- Languages
   "go.gopath": "~/.go",
-  "solidity.telemetry": true,
+  "solidity.telemetry": false,
   "html.format.wrapLineLength": 80,
   "css.enabledLanguages": ["html"],
   "Lua.diagnostics.globals": ["vim"],
@@ -191,6 +191,24 @@
       "commands": ["editor.action.showHover"]
     }
   ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    }
+  ],
 
   // -- Utilities
   "extensions.autoUpdate": false,
@@ -212,10 +230,37 @@
     "**/README.md",
     "**/*.txt"
   ],
-  "snyk.yesWelcomeNotification": false,
-  "snyk.advanced.cliPath": "/home/simon/.local/share/snyk-ls/snyk-linux",
-  "snyk.trustedFolders": [
-    "/home/simon/Projects/Personal",
-    "/home/simon/Projects/Articles"
-  ]
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  }
 }
