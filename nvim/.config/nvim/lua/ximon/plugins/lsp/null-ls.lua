@@ -26,6 +26,7 @@ null_ls.setup({
 		}),
 		formatting.sqlfmt,
 		formatting.dart_format,
+		formatting.mix,
 
 		diagnostics.eslint_d.with({
 			condition = function(utils)
