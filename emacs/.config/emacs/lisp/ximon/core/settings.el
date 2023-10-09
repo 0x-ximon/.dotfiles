@@ -5,7 +5,7 @@
   '(auto-dark-light-theme 'doom-nord-light)
   '(auto-dark-mode t)
   '(ispell-dictionary nil)
-  '(wakatime-cli-path "/usr/local/bin/wakatime"))
+  '(wakatime-cli-path "~/.wakatime/wakatime-cli"))
 
 (custom-set-faces)
 
