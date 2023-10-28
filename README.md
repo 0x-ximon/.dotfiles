@@ -9,6 +9,7 @@ There are configs for
 - ZSH
 - Emacs
 - VS Code
+- Clang
 
 To setup the configs on your machine, install GNU Stow:
 
@@ -20,5 +21,5 @@ After which, you can then run the stow command to place them in their respective
 folders in your $HOME directory.
 
 ```bash
-stow nvim tmux zsh emacs vscode
+stow nvim tmux zsh emacs vscode clang
 ```
