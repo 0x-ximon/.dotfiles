@@ -150,6 +150,7 @@ local plugins = {
 	"jose-elias-alvarez/typescript.nvim",
 	"onsails/lspkind.nvim",
 	"akinsho/flutter-tools.nvim",
+	"stevearc/conform.nvim",
 
 	-- Formatting & Linting
 	"jose-elias-alvarez/null-ls.nvim",

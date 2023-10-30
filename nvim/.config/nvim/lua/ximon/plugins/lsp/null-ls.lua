@@ -9,25 +9,6 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
-		formatting.prettier.with({
-			-- Don't forget to install the "prettier-plugin-solidity".
-			extra_filetypes = { "solidity" },
-		}),
-		formatting.black.with({
-			extra_args = { "--line-length", "80" },
-		}),
-		formatting.rustfmt,
-		formatting.stylua,
-		formatting.clang_format,
-		formatting.gofumpt,
-		formatting.goimports,
-		formatting.sqlfluff.with({
-			extra_args = { "--dialect", "postgres" },
-		}),
-		formatting.sqlfmt,
-		formatting.dart_format,
-		formatting.mix,
-
 		diagnostics.eslint_d.with({
 			condition = function(utils)
 				return utils.root_has_file(".eslintrc.js")
