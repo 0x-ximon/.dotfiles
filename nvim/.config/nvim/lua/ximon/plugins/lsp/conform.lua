@@ -12,6 +12,8 @@ conform.setup({
 		javascript = { "prettier" },
 		typescript = { "prettier" },
 		solidity = { "prettier" },
+		json = { "prettier" },
+		markdown = { "prettier" },
 
 		python = { "black" },
 		rust = { "rustfmt" },
@@ -24,7 +26,7 @@ conform.setup({
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()
-		timeout_ms = 500,
+		timeout_ms = 10000,
 		lsp_fallback = true,
 	},
 })

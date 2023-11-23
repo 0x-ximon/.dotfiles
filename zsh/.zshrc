@@ -115,10 +115,6 @@ alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export PATH="/home/simon/.local/bin:$PATH"
 
 export PATH="$PATH:/home/simon/.go/bin"
@@ -134,8 +130,6 @@ export PATH="$PATH:/home/simon/.foundry/bin"
 if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init -)"
 fi
-
-export PATH="$PATH:/home/simon/multiversx-sdk"
 
 export PATH="$PATH:/home/simon/.flutter/bin"
 export PATH="$PATH:/home/simon/.android_sdk/cmdline-tools/latest/bin"
