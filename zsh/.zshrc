@@ -117,6 +117,8 @@ alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
 
 export PATH="/home/simon/.local/bin:$PATH"
 
+export PATH="$PATH:/home/simon/.gradle/bin"
+export PATH="$PATH:/home/simon/.mvn/bin"
 export PATH="$PATH:/home/simon/.go/bin"
 export GOPATH=$HOME/.go
 

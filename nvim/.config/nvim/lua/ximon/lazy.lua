@@ -153,7 +153,7 @@ local plugins = {
 	"stevearc/conform.nvim",
 
 	-- Formatting & Linting
-	"jose-elias-alvarez/null-ls.nvim",
+	"nvimtools/none-ls.nvim",
 	"jayp0521/mason-null-ls.nvim",
 
 	-- Commenting
