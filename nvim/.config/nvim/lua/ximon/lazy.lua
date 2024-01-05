@@ -126,8 +126,8 @@ local plugins = {
 	"vim-scripts/ReplaceWithRegister",
 	{
 		"nvim-telescope/telescope.nvim",
-		tag = "0.1.1",
-		dependencies = { { "nvim-lua/plenary.nvim" } },
+		branch = "0.1.x",
+		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	"windwp/nvim-autopairs",
 	"windwp/nvim-ts-autotag",

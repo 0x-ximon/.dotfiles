@@ -112,6 +112,8 @@ alias tmuxconfig="nvim ~/.dotfiles/tmux/.tmux.conf"
 alias nvimconfig="nvim ~/.dotfiles/nvim/.config/nvim/"
 alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
 
+alias dotfiles="code ~/.dotfiles"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
