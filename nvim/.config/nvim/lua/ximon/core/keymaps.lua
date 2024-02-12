@@ -45,6 +45,9 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- Neo Tree
 keymap.set("n", ";e", ":Neotree toggle<CR>")
+keymap.set("n", "-", "<CMD>Oil<CR>", {
+	desc = "Open parent directory",
+})
 
 -- Telescope Mappings
 keymap.set("n", ";f", ":Telescope find_files<CR>")
