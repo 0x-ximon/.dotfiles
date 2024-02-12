@@ -18,6 +18,7 @@
 (require 'doom-modeline)
 (require 'good-scroll)
 (require 'evil)
+(require 'dired-config)
 (require 'neotree)
 (require 'magit)
 (require 'wakatime)

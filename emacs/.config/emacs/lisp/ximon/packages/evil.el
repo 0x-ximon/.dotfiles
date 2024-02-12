@@ -1,3 +1,5 @@
+(require 'dired-x)
+
 (use-package evil
              :ensure t
              :init
@@ -27,7 +29,10 @@
 (setq-default evil-escape-delay 0.2)
 (evil-set-leader 'normal (kbd "SPC"))
 (setq-default evil-escape-key-sequence "jk")
+
 (define-key evil-normal-state-map ";e" 'neotree-toggle)
+(define-key evil-normal-state map "-" 'dired-jump)
+(define-key evil-motion-state-map "-" 'dired-jump)
 
 (define-key evil-normal-state-map (kbd "C-k") 'windmove-up)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
