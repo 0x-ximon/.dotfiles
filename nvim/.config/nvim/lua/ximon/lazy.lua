@@ -153,7 +153,12 @@ local plugins = {
 	"stevearc/conform.nvim",
 
 	-- Formatting & Linting
-	"nvimtools/none-ls.nvim",
+	{
+		"nvimtools/none-ls.nvim",
+		dependencies = {
+			"nvimtools/none-ls-extras.nvim",
+		},
+	},
 	"jayp0521/mason-null-ls.nvim",
 
 	-- Commenting

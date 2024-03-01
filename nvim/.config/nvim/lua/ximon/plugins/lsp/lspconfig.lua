@@ -96,11 +96,10 @@ lspconfig["dartls"].setup({
 	root_dir = lspconfig.util.root_pattern("pubspec.yaml"),
 })
 
--- lspconfig["sqlls"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- 	root_dir = lspconfig.util.root_pattern(".sqlintrc.json"),
--- })
+lspconfig["ruff_lsp"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 lspconfig["solidity"].setup({
 	capabilities = capabilities,

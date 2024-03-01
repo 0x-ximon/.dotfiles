@@ -8,13 +8,8 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
-		diagnostics.eslint_d.with({
-			condition = function(utils)
-				return utils.root_has_file(".eslintrc.js")
-			end,
-		}),
+		require("none-ls.code_actions.eslint"),
 		diagnostics.mypy,
-		diagnostics.ruff,
 	},
 
 	on_attach = function(current_client, bufnr)
