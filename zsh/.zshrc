@@ -119,6 +119,8 @@ alias dotfiles="code ~/.dotfiles"
 
 export PATH="/home/simon/.local/bin:$PATH"
 
+export PATH="$PATH:/home/simon/.pyenv/versions"
+
 export PATH="$PATH:/home/simon/.gradle/bin"
 export PATH="$PATH:/home/simon/.mvn/bin"
 export PATH="$PATH:/home/simon/.go/bin"
@@ -131,9 +133,11 @@ source "$HOME/.cargo/env"
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 
 export PATH="$PATH:/home/simon/.foundry/bin"
-if command -v pyenv 1>/dev/null 2>&1; then
- eval "$(pyenv init -)"
-fi
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
 
 export PATH="$PATH:/home/simon/.flutter/bin"
 export PATH="$PATH:/home/simon/.android_sdk/cmdline-tools/latest/bin"
@@ -141,3 +145,4 @@ export PATH="$PATH:/home/simon/.android_sdk/emulator"
 
 export PATH="$PATH:/home/simon/.firebase/bin"
 export PATH="$PATH:/home/simon/.pub-cache/bin"
+
