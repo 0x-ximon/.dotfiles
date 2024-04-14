@@ -52,6 +52,12 @@ local plugins = {
 			"MunifTanjim/nui.nvim",
 		},
 	},
+	{
+		"stevearc/oil.nvim",
+		opts = {},
+		-- Optional dependencies
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
 	"rcarriga/nvim-notify",
 	"christoomey/vim-tmux-navigator",
 	"szw/vim-maximizer",
@@ -63,12 +69,12 @@ local plugins = {
 			local dashboard = require("alpha.themes.dashboard")
 
 			local logo = [[
-     _                     
-(_|   |_/o             
-  |   |      _  _  _   
-  |   |  |  / |/ |/ |  
+     _
+(_|   |_/o
+  |   |      _  _  _
+  |   |  |  / |/ |/ |
    \_/   |_/  |  |  |_/
-			]]
+            ]]
 
 			dashboard.section.header.val = vim.split(logo, "\n")
 

@@ -7,6 +7,7 @@ require("ximon.core.colorscheme")
 
 -- Plugin Imports
 require("ximon.plugins.treesitter")
+require("ximon.plugins.oil-nvim")
 require("ximon.plugins.neo-tree")
 require("ximon.plugins.lualine")
 require("ximon.plugins.comment")
