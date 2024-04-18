@@ -1,5 +1,5 @@
 (use-package wakatime-mode
-             :ensure t)
+  :ensure t)
 
 (global-wakatime-mode)
 

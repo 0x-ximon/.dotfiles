@@ -1,4 +1,4 @@
 (use-package magit
-             :ensure t)
+  :ensure t)
 
 (provide 'magit)

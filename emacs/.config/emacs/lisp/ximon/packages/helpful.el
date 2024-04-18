@@ -1,4 +1,4 @@
 (use-package helpful
-             :ensure t)
+  :ensure t)
 
 (provide 'helpful)

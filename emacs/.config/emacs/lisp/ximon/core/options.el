@@ -1,6 +1,6 @@
 (setq 
-  user-full-name      "Simon Samuel"
-  user-mail-address   "salviensky@gmail.com")
+ user-full-name      "Simon Samuel"
+ user-mail-address   "salviensky@gmail.com")
 
 (setq org-directory "~/Projects/Personal/Tasks")
 (setq display-line-numbers-type 'relative)
@@ -23,16 +23,16 @@
 (setq warning-minimum-level :emergency)
 
 (dolist 
-  (mode 
-    '(
-      neotree-mode-hook
-      term-mode-hook
-      eshell-mode-hook))
+    (mode 
+     '(
+       neotree-mode-hook
+       term-mode-hook
+       eshell-mode-hook))
 
   (add-hook 
-    mode (
-          lambda () (
-                     display-line-numbers-mode 0))))
+   mode (
+         lambda () (
+                    display-line-numbers-mode 0))))
 
 
 (provide 'options)
