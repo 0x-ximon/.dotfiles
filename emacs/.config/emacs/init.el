@@ -4,8 +4,8 @@
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/")
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/lsp/")
 
-(require 'org-config)
 (require 'straight)
+(require 'org-config)
 (require 'lang-modes)
 
 (require 'settings) 
@@ -24,4 +24,4 @@
 (require 'lsp-mode-config)
 (require 'grammarly)
 (require 'org-superstar)
-(require 'git-gutter-config)
+(require 'git-gutter)
