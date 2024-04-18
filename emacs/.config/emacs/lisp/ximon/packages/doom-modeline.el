@@ -36,20 +36,21 @@
 (setq doom-modeline-workspace-name t)
 (setq doom-modeline-buffer-encoding t)
 (setq doom-modeline-vcs-max-length 12)
-(setq doom-modeline-enable-word-count nil)
-
 (setq doom-modeline-major-mode-icon nil)
+
 (setq doom-modeline-buffer-state-icon t)
 (setq doom-modeline-unicode-fallback nil)
 (setq doom-modeline-window-width-limit 80)
 (setq doom-modeline-irc-stylize 'identity)
+(setq doom-modeline-enable-word-count nil)
 
+(setq doom-modeline-modal-modern-icon nil)
 (setq doom-modeline-checker-simple-format t)
 (setq doom-modeline-project-detection 'auto)
 (setq doom-modeline-major-mode-color-icon t)
 (setq doom-modeline-github-interval (* 30 60))
-(setq doom-modeline-buffer-modification-icon t)
 
+(setq doom-modeline-buffer-modification-icon t)
 (setq doom-modeline-display-default-persp-name t)
 (setq doom-modeline-highlight-modified-buffer-name t)
 (setq doom-modeline-display-misc-in-all-mode-lines t)
