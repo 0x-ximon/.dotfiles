@@ -109,8 +109,8 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # Configuration aliases
 alias zshconfig="nvim ~/.dotfiles/zsh/.zshrc"
 alias tmuxconfig="nvim ~/.dotfiles/tmux/.tmux.conf"
-alias nvimconfig="nvim ~/.dotfiles/nvim/.config/nvim/"
-alias emacsconfig="nvim ~/.dotfiles/emacs/.config/emacs"
+alias nvimconfig="neovide ~/.dotfiles/nvim/.config/nvim/"
+alias emacsconfig="emacsclient -c -F \"'(fullscreen . maximized)\" ~/.dotfiles/emacs/.config/emacs/" 
 
 alias dotfiles="code ~/.dotfiles"
 
