@@ -2,7 +2,8 @@
  user-full-name      "Simon Samuel"
  user-mail-address   "salviensky@gmail.com")
 
-(setq org-directory "~/Projects/Personal/Tasks")
+(add-to-list 'default-frame-alist '(fullscreen . maximized)) 
+
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode t)
 (setq inhibit-startup-message t)  
