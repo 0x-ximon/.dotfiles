@@ -107,12 +107,14 @@ source $ZSH/oh-my-zsh.sh
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Configuration aliases
-alias zshconfig="nvim ~/.dotfiles/zsh/.zshrc"
-alias tmuxconfig="nvim ~/.dotfiles/tmux/.tmux.conf"
-alias nvimconfig="neovide ~/.dotfiles/nvim/.config/nvim/"
-alias emacsconfig="emacsclient -c -F \"'(fullscreen . maximized)\" ~/.dotfiles/emacs/.config/emacs/" 
+alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
+alias tmuxconfig="cd ~/.dotfiles/tmux/ && nvim .tmux.conf"
+alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovide ."
+alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && emacsclient . -cnqu -a \"emacs\"" 
 
 alias dotfiles="code ~/.dotfiles"
+alias playground="cd ~/Projects/Playground/ && neovide ."
+alias study="cd ~/Projects/Study/ && emacsclient . -cnqu -a \"emacs\""
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
