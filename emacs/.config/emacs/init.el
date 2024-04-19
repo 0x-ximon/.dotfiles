@@ -14,7 +14,6 @@
 
 (require 'helpful)
 (require 'evil-terminal-cursor)
-(require 'doom-dashboard)
 (require 'doom-modeline)
 (require 'good-scroll)
 (require 'evil)
@@ -25,3 +24,4 @@
 (require 'grammarly)
 (require 'org-superstar)
 (require 'git-gutter)
+(require 'doom-dashboard)
