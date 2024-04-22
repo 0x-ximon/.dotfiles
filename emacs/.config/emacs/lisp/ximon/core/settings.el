@@ -1,4 +1,4 @@
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 160)
 
 (custom-set-variables
  '(auto-dark-dark-theme 'doom-acario-dark)
