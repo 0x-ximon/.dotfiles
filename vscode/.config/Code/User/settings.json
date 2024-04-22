@@ -52,7 +52,7 @@
 
   // Terminal settings
   "terminal.integrated.inheritEnv": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font, Fira Code",
   "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
 
@@ -103,7 +103,7 @@
 
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
 
   "[html]": {
@@ -214,7 +214,7 @@
   "extensions.autoUpdate": false,
   "redhat.telemetry.enabled": true,
   "gitlens.codeLens.enabled": false,
-  "github.copilot.inlineSuggest.enable": true,
+  "github.copilot.editor.enableAutoCompletions": true,
 
   "github.copilot.enable": {
     "*": true,
@@ -224,12 +224,6 @@
     "yaml": true,
     "cpp": false
   },
-  "grammarly.files.include": [
-    "**/article.md",
-    "**/readme.md",
-    "**/README.md",
-    "**/*.txt"
-  ],
   "files.associations": {
     ".env*": "dotenv"
   },
