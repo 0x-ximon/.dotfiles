@@ -28,6 +28,7 @@
 (evil-set-leader 'normal (kbd "SPC"))
 (setq-default evil-escape-key-sequence "jk")
 (define-key evil-normal-state-map ";e" 'neotree-toggle)
+(define-key evil-normal-state-map ";d" 'dashboard-open)
 
 (define-key evil-normal-state-map (kbd "C-k") 'windmove-up)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)

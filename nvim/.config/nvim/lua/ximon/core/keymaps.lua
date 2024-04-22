@@ -55,3 +55,4 @@ keymap.set("n", ";r", ":Telescope live_grep<CR>")
 
 -- Neocolum Mappings
 keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
+keymap.set("n", ";d", ":Alpha<CR>")
