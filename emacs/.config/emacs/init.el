@@ -24,4 +24,5 @@
 (require 'grammarly)
 (require 'org-superstar)
 (require 'git-gutter)
+(require 'smart-parens)
 (require 'doom-dashboard)
