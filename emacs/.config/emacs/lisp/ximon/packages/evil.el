@@ -27,6 +27,8 @@
 (setq-default evil-escape-delay 0.2)
 (evil-set-leader 'normal (kbd "SPC"))
 (setq-default evil-escape-key-sequence "jk")
+
+(define-key evil-normal-state-map ";w" 'save-buffer)
 (define-key evil-normal-state-map ";e" 'neotree-toggle)
 (define-key evil-normal-state-map ";d" 'dashboard-open)
 
@@ -36,6 +38,10 @@
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 
 (define-key evil-normal-state-map (kbd "-") 'dired-jump)
+
 (define-key evil-normal-state-map (kbd "<leader>ca") 'lsp-execute-code-action)
+(define-key evil-normal-state-map (kbd "<leader>sv") 'split-window-right)
+(define-key evil-normal-state-map (kbd "<leader>sh") 'split-window-below)
+(define-key evil-normal-state-map (kbd "<leader>sx") 'kill-buffer-and-window)
 
 (provide 'evil)
