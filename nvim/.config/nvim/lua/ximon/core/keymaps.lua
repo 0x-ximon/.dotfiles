@@ -56,6 +56,7 @@ keymap.set("n", "-", "<CMD>Oil<CR>", {
 -- Telescope Mappings
 keymap.set("n", ";f", ":Telescope find_files<CR>")
 keymap.set("n", ";r", ":Telescope live_grep<CR>")
+keymap.set("n", ";b", ":Telescope buffers<CR>")
 
 -- Neocolum Mappings
 keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
