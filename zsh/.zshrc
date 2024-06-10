@@ -104,6 +104,14 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias ls="exa"
+alias la="exa -a"
+alias ll="exa -l"
+
+alias cd="z"
+alias cat="batcat"
+
+
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Configuration aliases
@@ -148,3 +156,4 @@ export PATH="$PATH:/home/simon/.android_sdk/emulator"
 export PATH="$PATH:/home/simon/.firebase/bin"
 export PATH="$PATH:/home/simon/.pub-cache/bin"
 
+eval "$(zoxide init zsh)"
