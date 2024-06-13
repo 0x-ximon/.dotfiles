@@ -162,6 +162,10 @@
       "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
+      "before": [";", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
       "before": ["g", "d"],
       "commands": ["editor.action.peekDefinition"]
     },
