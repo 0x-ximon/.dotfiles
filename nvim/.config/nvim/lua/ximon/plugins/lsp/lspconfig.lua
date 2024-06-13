@@ -101,6 +101,11 @@ lspconfig["ruff_lsp"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["markdown_oxide"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 lspconfig["solidity"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
