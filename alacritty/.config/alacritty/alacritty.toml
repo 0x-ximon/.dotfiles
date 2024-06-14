@@ -1,0 +1,35 @@
+import = [
+    "~/.config/alacritty/themes/themes/catppuccin.toml"
+]
+# working_directory = "$HOME/Projects"
+
+[window]
+dynamic_padding = true
+startup_mode = "Maximized"
+decorations = "None"
+opacity = 0.8
+
+[font]
+normal = {family = "FiraCode Nerd Font", style = "Regular"}
+size = 14
+
+[colors.normal]
+black = "#000000"
+red = "#CD0000"
+green = "#00CD00"
+yellow = "#CDCD00"
+blue = "#0000CD"
+magenta = "#CD00CD"
+cyan = "#00CDCD"
+white = "#FAEBD7"
+
+[colors.bright]
+black = "#404040"
+red = "#FF0000"
+green = "#00FF00"
+yellow = "#FFFF00"
+blue = "#0000FF"
+magenta = "#FF00FF"
+cyan = "#00FFFF"
+white = "#FFFFFF"
+
