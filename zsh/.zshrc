@@ -127,13 +127,13 @@ alias study="cd ~/Projects/Study/ && emacsclient . -cnqu -a \"emacs\""
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="/home/simon/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
-export PATH="$PATH:/home/simon/.pyenv/versions"
+export PATH="$PATH:$HOME/.pyenv/versions"
 
-export PATH="$PATH:/home/simon/.gradle/bin"
-export PATH="$PATH:/home/simon/.mvn/bin"
-export PATH="$PATH:/home/simon/.go/bin"
+export PATH="$PATH:$HOME/.gradle/bin"
+export PATH="$PATH:$HOME/.mvn/bin"
+export PATH="$PATH:$HOME/.go/bin"
 export GOPATH=$HOME/.go
 
 export PATH="$PATH:/usr/local/go/bin"
@@ -142,18 +142,18 @@ source "$HOME/.cargo/env"
 # Solana Setup
 PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 
-export PATH="$PATH:/home/simon/.foundry/bin"
+export PATH="$PATH:$HOME/.foundry/bin"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 
-export PATH="$PATH:/home/simon/.flutter/bin"
-export PATH="$PATH:/home/simon/.android_sdk/cmdline-tools/latest/bin"
-export PATH="$PATH:/home/simon/.android_sdk/emulator"
+export PATH="$PATH:$HOME/.flutter/bin"
+export PATH="$PATH:$HOME/.android_sdk/cmdline-tools/latest/bin"
+export PATH="$PATH:$HOME/.android_sdk/emulator"
 
-export PATH="$PATH:/home/simon/.firebase/bin"
-export PATH="$PATH:/home/simon/.pub-cache/bin"
+export PATH="$PATH:$HOME/.firebase/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
 
 eval "$(zoxide init zsh)"
