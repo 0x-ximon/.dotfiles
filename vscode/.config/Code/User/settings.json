@@ -22,11 +22,10 @@
   // Window settings
   "window.confirmBeforeClose": "always",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "GitHub Light",
   "window.autoDetectHighContrast": false,
 
-  "workbench.preferredDarkColorTheme": "Brogrammer",
-  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
 
   "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
