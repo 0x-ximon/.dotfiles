@@ -110,8 +110,6 @@ alias ll="exa -l"
 
 alias cd="z"
 alias cat="batcat"
-
-
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
 # Configuration aliases
