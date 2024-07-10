@@ -61,3 +61,6 @@ keymap.set("n", ";b", ":Telescope buffers<CR>")
 -- Neocolum Mappings
 keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
 keymap.set("n", ";d", ":Alpha<CR>")
+
+-- Magit Mappings
+keymap.set("n", ";m", ":Neogit")

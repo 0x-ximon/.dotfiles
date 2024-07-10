@@ -32,6 +32,7 @@
 (define-key evil-normal-state-map ";e" 'neotree-toggle)
 (define-key evil-normal-state-map ";d" 'dashboard-open)
 (define-key evil-normal-state-map ";b" 'list-buffers)
+(define-key evil-normal-state-map ";m" 'magit)
 
 (define-key evil-normal-state-map (kbd "C-k") 'windmove-up)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
