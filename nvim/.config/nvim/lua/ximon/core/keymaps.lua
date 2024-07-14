@@ -63,4 +63,4 @@ keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
 keymap.set("n", ";d", ":Alpha<CR>")
 
 -- Magit Mappings
-keymap.set("n", ";m", ":Neogit")
+keymap.set("n", ";m", ":Neogit<CR>")
