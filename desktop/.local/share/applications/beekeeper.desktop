@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Beekeeper
+Comment=Beekeeper Studio
+Exec=/opt/Beekeeper-Studio/beekeeper-studio.AppImage %U
+Icon=/opt/Beekeeper-Studio/assets/icon.svg
+Type=Application
+Categories=TextEditor;Utility;
+StartupNotify=true
+Terminal=false
