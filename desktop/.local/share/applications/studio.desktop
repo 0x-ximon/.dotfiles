@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Idea
-Comment=IntelliJ Idea
-Exec=idea %U
-Icon=/opt/Idea/bin/idea.svg
+Name=Android Studio
+Comment=Android Studio
+Exec=studio %U
+Icon=/opt/Android-Studio/bin/studio.svg
 Type=Application
 Categories=TextEditor;Utility;
 StartupNotify=true
