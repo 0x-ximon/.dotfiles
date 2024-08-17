@@ -130,7 +130,7 @@ alias alacritty-dark="ln -s -f /home/simon/.config/alacritty/themes/themes/githu
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export PATH="$PATH:$HOME/.pyenv/versions"
+# export PATH="$PATH:$HOME/.pyenv/versions"
 
 export PATH="$PATH:$HOME/.gradle/bin"
 export PATH="$PATH:$HOME/.mvn/bin"
@@ -141,20 +141,20 @@ export PATH="$PATH:/usr/local/go/bin"
 source "$HOME/.cargo/env"
 
 # Solana Setup
-PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
+# PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 
 export PATH="$PATH:$HOME/.foundry/bin"
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv virtualenv-init -)"
 
 
-export PATH="$PATH:$HOME/.flutter/bin"
-export PATH="$PATH:$HOME/.android_sdk/cmdline-tools/latest/bin"
-export PATH="$PATH:$HOME/.android_sdk/emulator"
-
-export PATH="$PATH:$HOME/.firebase/bin"
-export PATH="$PATH:$HOME/.pub-cache/bin"
+# export PATH="$PATH:$HOME/.flutter/bin"
+# export PATH="$PATH:$HOME/.android_sdk/cmdline-tools/latest/bin"
+# export PATH="$PATH:$HOME/.android_sdk/emulator"
+#
+# export PATH="$PATH:$HOME/.firebase/bin"
+# export PATH="$PATH:$HOME/.pub-cache/bin"
 
 eval "$(zoxide init zsh)"
