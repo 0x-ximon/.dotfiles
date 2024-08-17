@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ClickUp
+Comment=ClickUp
+Exec=/opt/Clickup/clickUp.AppImage %U
+Icon=/opt/Clickup/assets/icon.svg
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Terminal=false
