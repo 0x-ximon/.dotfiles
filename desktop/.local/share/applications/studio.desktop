@@ -7,4 +7,3 @@ Type=Application
 Categories=TextEditor;Utility;
 StartupNotify=true
 Terminal=false
-
