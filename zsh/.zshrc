@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-wakatime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -130,14 +130,13 @@ alias alacritty-dark="ln -s -f /home/simon/.config/alacritty/themes/themes/githu
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# export PATH="$PATH:$HOME/.pyenv/versions"
 
+export PATH="$PATH:$HOME/.config/composer/vendor/bin/"
 export PATH="$PATH:$HOME/.gradle/bin"
 export PATH="$PATH:$HOME/.mvn/bin"
 export PATH="$PATH:$HOME/.go/bin"
 export GOPATH=$HOME/.go
 
-export PATH="$PATH:/usr/local/go/bin"
 source "$HOME/.cargo/env"
 
 # Solana Setup
@@ -145,16 +144,20 @@ source "$HOME/.cargo/env"
 
 export PATH="$PATH:$HOME/.foundry/bin"
 
-# export PATH="$HOME/.pyenv/bin:$PATH"
-# eval "$(pyenv init --path)"
-# eval "$(pyenv virtualenv-init -)"
-
-
-# export PATH="$PATH:$HOME/.flutter/bin"
-# export PATH="$PATH:$HOME/.android_sdk/cmdline-tools/latest/bin"
-# export PATH="$PATH:$HOME/.android_sdk/emulator"
-#
-# export PATH="$PATH:$HOME/.firebase/bin"
-# export PATH="$PATH:$HOME/.pub-cache/bin"
 
 eval "$(zoxide init zsh)"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# pnpm
+export PNPM_HOME="/home/simon/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

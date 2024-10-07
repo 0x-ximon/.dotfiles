@@ -49,7 +49,7 @@ typescript.setup({
     },
 })
 
-lspconfig["tsserver"].setup({
+lspconfig["ts_ls"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
 })
