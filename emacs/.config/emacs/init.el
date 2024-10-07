@@ -4,8 +4,7 @@
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/")
 (add-to-list 'load-path "~/.dotfiles/emacs/.config/emacs/lisp/ximon/packages/lsp/")
 
-;; (require 'straight)
-(require 'elpaca)
+(require 'straight)
 (require 'org-config)
 (require 'lang-modes)
 
