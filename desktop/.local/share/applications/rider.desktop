@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Rider
+Comment=Rider
+Exec=rider %U
+Icon=/opt/Rider/bin/rider.svg
+Type=Application
+Categories=TextEditor;Utility;
+StartupNotify=true
+Terminal=false
