@@ -23,26 +23,51 @@ local plugins = {
     "williamboman/mason.nvim",
 
     -- Interface
-    { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
+    --
+    {
+        "projekt0n/github-nvim-theme",
+        lazy = false,
+        name = 'github-theme',
+
+        config = function()
+            local theme_status, github_theme = pcall(require, "github-theme")
+            if not theme_status then
+                print("Github theme not working")
+            end
+
+            github_theme.setup({
+                options = {
+                    transparent = false,
+                    darken = {
+                        floats = true,
+                    },
+                },
+            })
+        end
+    },
+    {
+        "f-person/auto-dark-mode.nvim",
+        opts = {
+            update_interval = 1000,
+
+            set_light_mode = function()
+                vim.api.nvim_set_option_value("background", "light", {})
+                vim.cmd("colorscheme github_light_default")
+            end,
+
+            set_dark_mode = function()
+                vim.api.nvim_set_option_value("background", "dark", {})
+                vim.cmd("colorscheme github_dark_default")
+            end,
+
+            fallback = "light"
+        }
+    },
     {
         "nvim-treesitter/nvim-treesitter",
         build = function()
             require("nvim-treesitter.install").update({ with_sync = true })
         end,
-    },
-    {
-        "f-person/auto-dark-mode.nvim",
-        config = {
-            update_interval = 1000,
-            set_dark_mode = function()
-                vim.api.nvim_set_option_value("background", "dark", {})
-                vim.cmd("colorscheme github_dark_default")
-            end,
-            set_light_mode = function()
-                vim.api.nvim_set_option_value("background", "light", {})
-                vim.cmd("colorscheme github_light_default")
-            end,
-        },
     },
     {
         "nvim-neo-tree/neo-tree.nvim",
@@ -159,6 +184,27 @@ local plugins = {
             "ibhagwan/fzf-lua",              -- optional
         },
         config = true,
+    },
+    {
+        "OXY2DEV/markview.nvim",
+        lazy = false, -- Recommended
+        -- ft = "markdown" -- If you decide to lazy-load anyway
+
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-tree/nvim-web-devicons"
+        }
+    },
+    {
+        "OXY2DEV/helpview.nvim",
+        lazy = false, -- Recommended
+
+        -- In case you still want to lazy load
+        -- ft = "help",
+
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter"
+        }
     },
     "vim-scripts/ReplaceWithRegister",
     {

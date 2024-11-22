@@ -15,10 +15,10 @@ keymap.set("n", "K", "{")
 keymap.set("n", "J", "}")
 
 -- Window size Mappings
-keymap.set("n", "<C-Left>", ":vertical resize +1<CR>")
-keymap.set("n", "<C-Right>", ":vertical resize -1<CR>")
-keymap.set("n", "<C-Up>", ":resize -1<CR>")
-keymap.set("n", "<C-Down>", ":resize +1<CR>")
+keymap.set("n", "<C-Left>", ":vertical resize -1<CR>")
+keymap.set("n", "<C-Right>", ":vertical resize +1<CR>")
+keymap.set("n", "<C-Up>", ":resize +1<CR>")
+keymap.set("n", "<C-Down>", ":resize -1<CR>")
 
 -- Increment Numbers
 keymap.set("n", "<leader>+", "<C-a>")
@@ -38,6 +38,7 @@ keymap.set("n", "<leader>tp", ":tabp<CR>")
 
 -- Helpful Keymaps
 keymap.set("n", ";w", ":update<CR>")
+keymap.set("n", ";q", ":close<CR>")
 
 -- Terminal Keymaps
 keymap.set("n", ";t", ":vs | te<CR>")
@@ -64,3 +65,16 @@ keymap.set("n", ";d", ":Alpha<CR>")
 
 -- Magit Mappings
 keymap.set("n", ";m", ":Neogit<CR>")
+
+
+-- local toggle_theme = function()
+--     if vim.api.nvim_get_option_value("background", {}) == "light" then
+--         vim.api.nvim_set_option_value("background", "dark", {})
+--         vim.cmd("colorscheme github_dark_default")
+--     else
+--         vim.api.nvim_set_option_value("background", "light", {})
+--         vim.cmd("colorscheme github_light_default")
+--     end
+-- end
+--
+-- vim.keymap.set('n', ';s', toggle_theme)

@@ -3,7 +3,6 @@ require("ximon.lazy")
 -- Core Imports
 require("ximon.core.options")
 require("ximon.core.keymaps")
-require("ximon.core.colorscheme")
 
 -- Plugin Imports
 require("ximon.plugins.treesitter")
