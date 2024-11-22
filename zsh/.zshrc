@@ -115,7 +115,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # Configuration aliases
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
 alias tmuxconfig="cd ~/.dotfiles/tmux/ && nvim .tmux.conf"
-alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovide ."
+alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && nvim ."
 alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && emacsclient . -cnqu -a \"emacs\"" 
 
 alias dotfiles="code ~/.dotfiles"
@@ -139,11 +139,9 @@ export GOPATH=$HOME/.go
 
 source "$HOME/.cargo/env"
 
-# Solana Setup
-# PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
-
+export PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH" 
 export PATH="$PATH:$HOME/.foundry/bin"
-
 
 eval "$(zoxide init zsh)"
 export PYENV_ROOT="$HOME/.pyenv"
@@ -161,3 +159,10 @@ esac
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$(npm config get prefix)/bin:$PATH"
+
+export NARGO_HOME="/home/simon/.nargo"
+
+export PATH="$PATH:$NARGO_HOME/bin"
+export PATH="/home/simon/.bb:$PATH"
+. "/home/simon/.deno/env"
