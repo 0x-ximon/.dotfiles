@@ -4,10 +4,10 @@
 (use-package rust-mode
   :ensure t)
 
-(use-package dart-mode
+(use-package zig-mode
   :ensure t)
 
-(use-package elixir-mode
+(use-package solidity-mode
   :ensure t)
 
 (provide 'lang-modes)

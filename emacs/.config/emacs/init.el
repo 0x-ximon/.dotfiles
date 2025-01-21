@@ -21,7 +21,6 @@
 (require 'magit)
 (require 'wakatime)
 (require 'lsp-mode-config)
-(require 'grammarly)
 (require 'org-superstar)
 (require 'git-gutter)
 (require 'smart-parens)
