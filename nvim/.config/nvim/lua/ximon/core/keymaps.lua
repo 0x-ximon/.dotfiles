@@ -37,11 +37,11 @@ keymap.set("n", "<leader>tn", ":tabn<CR>")
 keymap.set("n", "<leader>tp", ":tabp<CR>")
 
 -- Helpful Keymaps
-keymap.set("n", ";w", ":update<CR>")
-keymap.set("n", ";q", ":close<CR>")
+keymap.set("n", "<leader>w", ":update<CR>")
+keymap.set("n", "<leader>q", ":close<CR>")
 
 -- Terminal Keymaps
-keymap.set("n", ";t", ":vs | te<CR>")
+keymap.set("n", "<leader>t", ":vs | te<CR>")
 keymap.set("t", "jk", "<C-\\><C-n>")
 
 -- Vim Maximizer
@@ -49,23 +49,19 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 keymap.set("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>")
 
 -- Neo Tree
-keymap.set("n", ";e", ":Neotree toggle<CR>")
-keymap.set("n", "-", "<CMD>Oil<CR>", {
-    desc = "Open parent directory",
-})
+keymap.set("n", "<leader>e", ":Neotree toggle<CR>")
+keymap.set("n", "-", "<CMD>Oil<CR>")
 
 -- Telescope Mappings
-keymap.set("n", ";f", ":Telescope find_files<CR>")
-keymap.set("n", ";g", ":Telescope live_grep<CR>")
-keymap.set("n", ";b", ":Telescope buffers<CR>")
+keymap.set("n", "<leader><leader>", ":Telescope find_files<CR>")
+keymap.set("n", "<leader>f", ":Telescope live_grep<CR>")
+keymap.set("n", "<leader>b", ":Telescope buffers<CR>")
 
 -- Neocolum Mappings
-keymap.set("n", ";c", ":ToggleNeoColumn<CR>")
-keymap.set("n", ";d", ":Alpha<CR>")
+keymap.set("n", "<leader>d", ":Alpha<CR>")
 
 -- Magit Mappings
-keymap.set("n", ";m", ":Neogit<CR>")
-
+keymap.set("n", "<leader>m", ":Neogit<CR>")
 
 -- local toggle_theme = function()
 --     if vim.api.nvim_get_option_value("background", {}) == "light" then

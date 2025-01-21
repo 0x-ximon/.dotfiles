@@ -17,6 +17,7 @@ treesitter.setup({
 		"yaml",
 		"html",
 		"rust",
+		"solidity",
 		"python",
 		"css",
 		"markdown",

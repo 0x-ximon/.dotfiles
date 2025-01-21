@@ -104,6 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+
+source "$HOME/.cargo/env"
+source "$HOME/.deno/env"
+
+
 alias ls="exa"
 alias la="exa -a"
 alias ll="exa -l"
@@ -137,7 +142,6 @@ export PATH="$PATH:$HOME/.mvn/bin"
 export PATH="$PATH:$HOME/.go/bin"
 export GOPATH=$HOME/.go
 
-source "$HOME/.cargo/env"
 
 export PATH="/home/simon/.local/share/solana/install/active_release/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH" 
@@ -164,5 +168,5 @@ export PATH="$(npm config get prefix)/bin:$PATH"
 export NARGO_HOME="/home/simon/.nargo"
 
 export PATH="$PATH:$NARGO_HOME/bin"
-export PATH="/home/simon/.bb:$PATH"
-. "/home/simon/.deno/env"
+export PATH="$PATH/.bb:$PATH"
+export PATH="$HOME/.config/emacs/bin/:$PATH"

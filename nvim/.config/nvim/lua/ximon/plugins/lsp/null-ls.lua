@@ -4,12 +4,10 @@ if not status then
 end
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
 		require("none-ls.code_actions.eslint"),
-		diagnostics.mypy,
 	},
 
 	on_attach = function(current_client, bufnr)
