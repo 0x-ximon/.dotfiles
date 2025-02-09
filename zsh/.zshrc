@@ -170,3 +170,10 @@ export NARGO_HOME="/home/simon/.nargo"
 export PATH="$PATH:$NARGO_HOME/bin"
 export PATH="$PATH/.bb:$PATH"
 export PATH="$HOME/.config/emacs/bin/:$PATH"
+
+# bun completions
+[ -s "/home/simon/.bun/_bun" ] && source "/home/simon/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

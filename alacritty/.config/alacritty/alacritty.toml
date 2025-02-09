@@ -6,7 +6,7 @@ import = [
 startup_mode = "Maximized"
 dynamic_padding = true
 decorations = "None"
-opacity = 0.85
+opacity = 1
 
 [font]
 normal = {family = "FiraCode Nerd Font", style = "Regular"}

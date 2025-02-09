@@ -19,7 +19,7 @@ conform.setup({
 		cpp = { "clang_format" },
 		dart = { "dart_format" },
 		bash = { "beautysh" },
-		python = { "ruff" },
+		python = { "ruff_format" },
 		rust = { "rustfmt" },
 		lua = { "stylua" },
 		elixir = { "mix" },
