@@ -27,6 +27,7 @@ export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$NARGO_HOME/bin"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:$(npm config get prefix)/bin"
+export PATH="$PATH:/.bb"
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
