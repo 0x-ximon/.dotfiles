@@ -1,4 +1,15 @@
 {
+  "languages": {
+    "TypeScript": {
+      "show_edit_predictions": true
+    }
+  },
+  "terminal": {
+    "dock": "right"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "vim_mode": true,
 
   "ui_font_family": "FiraCode Nerd Font",

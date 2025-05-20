@@ -41,19 +41,25 @@ end
 lspconfig["ts_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	root_dir = lspconfig.util.root_pattern("package.json"),
-	single_file_support = false,
+	root_markers = { "package.json" },
 })
 
 lspconfig["denols"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
-	root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+	root_markers = { "deno.json", "deno.jsonc" },
 })
 
 lspconfig["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	settings = {
+		python = {
+			analysis = {
+				typeCheckingMode = "off",
+			},
+		},
+	},
 })
 
 lspconfig["rust_analyzer"].setup({

@@ -6,12 +6,6 @@
     }
   },
   {
-    "context": "Editor",
-    "bindings": {
-      "?": "editor::Hover"
-    }
-  },
-  {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       "j k": ["vim::SwitchMode", "Normal"]

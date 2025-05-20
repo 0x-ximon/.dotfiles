@@ -62,15 +62,3 @@ keymap.set("n", "<leader>d", ":Alpha<CR>")
 
 -- Magit Mappings
 keymap.set("n", "<leader>m", ":Neogit<CR>")
-
--- local toggle_theme = function()
---     if vim.api.nvim_get_option_value("background", {}) == "light" then
---         vim.api.nvim_set_option_value("background", "dark", {})
---         vim.cmd("colorscheme github_dark_default")
---     else
---         vim.api.nvim_set_option_value("background", "light", {})
---         vim.cmd("colorscheme github_light_default")
---     end
--- end
---
--- vim.keymap.set('n', ';s', toggle_theme)

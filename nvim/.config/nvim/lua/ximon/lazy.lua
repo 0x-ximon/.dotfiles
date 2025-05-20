@@ -20,7 +20,8 @@ end
 
 local plugins = {
 	-- Package Managers
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
+	"mason-org/mason-lspconfig.nvim",
 
 	-- Interface
 	--
@@ -84,6 +85,7 @@ local plugins = {
 		-- Optional dependencies
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
+	{ "tiagovla/scope.nvim", config = true },
 	"rcarriga/nvim-notify",
 	"christoomey/vim-tmux-navigator",
 	"szw/vim-maximizer",
@@ -232,7 +234,6 @@ local plugins = {
 
 	-- Dependencies
 	"nvim-lua/plenary.nvim",
-	"williamboman/mason-lspconfig.nvim",
 }
 
 local opt = {}

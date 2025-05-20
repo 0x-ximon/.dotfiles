@@ -4,12 +4,10 @@
   (setq lsp-keymap-prefix "C-c l")
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
 	 (go-mode . lsp)
-	 (org-mode . lsp)
 	 (python-mode . lsp)
 	 (solidity-mode . lsp)
 	 (rust-mode . lsp)
 	 (zig-mode . lsp)
-	 ;; if you want which-key integration
 	 (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
