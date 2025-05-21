@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=Neovim
-Comment=Neovim (Terminal)
-Exec=/opt/Neovim/nvim.appimage %U
+Comment=Neovim GUI 
+Exec=/opt/Neovide/neovide.AppImage %U
 Icon=/opt/Neovim/assets/icon.svg
 Type=Application
-Categories=TextEditor;Utility;
+Categories=TextEditor;Utility;Development;
 StartupNotify=true
-Terminal=true
+Terminal=false

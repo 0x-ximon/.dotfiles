@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Neovide
-Comment=Neovim GUI Client
-Exec=/opt/Neovide/neovide.AppImage %U
-Icon=/opt/Neovide/assets/icon.svg
-Type=Application
-Categories=TextEditor;Utility;
-StartupNotify=true
-Terminal=false
