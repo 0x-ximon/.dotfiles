@@ -15,16 +15,16 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -------------------------------------------------------------------------------
 
 -- Quick Write
-vim.keymap.set("n", "<leader>w", ":update<CR>", { desc = "Quick Write" })
+vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Quick Write" })
 
 -- Quick Quit
-vim.keymap.set("n", "<leader>q", ":close<CR>", { desc = "Quick Quit" })
+vim.keymap.set("n", "<leader>q", "<cmd>close<CR>", { desc = "Quick Quit" })
 
 -- Quick Close
 vim.keymap.set("n", "<leader>x", "<C-W>c", { desc = "Close Window" })
 
 -- Quick Lazy
-vim.keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Quick Lazy" })
+vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Quick Lazy" })
 
 -------------------------------------------------------------------------------
 ------------------------------- WINDOW KEYMAPS --------------------------------
