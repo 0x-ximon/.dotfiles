@@ -1,7 +1,8 @@
 -------------------------------------------------------------------------------
 ------------------------------- GENERAL KEYMAPS -------------------------------
 -------------------------------------------------------------------------------
--- Press 'jj' in insert mode to exit insert mode
+
+-- Press 'jj' in insert mode to exit insert mode into normal mode
 vim.keymap.set("i", "jj", "<Esc>")
 
 -- Press 'U' in normal mode to redo the last undo
@@ -9,6 +10,15 @@ vim.keymap.set("n", "U", "<C-r>")
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- Enter into Oil mode (file explorer) when pressing '-'
+vim.keymap.set("n", "-", "<CMD>Oil<CR>")
+
+-- Use 'H', 'L', 'K', 'J' to navigate to the beginning/end of the line
+vim.keymap.set("n", "H", "^", { desc = "Go to the beginning of the line" })
+vim.keymap.set("n", "L", "$", { desc = "Go to the end of the line" })
+vim.keymap.set("n", "J", "}", { desc = "Go to the next line" })
+vim.keymap.set("n", "K", "{", { desc = "Go to the previous line" })
 
 -------------------------------------------------------------------------------
 -------------------------------- QUICK KEYMAPS --------------------------------
@@ -18,10 +28,10 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Quick Write" })
 
 -- Quick Quit
-vim.keymap.set("n", "<leader>q", "<cmd>close<CR>", { desc = "Quick Quit" })
+vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Quit" })
 
 -- Quick Close
-vim.keymap.set("n", "<leader>x", "<C-W>c", { desc = "Close Window" })
+vim.keymap.set("n", "<leader>x", "<cmd>close<CR>", { desc = "Quick Close" })
 
 -- Quick Lazy
 vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Quick Lazy" })
@@ -59,11 +69,6 @@ vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Increa
 vim.keymap.set("n", "[b", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
 vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
-vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Delete Buffer and Window" })
-
--- vim.keymap.set("n", "<leader>bd", function()
---   Snacks.bufdelete()
--- end, { desc = "Delete Buffer" })
 
 -------------------------------------------------------------------------------
 -------------------------------- TABS KEYMAPS ---------------------------------
@@ -96,5 +101,5 @@ vim.keymap.set("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
 vim.keymap.set("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
 
 -------------------------------------------------------------------------------
------------------------------- TOGGLE KEYMAPS ---------------------------------
+----------------------------- DISABLED KEYMAPS --------------------------------
 -------------------------------------------------------------------------------
