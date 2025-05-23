@@ -11,10 +11,19 @@ return {
 
     -- Mini.Statusline
     local statusline = require("mini.statusline")
+    statusline.section_location = function() return "%2l:%-2v" end
     statusline.setup()
-    statusline.section_location = function()
-      return "%2l:%-2v"
-    end
+
+    -- Mini.Files
+    require("mini.files").setup(
+      {
+	mappings = {
+	  go_in_plus = "<CR>",
+	  go_out_plus = "=",
+	  synchronize = "~"
+	}
+      }
+    )
 
     -- Better Around/Inside textobjects
     --

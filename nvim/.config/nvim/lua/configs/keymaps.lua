@@ -14,11 +14,17 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Enter into Oil mode (file explorer) when pressing '-'
 vim.keymap.set("n", "-", "<CMD>Oil<CR>")
 
+-- Enter into Mini.files mode (file explorer) when pressing '='
+vim.keymap.set("n", "=", function() MiniFiles.open() end)
+
 -- Use 'H', 'L', 'K', 'J' to navigate to the beginning/end of the line
 vim.keymap.set("n", "H", "^", { desc = "Go to the beginning of the line" })
 vim.keymap.set("n", "L", "$", { desc = "Go to the end of the line" })
 vim.keymap.set("n", "J", "}", { desc = "Go to the next line" })
 vim.keymap.set("n", "K", "{", { desc = "Go to the previous line" })
+
+-- Use Double Escape to exit Terminal mode
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
 
 -------------------------------------------------------------------------------
 -------------------------------- QUICK KEYMAPS --------------------------------
@@ -68,7 +74,6 @@ vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Increa
 
 vim.keymap.set("n", "[b", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
 vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
-vim.keymap.set("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 
 -------------------------------------------------------------------------------
 -------------------------------- TABS KEYMAPS ---------------------------------
