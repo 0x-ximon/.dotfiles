@@ -23,5 +23,5 @@ vim.o.shiftwidth = 4 -- Number of spaces to use for each step of indent
 vim.o.inccommand = "split" -- Show incremental command results in a split
 
 vim.schedule(function()
-  vim.o.clipboard = "unnamedplus" -- Use system clipboard for all operations
+    vim.o.clipboard = "unnamedplus" -- Use system clipboard for all operations
 end)

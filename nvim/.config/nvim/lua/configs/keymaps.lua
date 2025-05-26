@@ -11,12 +11,6 @@ vim.keymap.set("n", "U", "<C-r>")
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
--- Enter into Oil mode (file explorer) when pressing '-'
-vim.keymap.set("n", "-", "<CMD>Oil<CR>")
-
--- Enter into Mini.files mode (file explorer) when pressing '='
-vim.keymap.set("n", "=", function() MiniFiles.open() end)
-
 -- Use 'H', 'L', 'K', 'J' to navigate to the beginning/end of the line
 vim.keymap.set("n", "H", "^", { desc = "Go to the beginning of the line" })
 vim.keymap.set("n", "L", "$", { desc = "Go to the end of the line" })
@@ -42,6 +36,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>close<CR>", { desc = "Quick Close" })
 -- Quick Lazy
 vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Quick Lazy" })
 
+-- Quick Mason
+vim.keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Quick Mason" })
+
 -------------------------------------------------------------------------------
 ------------------------------- WINDOW KEYMAPS --------------------------------
 -------------------------------------------------------------------------------
@@ -63,10 +60,10 @@ vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the top" })
 vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 
 --  Use CTRL+<ArrowKey> to resize the current window
-vim.keymap.set("n", "<C-Up>", "<cmd>resize -2<CR>", { desc = "Decrease height of current split" })
-vim.keymap.set("n", "<C-Down>", "<cmd>resize +2<CR>", { desc = "Increase height of current split" })
-vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<CR>", { desc = "Decrease width of current split" })
-vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Increase width of current split" })
+vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<CR>", { desc = "Decrease height of current split" })
+vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<CR>", { desc = "Increase height of current split" })
+vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize +2<CR>", { desc = "Decrease width of current split" })
+vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize -2<CR>", { desc = "Increase width of current split" })
 
 -------------------------------------------------------------------------------
 ------------------------------- BUFFER KEYMAPS --------------------------------
@@ -82,29 +79,15 @@ vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<leader>[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 vim.keymap.set("n", "<leader>]<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 vim.keymap.set("n", "<leader><tab>n", "<cmd>tabnew<cr>", { desc = "New Tab" })
-vim.keymap.set("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
-
--------------------------------------------------------------------------------
--------------------------------- LSP KEYMAPS ----------------------------------
--------------------------------------------------------------------------------
-
-local diagnostic_goto = function(next, severity)
-  local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-  severity = severity and vim.diagnostic.severity[severity] or nil
-  return function()
-    go({ severity = severity })
-  end
-end
-
-vim.keymap.set("n", "]d", diagnostic_goto(true), { desc = "Next Diagnostic" })
-vim.keymap.set("n", "[d", diagnostic_goto(false), { desc = "Prev Diagnostic" })
-vim.keymap.set("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
-vim.keymap.set("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
-vim.keymap.set("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
-vim.keymap.set("n", "[w", diagnostic_goto(false, "WARN"), { desc = "Prev Warning" })
-vim.keymap.set("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
-vim.keymap.set("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
+vim.keymap.set("n", "<leader><tab>x", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 
 -------------------------------------------------------------------------------
 ----------------------------- DISABLED KEYMAPS --------------------------------
 -------------------------------------------------------------------------------
+
+vim.keymap.del({ "n", "v" }, "gra")
+vim.keymap.del("i", "<C-S>")
+vim.keymap.del("n", "grn")
+vim.keymap.del("n", "grr")
+vim.keymap.del("n", "gri")
+vim.keymap.del("n", "gO")
