@@ -10,6 +10,7 @@ return {
         bigfile = { enabled = true },
         dashboard = { enabled = true },
         input = { enabled = true },
+        lazygit = { enabled = true },
         picker = { enabled = true },
         notifier = { enabled = true },
         quickfile = { enabled = true },
@@ -48,6 +49,13 @@ return {
                 Snacks.picker.grep()
             end,
             desc = "Grep",
+        },
+        {
+            "<leader>%",
+            function()
+                Snacks.lazygit.open()
+            end,
+            desc = "Lazygit",
         },
 
         {
