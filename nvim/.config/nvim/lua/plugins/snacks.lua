@@ -39,9 +39,9 @@ return {
         {
             "<leader>.",
             function()
-                Snacks.scratch()
+                Snacks.terminal()
             end,
-            desc = "Toggle Scratch Buffer",
+            desc = "Terminal",
         },
         {
             "<leader>/",
@@ -57,7 +57,6 @@ return {
             end,
             desc = "Lazygit",
         },
-
         {
             "<leader>n",
             function()
@@ -66,26 +65,18 @@ return {
             desc = "Notification History",
         },
         {
-            "<leader>t",
-            function()
-                Snacks.terminal()
-            end,
-            desc = "Toggle Terminal",
-        },
-
-        {
-            "<leader>b",
+            "<leader>bl",
             function()
                 Snacks.picker.buffers()
             end,
-            desc = "Buffers",
+            desc = "List Buffers",
         },
         {
-            "<leader>bd",
+            "<leader>bx",
             function()
                 Snacks.bufdelete()
             end,
-            desc = "Delete Buffer",
+            desc = "Exit Current Buffer",
         },
         {
             "<leader>bs",
