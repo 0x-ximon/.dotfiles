@@ -5,6 +5,7 @@
 
     ;; General Keybindings
     (general-def 'normal 
+      "-" 'dired-jump
       "U" 'evil-redo)
 
     (general-def 'normal 'override
