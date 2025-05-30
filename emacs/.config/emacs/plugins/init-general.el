@@ -3,7 +3,7 @@
   :ensure t
   :init (auto-dark-mode)
   :custom 
-    (auto-dark-themes '((doom-acario-dark) (doom-acario-light))))
+  (auto-dark-themes '((doom-acario-dark) (doom-acario-light))))
 
 ;; Nerd Icons Configuration
 (use-package nerd-icons

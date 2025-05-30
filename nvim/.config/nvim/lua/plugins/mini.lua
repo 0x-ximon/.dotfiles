@@ -16,6 +16,7 @@ return {
 
     config = function()
         require("mini.statusline").setup()
+        require("mini.sessions").setup()
         require("mini.pairs").setup()
         require("mini.icons").setup()
         require("mini.diff").setup()
