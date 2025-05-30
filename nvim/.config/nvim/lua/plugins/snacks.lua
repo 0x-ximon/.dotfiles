@@ -35,7 +35,7 @@ return {
             function()
                 Snacks.picker.smart()
             end,
-            desc = "Smart Find Files",
+            desc = "Find File",
         },
         {
             "<leader>:",

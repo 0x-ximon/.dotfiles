@@ -32,6 +32,10 @@
     "x" '(evil-quit :wk "Quick Exit")
     "e" '(elpaca-manager :wk "Quick Elpaca"))
   
+  (ximon/leader
+	"SPC" '(project-find-file :wk "Find File")
+	"%"   '(magit :wk "Magit"))
+
   ;; Window Keymaps
   (ximon/leader
     "_" '(evil-window-split :wk "Split Window Below")

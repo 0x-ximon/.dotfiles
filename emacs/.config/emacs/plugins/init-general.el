@@ -1,3 +1,14 @@
+;; Use the inbuilt project management plugin
+(use-package project
+  :ensure nil)
+
+(use-package transient
+  :ensure t)
+
+(use-package magit
+  :ensure t
+  :after transient)
+
 ;; Auto Dark Mode Configuration
 (use-package auto-dark
   :ensure t

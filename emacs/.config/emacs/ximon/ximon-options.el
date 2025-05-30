@@ -27,7 +27,7 @@
   (display-line-numbers-type 'relative)                   ;; Relative line numbers
   (dired-kill-when-opening-new-dired-buffer t)            ;; Dired don't create new buffer
   (initial-frame-alist '((fullscreen . maximized)))       ;; Start Emacs in maximized mode
-  
+
   :hook
   (dired-mode . dired-hide-details-mode)                  ;; Hide details in Dired mode
   (text-mode . visual-line-mode)                          ;; Enable visual line mode in text modes
@@ -45,9 +45,10 @@
   (set-face-attribute 'default nil                        ;; Set default face attributes   
 					  :font "Iosevka Nerd Font"
 					  :height 140)
-  
-  :bind
-  ([escape] . keyboard-escape-quit)                       ;; Use Escape to quit
-  )
 
+  (add-to-list 'default-frame-alist '(fullscreen . maximized)) ;; Ensure new frames are maximized
+
+  :bind
+  ([escape] . keyboard-escape-quit))                      ;; Use Escape to quit
+ 
 (provide 'ximon-options)
