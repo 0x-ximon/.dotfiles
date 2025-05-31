@@ -2,7 +2,7 @@
   :init (evil-mode)
   :ensure t
   :config (evil-set-initial-state 'eat-mode 'insert) 
-
+  
   :custom 
   (evil-want-keybinding nil)    ;; Disable evil bindings in other modes (It's not consistent and not good)
   (evil-want-C-u-scroll t)      ;; Set C-u to scroll up

@@ -66,6 +66,13 @@ return {
             desc = "Lazygit",
         },
         {
+            "<leader>d",
+            function()
+                Snacks.dashboard.open()
+            end,
+            desc = "Dashboard",
+        },
+        {
             "<leader>n",
             function()
                 Snacks.picker.notifications()

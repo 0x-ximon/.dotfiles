@@ -22,6 +22,8 @@ vim.o.tabstop = 4 -- Number of spaces that a tab in the file counts for
 vim.o.shiftwidth = 4 -- Number of spaces to use for each step of indent
 vim.o.inccommand = "split" -- Show incremental command results in a split
 
+vim.o.completeopt = "menuone,noinsert,popup,fuzzy"
+
 vim.schedule(function()
     vim.o.clipboard = "unnamedplus" -- Use system clipboard for all operations
 end)

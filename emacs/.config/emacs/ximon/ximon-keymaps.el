@@ -30,13 +30,14 @@
   (ximon/leader
     "u" '(evil-update :wk "Quick Update") 
     "x" '(evil-quit :wk "Quick Exit")
-    "e" '(elpaca-manager :wk "Quick Elpaca"))
   
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
 	"/"   '(project-find-regexp :wk "Grep")
 	"."   '(vterm-other-window :wk "Terminal")
 	"%"   '(magit :wk "Magit")
+  "e"   '(elpaca-manager :wk "Elpaca")
+  "d"   '(dashboard-open :wk "Dashboard"))
 )
 
   ;; Window Keymaps
