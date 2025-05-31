@@ -4,5 +4,7 @@
 (require 'init-general)
 (require 'init-doom)
 (require 'init-evil)
+(require 'init-org)
+(require 'init-completion)
 
 (provide 'ximon-plugins)

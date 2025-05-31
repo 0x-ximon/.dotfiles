@@ -34,7 +34,10 @@
   
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"%"   '(magit :wk "Magit"))
+	"/"   '(project-find-regexp :wk "Grep")
+	"."   '(vterm-other-window :wk "Terminal")
+	"%"   '(magit :wk "Magit")
+)
 
   ;; Window Keymaps
   (ximon/leader

@@ -22,6 +22,7 @@
 
   (ring-bell-function 'ignore)                ;; Disable the bell sound
   (visible-bell nil)                          ;; Disable visible bell
+  (truncate-lines t)                          ;; Enable line truncate by default
 
   (global-display-line-numbers-mode t)                    ;; Display line numbers
   (display-line-numbers-type 'relative)                   ;; Relative line numbers
@@ -31,7 +32,6 @@
   :hook
   (dired-mode . dired-hide-details-mode)                  ;; Hide details in Dired mode
   (text-mode . visual-line-mode)                          ;; Enable visual line mode in text modes
-  (prog-mode . (lambda () (setq truncate-lines t)))       ;; Enable line truncate in prog modes
 
   :config
   (setq custom-safe-themes t)                             ;; Allow all themes to be loaded safely
