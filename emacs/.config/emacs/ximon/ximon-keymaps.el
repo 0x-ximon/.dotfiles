@@ -29,16 +29,15 @@
   ;; Quick Keymaps
   (ximon/leader
     "u" '(evil-update :wk "Quick Update") 
-    "x" '(evil-quit :wk "Quick Exit")
-  
+    "x" '(evil-quit :wk "Quick Exit"))
+
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"/"   '(project-find-regexp :wk "Grep")
+	"/"   '(consult-ripgrep :wk "Grep")
 	"."   '(vterm-other-window :wk "Terminal")
 	"%"   '(magit :wk "Magit")
-  "e"   '(elpaca-manager :wk "Elpaca")
-  "d"   '(dashboard-open :wk "Dashboard"))
-)
+	"e"   '(elpaca-manager :wk "Elpaca")
+	"d"   '(dashboard-open :wk "Dashboard"))
 
   ;; Window Keymaps
   (ximon/leader

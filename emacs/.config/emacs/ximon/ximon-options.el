@@ -23,6 +23,7 @@
   (ring-bell-function 'ignore)                ;; Disable the bell sound
   (visible-bell nil)                          ;; Disable visible bell
   (truncate-lines t)                          ;; Enable line truncate by default
+  (org-startup-indented t)                    ;; Activate org-indent-mode in all org files 
 
   (global-display-line-numbers-mode t)                    ;; Display line numbers
   (display-line-numbers-type 'relative)                   ;; Relative line numbers
@@ -36,12 +37,14 @@
   :config
   (setq custom-safe-themes t)                             ;; Allow all themes to be loaded safely
 
-  (setq custom-file 
-		(expand-file-name "custom.el" user-emacs-directory))  ;; Custom file location
+  (setq custom-file                                       ;; Custom file location
+		(expand-file-name "custom.el" user-emacs-directory))  
 
-  (when (file-exists-p custom-file)
-    (load custom-file))                                   ;; Load custom file if it exists
+  (when (file-exists-p custom-file) (load custom-file))   ;; Load custom file if it exists
 
+  (setq initial-buffer-choice 
+		(lambda () (get-buffer-create dashboard-buffer-name)))
+  
   (set-face-attribute 'default nil                        ;; Set default face attributes   
 					  :font "Iosevka Nerd Font"
 					  :height 140)
@@ -50,5 +53,5 @@
 
   :bind
   ([escape] . keyboard-escape-quit))                      ;; Use Escape to quit
- 
+
 (provide 'ximon-options)

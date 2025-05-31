@@ -34,4 +34,8 @@
   :init
   (vertico-mode))
 
+(use-package consult
+  :ensure t
+  :hook (completion-list-mode . consult-preview-at-point-mode))
+
 (provide 'init-completion)
