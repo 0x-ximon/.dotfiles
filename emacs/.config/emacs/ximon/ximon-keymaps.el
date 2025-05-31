@@ -33,7 +33,7 @@
 
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"/"   '(consult-ripgrep :wk "Grep")
+	"/"   '(consult-grep :wk "Grep")
 	"."   '(vterm-other-window :wk "Terminal")
 	"%"   '(magit :wk "Magit")
 	"e"   '(elpaca-manager :wk "Elpaca")
@@ -82,6 +82,12 @@
     "t" '(:ignore t :wk "Tab")
     "t n" '(tab-new :wk "New tab")
     "t x" '(tab-close :wk "Close current tab"))
-  )
+  
+  ;; LSP Keymaps
+  (ximon/leader eglot-mode-map
+	"c a" '(eglot-code-actions :wk "Code Actions")
+	"c f" '(eglot-format :wk "Code Format")
+	"c r" '(eglot-rename :wk "Code Rename"))
+)
 
 (provide 'ximon-keymaps)

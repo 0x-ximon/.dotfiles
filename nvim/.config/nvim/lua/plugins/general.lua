@@ -6,6 +6,11 @@ return {
     },
 
     {
+        "wakatime/vim-wakatime",
+        lazy = false,
+    },
+
+    {
         "folke/which-key.nvim",
         event = "VeryLazy",
         opts = {
