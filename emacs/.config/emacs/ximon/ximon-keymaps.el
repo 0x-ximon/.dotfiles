@@ -87,7 +87,6 @@
   (ximon/leader eglot-mode-map
 	"c a" '(eglot-code-actions :wk "Code Actions")
 	"c f" '(eglot-format :wk "Code Format")
-	"c r" '(eglot-rename :wk "Code Rename"))
-)
+	"c r" '(eglot-rename :wk "Code Rename")))
 
 (provide 'ximon-keymaps)
