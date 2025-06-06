@@ -38,14 +38,14 @@ return {
             desc = "Find File",
         },
         {
-            "<leader>:",
+            "<leader>.",
             function()
-                Snacks.picker.command_history()
+                Snacks.dashboard()
             end,
-            desc = "Command History",
+            desc = "Dashboard",
         },
         {
-            "<leader>.",
+            "<leader>!",
             function()
                 Snacks.terminal()
             end,
@@ -61,23 +61,9 @@ return {
         {
             "<leader>%",
             function()
-                Snacks.lazygit.open()
+                Snacks.lazygit()
             end,
             desc = "Lazygit",
-        },
-        {
-            "<leader>d",
-            function()
-                Snacks.dashboard.open()
-            end,
-            desc = "Dashboard",
-        },
-        {
-            "<leader>n",
-            function()
-                Snacks.picker.notifications()
-            end,
-            desc = "Notification History",
         },
         {
             "<leader>bl",
@@ -96,9 +82,9 @@ return {
         {
             "<leader>bs",
             function()
-                Snacks.scratch.select()
+                Snacks.scratch()
             end,
-            desc = "Select Scratch Buffer",
+            desc = "Scratch Buffer",
         },
     },
 }

@@ -17,6 +17,10 @@ vim.keymap.set("n", "L", "$", { desc = "Go to the end of the line" })
 vim.keymap.set("n", "J", "}", { desc = "Go to the next line" })
 vim.keymap.set("n", "K", "{", { desc = "Go to the previous line" })
 
+-- Remap Alt + 'X' similiar to KEYMAPS
+vim.keymap.set("n", "<A-x>", ":", { noremap = true })
+vim.keymap.set("i", "<A-x>", "<C-o>:", { noremap = true })
+
 -- Use Double Escape to exit Terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
 
@@ -29,12 +33,6 @@ vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Quick Write" })
 
 -- Quick Quit
 vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
-
--- Quick Lazy
-vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Quick Lazy" })
-
--- Quick Mason
-vim.keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Quick Mason" })
 
 -------------------------------------------------------------------------------
 ------------------------------- WINDOW KEYMAPS --------------------------------

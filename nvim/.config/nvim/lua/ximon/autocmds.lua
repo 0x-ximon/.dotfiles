@@ -39,13 +39,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
             vim.keymap.set("n", "gt", vim.lsp.buf.type_definition, { desc = "Goto Type" })
         end
         if client:supports_method("textDocument/codeAction") then
-            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
+            vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "LSP Actions" })
         end
         if client:supports_method("textDocument/formatting") then
-            vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, { desc = "Code Format" })
+            vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format" })
         end
         if client:supports_method("textDocument/rename") then
-            vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "Code Rename" })
+            vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "LSP Rename" })
         end
     end,
 })

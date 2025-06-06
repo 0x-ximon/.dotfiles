@@ -34,10 +34,9 @@
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
 	"/"   '(consult-grep :wk "Grep")
-	"."   '(vterm-other-window :wk "Terminal")
-	"%"   '(magit :wk "Magit")
-	"e"   '(elpaca-manager :wk "Elpaca")
-	"d"   '(dashboard-open :wk "Dashboard"))
+	"."   '(dashboard-open :wk "Dashboard")
+	"!"   '(vterm-other-window :wk "Terminal")
+	"%"   '(magit :wk "Magit"))
 
   ;; Window Keymaps
   (ximon/leader
@@ -69,8 +68,8 @@
 
   (ximon/leader
     "b" '(:ignore t :wk "Buffer")
+    "b s" '(scratch-buffer :wk "scratch buffer")
     "b x" '(kill-current-buffer :wk "Exit current buffer")
-    "b s" '(scratch-buffer :wk "Select scratch buffer")
     "b l" '(list-buffers :wk "List buffers"))
 
   ;; Tab Keymaps
@@ -85,8 +84,8 @@
 
   ;; LSP Keymaps
   (ximon/leader eglot-mode-map
-	"c a" '(eglot-code-actions :wk "Code Actions")
-	"c f" '(eglot-format :wk "Code Format")
-	"c r" '(eglot-rename :wk "Code Rename")))
+	"l a" '(eglot-code-actions :wk "LSP Actions")
+	"l f" '(eglot-format :wk "LSP Format")
+	"l r" '(eglot-rename :wk "LSP Rename")))
 
 (provide 'ximon-keymaps)
