@@ -25,10 +25,10 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
 -------------------------------------------------------------------------------
 
 -- Quick Write
-vim.keymap.set("n", "<leader>u", "<cmd>update<CR>", { desc = "Quick Update" })
+vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Quick Write" })
 
 -- Quick Quit
-vim.keymap.set("n", "<leader>x", "<cmd>quit<CR>", { desc = "Quick Exit" })
+vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 
 -- Quick Lazy
 vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Quick Lazy" })

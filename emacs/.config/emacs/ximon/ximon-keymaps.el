@@ -4,7 +4,7 @@
   (general-evil-setup)
 
   ;; General Keybindings
-  (general-def 'normal 
+  (general-def 'normal
     "-" 'dired-jump
     "U" 'evil-redo)
 
@@ -18,18 +18,18 @@
   (general-create-definer ximon/leader
     :states 'normal
     :keymaps 'override
-    :prefix "SPC") 
+    :prefix "SPC")
 
   ;; Set up ";" as the local leader key
   (general-create-definer ximon/local-leader
-    :states 'normal 
+    :states 'normal
     :keymaps 'local
     :prefix ";")
 
   ;; Quick Keymaps
   (ximon/leader
-    "u" '(evil-update :wk "Quick Update") 
-    "x" '(evil-quit :wk "Quick Exit"))
+    "w" '(evil-update :wk "Quick Write")
+    "q" '(evil-quit :wk "Quick Quit"))
 
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
@@ -61,7 +61,7 @@
     "C-<right>" '(evil-window-increase-width :wk "Increase window width")
     "C-<down>" '(evil-window-decrease-height :wk "Decrease window height")
     "C-<up>" '(evil-window-increase-height :wk "Increase window height"))
-  
+
   ;; Buffer Keymaps
   (general-def 'normal
     "[b" '(previous-buffer :wk "Previous buffer")
@@ -74,7 +74,7 @@
     "b l" '(list-buffers :wk "List buffers"))
 
   ;; Tab Keymaps
-  (general-def 'normal 
+  (general-def 'normal
     "[t" '(tab-bar-switch-to-prev-tab :wk "Previous tab")
     "]t" '(tab-bar-switch-to-next-tab :wk "Next tab"))
 
@@ -82,7 +82,7 @@
     "t" '(:ignore t :wk "Tab")
     "t n" '(tab-new :wk "New tab")
     "t x" '(tab-close :wk "Close current tab"))
-  
+
   ;; LSP Keymaps
   (ximon/leader eglot-mode-map
 	"c a" '(eglot-code-actions :wk "Code Actions")

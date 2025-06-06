@@ -18,9 +18,12 @@ vim.o.confirm = true -- Confirm to save changes before exiting modified buffer
 
 vim.o.splitbelow = true -- Horizontal splits open below
 vim.o.splitright = true -- Vertical splits open to the right
-vim.o.tabstop = 4 -- Number of spaces that a tab in the file counts for
-vim.o.shiftwidth = 4 -- Number of spaces to use for each step of indent
 vim.o.inccommand = "split" -- Show incremental command results in a split
+
+vim.opt.tabstop = 4 -- Number of spaces a tab represents
+vim.opt.shiftwidth = 4 -- Number of spaces for indentation
+vim.opt.expandtab = true -- Convert tabs to spaces
+vim.opt.softtabstop = 4 -- Number of spaces for tab key
 
 vim.o.completeopt = "menuone,noinsert,popup,fuzzy"
 

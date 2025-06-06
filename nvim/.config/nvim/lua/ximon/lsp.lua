@@ -33,4 +33,9 @@ vim.lsp.enable({
     "lua_ls",
     "ts_ls",
     "rust_analyzer",
+    "zls",
+    "pyright",
+    "ruff",
+    "go_pls",
+    "solidity_ls_nomicfoundation",
 })
