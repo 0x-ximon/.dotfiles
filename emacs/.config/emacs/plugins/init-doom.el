@@ -30,11 +30,8 @@
   (dashboard-startupify-list '(dashboard-insert-banner
                                dashboard-insert-items
                                dashboard-insert-init-info))
-  :hook
-  (dashboard-mode . (lambda () (doom-modeline-mode -1)))            ;; Disable doom-modeline in dashboard
   
   :config
-  (add-hook 'dashboard-mode-hook (lambda () (setq-local mode-line-format nil)))
   (dashboard-setup-startup-hook))                             ;; Set up the dashboard on startup
 
 (provide 'init-doom)
