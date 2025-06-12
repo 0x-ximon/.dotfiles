@@ -74,14 +74,14 @@
 
   ;; Tab Keymaps
   (general-def 'normal
-    "[t" '(tab-bar-switch-to-prev-tab :wk "Previous tab")
-    "]t" '(tab-bar-switch-to-next-tab :wk "Next tab"))
+    "[TAB" '(tab-bar-switch-to-prev-tab :wk "Previous tab")
+    "]TAB" '(tab-bar-switch-to-next-tab :wk "Next tab"))
 
   (ximon/leader
-    "t" '(:ignore t :wk "Tab")
-    "t n" '(tab-new :wk "New tab")
-    "t x" '(tab-close :wk "Close current tab"))
-
+    "TAB" '(:ignore t :wk "Tab")
+    "TAB n" '(tab-new :wk "New tab")
+    "TAB x" '(tab-close :wk "Close current tab"))
+	 
   ;; LSP Keymaps
   (ximon/leader eglot-mode-map
 	"l a" '(eglot-code-actions :wk "LSP Actions")

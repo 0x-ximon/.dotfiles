@@ -71,11 +71,11 @@ vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 -------------------------------- TABS KEYMAPS ---------------------------------
 -------------------------------------------------------------------------------
 
-vim.keymap.set("n", "[t", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
-vim.keymap.set("n", "]t", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+vim.keymap.set("n", "[<Tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+vim.keymap.set("n", "]<Tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 
-vim.keymap.set("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New Tab" })
-vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<cr>", { desc = "Close Tab" })
+vim.keymap.set("n", "<leader><Tab>n", "<cmd>tabnew<cr>", { desc = "New Tab" })
+vim.keymap.set("n", "<leader><Tab>x", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 
 -------------------------------------------------------------------------------
 ----------------------------- DISABLED KEYMAPS --------------------------------
