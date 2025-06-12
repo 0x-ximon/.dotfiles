@@ -36,6 +36,7 @@ vim.lsp.enable({
     "zls",
     "pyright",
     "ruff",
-    "go_pls",
+    "gopls",
+    "roslyn",
     "solidity_ls_nomicfoundation",
 })
