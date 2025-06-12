@@ -49,9 +49,8 @@
 					  :font "Iosevka Nerd Font"
 					  :height 140)
 
-  (add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font")) 
+  (add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font-14")) 
   (add-to-list 'default-frame-alist '(fullscreen . maximized)) ;; Ensure new frames are maximized
-
 
   :bind
   ([escape] . keyboard-escape-quit))                      ;; Use Escape to quit

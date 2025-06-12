@@ -12,6 +12,9 @@
   (which-key-idle-delay 0.5)                             ;; Set the time delay (in seconds) for the which-key popup to appear
   (which-key-allow-imprecise-window-fit nil))            ;; Fixes which-key window slipping out in Emacs Daemon
 
+(use-package neotree
+  :ensure t)
+
 ;; Use the inbuilt project management plugin
 (use-package project
   :ensure nil)

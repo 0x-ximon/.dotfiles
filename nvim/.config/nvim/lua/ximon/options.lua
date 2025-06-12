@@ -4,7 +4,7 @@ vim.o.number = true -- Show absolute line numbers
 vim.o.relativenumber = true -- Show relative line numbers
 vim.o.scrolloff = 10 -- Keep 10 lines visible above/below cursor
 
-vim.o.undofile = true -- Enable persistent undo
+vim.o.undofile = false -- Enable persistent undo
 vim.o.swapfile = false -- Disable swapfiles
 vim.o.showmode = false -- Don't show mode (e.g., -- INSERT --)
 vim.o.ignorecase = true -- Ignore case in search patterns

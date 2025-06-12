@@ -40,16 +40,9 @@ return {
         {
             "<leader>.",
             function()
-                Snacks.dashboard()
+                Snacks.explorer()
             end,
-            desc = "Dashboard",
-        },
-        {
-            "<leader>!",
-            function()
-                Snacks.terminal()
-            end,
-            desc = "Terminal",
+            desc = "Explorer",
         },
         {
             "<leader>/",
@@ -65,6 +58,7 @@ return {
             end,
             desc = "Lazygit",
         },
+
         {
             "<leader>bl",
             function()

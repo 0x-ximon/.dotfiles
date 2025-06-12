@@ -38,6 +38,9 @@ vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 ------------------------------- WINDOW KEYMAPS --------------------------------
 -------------------------------------------------------------------------------
 
+-- Open Terminal
+vim.keymap.set("n", "<leader>!", "<cmd>terminal<CR>", { desc = "Terminal" })
+
 -- Creating and deleting windows
 vim.keymap.set("n", "<leader>_", "<C-W>s", { desc = "Split window below" })
 vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
@@ -73,9 +76,7 @@ vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 
 vim.keymap.set("n", "[<Tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 vim.keymap.set("n", "]<Tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
-
 vim.keymap.set("n", "<leader><Tab>n", "<cmd>tabnew<cr>", { desc = "New Tab" })
-vim.keymap.set("n", "<leader><Tab>x", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 
 -------------------------------------------------------------------------------
 ----------------------------- DISABLED KEYMAPS --------------------------------

@@ -1,0 +1,178 @@
+{
+  // Core settings
+  "git.autofetch": true,
+  "extensions.autoUpdate": false,
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.fontSize": 16,
+  "window.autoDetectColorScheme": true,
+
+  "editor.fontSize": 16,
+  "editor.fontWeight": "bold",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.fontFamily": "'FiraCode Nerd Font'",
+  "search.searchEditor.focusResultsOnSearch": true,
+
+  "workbench.panel.showLabels": false,
+  "workbench.activityBar.location": "top",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+
+  // Keymaps settings
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    // General Keymaps
+    {
+      "before": ["U"],
+      "after": ["<C-r>"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+
+    // Layout Keymaps
+    {
+      "before": ["<leader>", "_"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "|"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "("],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", ")"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"]
+    },
+
+    // Quick Keymaps
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // QoL Keymaps
+    {
+      "before": ["<leader>", "<space>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "!"],
+      "commands": ["workbench.action.createTerminalEditor"]
+    },
+    {
+      "before": ["<leader>", "."],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["workbench.scm.focus"]
+    },
+
+    // Tab Keymaps
+    {
+      "before": ["[", "<tab>"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["]", "<tab>"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["<leader>", "<tab>", "n"],
+      "commands": ["workbench.action.files.newUntitledFile"]
+    },
+
+    // LSP Keymaps
+    {
+      "before": ["?"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["$"],
+      "commands": ["editor.action.triggerParameterHints"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.revealDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "l", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.format"]
+    },
+    {
+      "before": ["<leader>", "l", "r"],
+      "commands": ["editor.action.rename"]
+    }
+  ],
+
+  // Extensions settings
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+
+  "python.analysis.typeCheckingMode": "standard",
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+
+  // Language Specific Settings
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

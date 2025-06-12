@@ -1,0 +1,42 @@
+[
+  {
+    "key": "alt+x",
+    "command": "workbench.action.showCommands"
+  },
+
+  // Window Navigations
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+
+  // Move Navigations
+  {
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  }
+]

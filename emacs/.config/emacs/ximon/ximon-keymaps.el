@@ -33,9 +33,9 @@
 
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"/"   '(consult-grep :wk "Grep")
-	"."   '(dashboard-open :wk "Dashboard")
 	"!"   '(vterm-other-window :wk "Terminal")
+	"."   '(neotree-toggle :wk "Explorer")
+	"/"   '(consult-grep :wk "Grep")
 	"%"   '(magit :wk "Magit"))
 
   ;; Window Keymaps
@@ -79,8 +79,7 @@
 
   (ximon/leader
     "TAB" '(:ignore t :wk "Tab")
-    "TAB n" '(tab-new :wk "New tab")
-    "TAB x" '(tab-close :wk "Close current tab"))
+    "TAB n" '(tab-new :wk "New tab"))
 	 
   ;; LSP Keymaps
   (ximon/leader eglot-mode-map
