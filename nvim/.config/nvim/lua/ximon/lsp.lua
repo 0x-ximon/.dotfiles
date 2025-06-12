@@ -32,6 +32,7 @@ vim.lsp.config("*", {
 vim.lsp.enable({
     "lua_ls",
     "ts_ls",
+    "clangd",
     "rust_analyzer",
     "zls",
     "pyright",
