@@ -2,6 +2,7 @@
   // Core settings
   "git.autofetch": true,
   "extensions.autoUpdate": false,
+  "window.restoreWindows": "none",
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 16,
   "window.autoDetectColorScheme": true,
