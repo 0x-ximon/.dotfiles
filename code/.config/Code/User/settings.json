@@ -169,7 +169,9 @@
 
   // Extensions settings
   "vim.leader": "<space>",
+  "oil-code.hasNerdFont": true,
   "vim.useSystemClipboard": true,
+  "oil-code.disableVimKeymaps": true,
 
   "python.analysis.typeCheckingMode": "standard",
   "rust-analyzer.inlayHints.typeHints.enable": false,
