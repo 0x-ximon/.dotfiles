@@ -105,8 +105,6 @@
       "before": ["<leader>", "%"],
       "commands": ["workbench.scm.focus"]
     },
-
-    // Tab Keymaps
     {
       "before": ["[", "<tab>"],
       "commands": ["workbench.action.previousEditorInGroup"]
@@ -160,6 +158,16 @@
     {
       "before": ["<leader>", "l", "r"],
       "commands": ["editor.action.rename"]
+    },
+
+    // Plugin Keymaps
+    {
+      "before": ["-"],
+      "commands": ["oil-code.open"]
+    },
+    {
+      "before": ["<CR>"],
+      "commands": ["oil-code.select"]
     }
   ],
 
@@ -170,6 +178,20 @@
   "python.analysis.typeCheckingMode": "standard",
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
+
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
 
   // Language Specific Settings
   "[jsonc]": {
