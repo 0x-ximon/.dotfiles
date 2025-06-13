@@ -124,10 +124,6 @@
       "commands": ["editor.action.showHover"]
     },
     {
-      "before": ["$"],
-      "commands": ["editor.action.triggerParameterHints"]
-    },
-    {
       "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
     },

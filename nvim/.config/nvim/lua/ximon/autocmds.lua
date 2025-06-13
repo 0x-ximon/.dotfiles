@@ -20,9 +20,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
         if client:supports_method("textDocument/hover") then
             vim.keymap.set("n", "?", vim.lsp.buf.hover, { desc = "Hover" })
         end
-        if client:supports_method("textDocument/signatureHelp") then
-            vim.keymap.set("n", "$", vim.lsp.buf.signature_help, { desc = "Signature" })
-        end
         if client:supports_method("textDocument/definition") then
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
         end

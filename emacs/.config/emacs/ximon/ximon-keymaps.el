@@ -80,8 +80,18 @@
   (ximon/leader
     "TAB" '(:ignore t :wk "Tab")
     "TAB n" '(tab-new :wk "New tab"))
-	 
+  
   ;; LSP Keymaps
+  (general-define-key 
+	:states 'normal 
+	:keymaps '(eglot-mode-map override)
+	"?"   '(eldoc-box-help-at-point :wk "Hover")
+	"g d" '(xref-find-definitions :wk "Go to Definition")
+	"g r" '(xref-find-references :wk "Find References")
+	"g e" '(eglot-find-declaration :wk "Go to Declaration")
+	"g i" '(eglot-find-implementation :wk "Go to Implementation")
+	"g t" '(eglot-find-typeDefinition :wk "Go to Type Definition"))
+
   (ximon/leader eglot-mode-map
 	"l a" '(eglot-code-actions :wk "LSP Actions")
 	"l f" '(eglot-format :wk "LSP Format")

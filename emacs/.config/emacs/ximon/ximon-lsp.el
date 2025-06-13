@@ -41,4 +41,8 @@
   (add-to-list 'eglot-server-programs
                '(zig-mode . ("~/.local/share/nvim/mason/bin/zls"))))
 
+(use-package eldoc-box
+  :ensure t
+  :after eldoc)
+
 (provide 'ximon-lsp)
