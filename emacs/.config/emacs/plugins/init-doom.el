@@ -21,8 +21,8 @@
   (dashboard-set-heading-icons t)                         ;; Set icons for headings   
   (dashboard-set-file-icons t)                            ;; Set icons for files
 
-  (dashboard-items '((recents   . 5)                   
-                     (projects  . 5)))
+  (dashboard-items '((projects  . 5)
+					 (recents   . 5)))
 
   (dashboard-startup-banner 
    (expand-file-name "banner.txt" user-emacs-directory)) ;; Use a custom banner file
