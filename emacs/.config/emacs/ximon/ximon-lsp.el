@@ -1,6 +1,9 @@
 (use-package go-mode  
   :ensure t)
 
+(use-package markdown-mode
+  :ensure t)
+
 (use-package rust-mode
   :ensure t)
 
@@ -16,7 +19,7 @@
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode go-mode rust-mode solidity-mode text-mode typescript-mode zig-mode) . eglot-ensure)
+  ((c-mode c++-mode go-mode markdown-mode rust-mode solidity-mode text-mode typescript-mode zig-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)      ;; No event buffers (Lsp server logs)
