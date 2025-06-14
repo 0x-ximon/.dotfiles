@@ -34,4 +34,13 @@
   :config
   (dashboard-setup-startup-hook))                             ;; Set up the dashboard on startup
 
+(use-package hide-mode-line
+  :ensure t
+  :after dashboard
+  :hook 
+  (dashboard-mode . hide-mode-line-mode)
+  (neotree-mode . hide-mode-line-mode)
+  
+  :config (add-to-list 'doom-modeline-mode-alist '(dashboard-mode)))
+
 (provide 'init-doom)
