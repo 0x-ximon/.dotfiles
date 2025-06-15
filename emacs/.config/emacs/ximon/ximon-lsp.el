@@ -44,6 +44,9 @@
   (add-to-list 'eglot-server-programs
                '(zig-mode . ("~/.local/share/nvim/mason/bin/zls"))))
 
+(setq-default eglot-workspace-configuration
+      '(:harper-ls (:linters (:Spaces :json-false))))
+
 (use-package eldoc-box
   :ensure t
   :after eldoc)
