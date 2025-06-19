@@ -45,7 +45,9 @@
                '(zig-mode . ("~/.local/share/nvim/mason/bin/zls"))))
 
 (setq-default eglot-workspace-configuration
-      '(:harper-ls (:linters (:Spaces :json-false))))
+			  '(:harper-ls (:linters 
+							(:Spaces :json-false
+							 :LongSentences :json-false))))
 
 (use-package eldoc-box
   :ensure t

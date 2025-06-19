@@ -15,6 +15,8 @@
   :custom
   (org-hide-emphasis-markers t)
   (org-pretty-entities t)
+  (org-modern-table nil)
+  (org-modern-timestamp nil)
   (org-modern-star 'replace)
 
   :hook (org-mode . org-modern-mode))	
