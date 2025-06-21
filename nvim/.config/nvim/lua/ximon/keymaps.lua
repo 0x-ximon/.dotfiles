@@ -2,9 +2,6 @@
 ------------------------------- GENERAL KEYMAPS -------------------------------
 -------------------------------------------------------------------------------
 
--- Press 'jj' in insert mode to exit insert mode into normal mode
-vim.keymap.set("i", "jj", "<Esc>")
-
 -- Press 'U' in normal mode to redo the last undo
 vim.keymap.set("n", "U", "<C-r>")
 

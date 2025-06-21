@@ -16,15 +16,6 @@
               ("RET" . nil)
               ("TAB" . nil)))
 
-(use-package evil-escape
-  :after evil
-  :ensure t
-  :config
-  (evil-escape-mode 1)                    ;; Enable evil-escape mode
-  (setq evil-escape-delay 0.2)            ;; Set the delay for the escape key sequence
-  (setq evil-escape-key-sequence "jj")    ;; Set the key sequence to escape from insert mode
-  (setq evil-escape-excluded-states '(normal visual multiedit emacs motion)))   
-
 (use-package evil-collection
   :after evil
   :ensure t
