@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Android Studio
-Comment=Android Studio
-Exec=studio %U
-Icon=/opt/Android-Studio/bin/studio.svg
-Type=Application
-Categories=TextEditor;Utility;
-StartupNotify=true
-Terminal=false
