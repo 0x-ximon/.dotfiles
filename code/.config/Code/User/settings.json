@@ -1,6 +1,7 @@
 {
   // Core settings
   "git.autofetch": true,
+  "keyboard.dispatch": "keyCode",
   "extensions.autoUpdate": false,
   "window.restoreWindows": "none",
   "files.autoSave": "onFocusChange",
