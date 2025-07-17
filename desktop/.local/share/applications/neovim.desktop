@@ -5,5 +5,4 @@ Exec=/opt/Neovide/neovide.AppImage %U
 Icon=/opt/Neovim/assets/icon.svg
 Type=Application
 Categories=TextEditor;Utility;Development;
-StartupNotify=true
 Terminal=false
