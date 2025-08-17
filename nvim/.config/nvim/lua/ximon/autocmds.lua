@@ -19,6 +19,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         -- Set keymaps for LSP features if supported by the client
         if client:supports_method("textDocument/hover") then
             vim.keymap.set("n", "?", vim.lsp.buf.hover, { desc = "Hover" })
+            vim.keymap.set("n", "$", vim.diagnostic.open_float, { desc = "Diagnostic" })
         end
         if client:supports_method("textDocument/definition") then
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
