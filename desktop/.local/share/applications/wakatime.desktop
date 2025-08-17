@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Wakatime
-Comment=Wakatime GUI 
-Exec=/opt/Wakatime/Wakatime.AppImage %U
-Icon=/opt/Wakatime/assets/icon.png
-Type=Application
-Categories=Utility;Development;
-StartupNotify=true
-Terminal=false
