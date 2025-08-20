@@ -15,27 +15,19 @@ source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
 
 eval "$(zoxide init zsh)"
-[ -s "/home/simon/.bun/_bun" ] && source "/home/simon/.bun/_bun"
-
 
 # PATH Configurations
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.config/emacs/bin"
 export PATH="$PATH:$HOME/.cargo/bin" 
 export PATH="$PATH:$HOME/.go/bin"
 export PATH="$PATH:$HOME/.foundry/bin"
-export PATH="$PATH:$NARGO_HOME/bin"
-export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$PATH:$(npm config get prefix)/bin"
-export PATH="$PATH:/.bb"
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export NARGO_HOME="/home/simon/.nargo"
-export BUN_INSTALL="$HOME/.bun"
 export GOPATH=$HOME/.go
 
 # Alias Definitions
