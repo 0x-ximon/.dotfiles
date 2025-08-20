@@ -1,3 +1,10 @@
+;; Auto Dark Mode Configuration
+(use-package auto-dark
+  :ensure t
+  :init (auto-dark-mode)
+  :custom 
+  (auto-dark-themes '((doom-acario-dark) (doom-acario-light))))
+
 (use-package which-key
   :ensure nil 
   :init (which-key-mode 1)
@@ -38,6 +45,14 @@
          (magit-post-refresh . diff-hl-magit-post-refresh))
   :init (global-diff-hl-mode))
 
+;; Diagnostics Plugin
+(use-package sideline-flymake
+  :ensure t
+  :hook (flymake-mode . sideline-mode)
+  :custom
+  (sideline-flymake-display-mode 'line)                  ;; Show errors on the current line
+  (sideline-backends-right '(sideline-flymake)))
+
 ;; Useful Plugins for Corfu and Vertigo
 (use-package orderless
   :ensure t
@@ -58,13 +73,6 @@
 ;; Terminal Configuration
 (use-package vterm
   :ensure t)
-
-;; Auto Dark Mode Configuration
-(use-package auto-dark
-  :ensure t
-  :init (auto-dark-mode)
-  :custom 
-  (auto-dark-themes '((doom-acario-dark) (doom-acario-light))))
 
 ;; Nerd Icons Configuration
 (use-package nerd-icons

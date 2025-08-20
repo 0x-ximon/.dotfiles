@@ -83,14 +83,30 @@
   
   ;; LSP Keymaps
   (general-define-key 
-	:states 'normal 
-	:keymaps '(eglot-mode-map override)
-	"?"   '(eldoc-box-help-at-point :wk "Hover")
-	"g d" '(xref-find-definitions :wk "Go to Definition")
-	"g r" '(xref-find-references :wk "Find References")
-	"g e" '(eglot-find-declaration :wk "Go to Declaration")
-	"g i" '(eglot-find-implementation :wk "Go to Implementation")
-	"g t" '(eglot-find-typeDefinition :wk "Go to Type Definition"))
+   :states 'normal 
+   :keymaps '(eglot-mode-map override)
+   "?"   '(eldoc-box-help-at-point :wk "Hover")
+   "$"   '(eldoc-box-help-at-point :wk "Diagnostic")
+   "g d" '(xref-find-definitions :wk "Go to Definition")
+   "g r" '(xref-find-references :wk "Find References")
+   "g e" '(eglot-find-declaration :wk "Go to Declaration")
+   "g i" '(eglot-find-implementation :wk "Go to Implementation")
+   "g t" '(eglot-find-typeDefinition :wk "Go to Type Definition"))
+  
+  (defun diagnostics-goto (&optional next filter)
+	(interactive "P")
+	(let ((dir (if next 1 -1)))
+      (flymake-goto-next-error dir filter)))
+
+  (general-def 'normal 'override
+	"[d" '((lambda () (interactive) (diagnostics-goto nil)) :wk "Previous Diagnostic")
+	"]d" '((lambda () (interactive) (diagnostics-goto t)) :wk "Next Diagnostic")
+	"[e" '((lambda () (interactive) (diagnostics-goto nil '(:error))) :wk "Previous Error")
+	"]e" '((lambda () (interactive) (diagnostics-goto t '(:error))) :wk "Next Error")
+	"[w" '((lambda () (interactive) (diagnostics-goto nil '(:warning))) :wk "Previous Warning")
+	"]w" '((lambda () (interactive) (diagnostics-goto t '(:warning))) :wk "Next Warning")
+	"[n" '((lambda () (interactive) (diagnostics-goto nil '(:note))) :wk "Previous Note")
+	"]n" '((lambda () (interactive) (diagnostics-goto t '(:note))) :wk "Next Note"))
 
   (ximon/leader eglot-mode-map
 	"l a" '(eglot-code-actions :wk "LSP Actions")

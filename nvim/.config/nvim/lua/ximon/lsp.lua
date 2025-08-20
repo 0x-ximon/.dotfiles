@@ -19,6 +19,5 @@ vim.lsp.enable({
     "pyright",
     "ruff",
     "gopls",
-    "roslyn",
     "solidity_ls_nomicfoundation",
 })

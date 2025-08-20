@@ -2,19 +2,7 @@ vim.diagnostic.config({
     severity_sort = true,
     float = { border = "rounded", source = "if_many" },
     underline = { severity = vim.diagnostic.severity.ERROR },
-    virtual_text = {
-        source = "if_many",
-        spacing = 2,
-        format = function(diagnostic)
-            local diagnostic_message = {
-                [vim.diagnostic.severity.ERROR] = diagnostic.message,
-                [vim.diagnostic.severity.WARN] = diagnostic.message,
-                [vim.diagnostic.severity.INFO] = diagnostic.message,
-                [vim.diagnostic.severity.HINT] = diagnostic.message,
-            }
-            return diagnostic_message[diagnostic.severity]
-        end,
-    },
+    virtual_text = { current_line = true },
 })
 
 local diagnostic_goto = function(next, severity)
@@ -26,6 +14,8 @@ local diagnostic_goto = function(next, severity)
     end
 end
 
+vim.keymap.set("n", "]d", diagnostic_goto(true), { desc = "Next Diagnostic" })
+vim.keymap.set("n", "[d", diagnostic_goto(false), { desc = "Prev Diagnostic" })
 vim.keymap.set("n", "]e", diagnostic_goto(true, "ERROR"), { desc = "Next Error" })
 vim.keymap.set("n", "[e", diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
 vim.keymap.set("n", "]w", diagnostic_goto(true, "WARN"), { desc = "Next Warning" })
