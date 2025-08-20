@@ -120,6 +120,10 @@
       "commands": ["editor.action.showHover"]
     },
     {
+      "before": ["$"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
     },
@@ -150,6 +154,14 @@
     {
       "before": ["<leader>", "l", "r"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
     },
 
     // Plugin Keymaps
