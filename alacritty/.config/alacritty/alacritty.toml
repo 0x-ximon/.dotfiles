@@ -9,7 +9,7 @@ decorations = "None"
 opacity = 1
 
 [font]
-normal = {family = "FiraCode Nerd Font", style = "Regular"}
+family = "MesloLGS NF"
 size = 14
 
 [colors.normal]
