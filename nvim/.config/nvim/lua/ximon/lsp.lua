@@ -13,6 +13,7 @@ vim.lsp.config("*", {
 vim.lsp.enable({
     "lua_ls",
     "ts_ls",
+    "denols",
     "clangd",
     "rust_analyzer",
     "zls",

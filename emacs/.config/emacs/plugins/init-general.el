@@ -34,6 +34,9 @@
 (use-package transient
   :ensure t)
 
+(use-package cond-let
+  :ensure (:host github :repo "tarsius/cond-let"))
+
 (use-package magit
   :ensure t
   :after transient)

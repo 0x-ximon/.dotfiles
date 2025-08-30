@@ -24,7 +24,6 @@
   "workbench.panel.showLabels": false,
   "workbench.activityBar.location": "top",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
 
@@ -181,7 +180,7 @@
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
 
-  "dotenv.enableAutocloaking": true,
+  "dotenv.enableAutocloaking": false,
   "python.analysis.typeCheckingMode": "standard",
   "dotnet.formatting.organizeImportsOnFormat": true,
   "rust-analyzer.inlayHints.typeHints.enable": false,
@@ -211,14 +210,7 @@
         }
       ]
     },
-    "textMateRules": [
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
+    "textMateRules": []
   },
 
   // Language Specific Settings
