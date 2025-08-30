@@ -49,8 +49,6 @@ alias playground="cd ~/Projects/Playground/ && neovide . --fork"
 alias study="cd ~/Notes/Study/ && emacsclient -cnqu -a 'emacs' ."
 alias learn="playground && study && exit"
 
-alias alacritty-light="ln -s -f /home/simon/.config/alacritty/themes/themes/github_light.toml /home/simon/.config/alacritty/theme.toml"
-alias alacritty-dark="ln -s -f /home/simon/.config/alacritty/themes/themes/github_dark.toml /home/simon/.config/alacritty/theme.toml"
-
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+. "/home/simon/.deno/env"
