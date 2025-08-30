@@ -14,27 +14,29 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
 
-eval "$(zoxide init zsh)"
-
-# PATH Configurations
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/.cargo/bin" 
-export PATH="$PATH:$HOME/.go/bin"
-export PATH="$PATH:$HOME/.foundry/bin"
-export PATH="$PATH:$(npm config get prefix)/bin"
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+# PATH Configurations
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin" 
+export PATH="$PATH:$HOME/.go/bin"
+export PATH="$PATH:$HOME/.dotnet"
+export PATH="$PATH:$HOME/.foundry/bin"
+export PATH="$PATH:$(npm config get prefix)/bin"
+
 export GOPATH=$HOME/.go
+eval "$(zoxide init zsh)"
 
 # Alias Definitions
 alias cd="z"
-alias ls="exa"
-alias la="exa -a"
-alias ll="exa -l"
+alias ls="eza"
+alias la="eza -a"
+alias ll="eza -l"
 alias cat="batcat"
 
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
