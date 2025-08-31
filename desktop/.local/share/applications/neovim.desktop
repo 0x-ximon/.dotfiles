@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Neovim
 Comment=Neovim GUI 
-Exec=/opt/Neovide/neovide.AppImage %U
-Icon=/opt/Neovim/assets/icon.svg
+Exec=neovim %U
+Icon=/opt/neovim/assets/neovim.svg
 Type=Application
 Categories=TextEditor;Utility;Development;
 Terminal=false

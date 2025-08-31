@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Obsidian
-Comment=Obsidian
-Exec=/opt/Obsidian/obsidian.AppImage %U
-Icon=/opt/Obsidian/assets/icon.svg
-Type=Application
-Categories=Utility;
-StartupNotify=true
-Terminal=false
