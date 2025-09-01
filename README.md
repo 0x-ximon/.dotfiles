@@ -17,11 +17,11 @@ stow nvim tmux zsh emacs
 
 # Gnome Keyboard Shortcuts
 
-|     | Name        | Shortcut  |                     Command |
-| :-: | :---------- | :-------: | --------------------------: |
-|  1  | Alacritty   | Super + A |                 `alacritty` |
-|  2  | Emacs       | Super + E | `emacsclient -c -a "emacs"` |
-|  3  | FireFox Dev | Super + F |        `firefox-devedition` |
-|  4  | Neovim      | Super + N |                   `neovide` |
-|  5  | Tmux        | Super + T |  `alacritty -e tmux attach` |
-|  6  | VS Code     | Super + V |                      `code` |
+|       | Name     | Shortcut  |                                   Command |
+| :---: | :------- | :-------: | ----------------------------------------: |
+|   1   | Terminal | Super + T |                          `gnome-terminal` |
+|   2   | Emacs    | Super + E |               `emacsclient -c -a "emacs"` |
+|   3   | Firefox  | Super + F |                                 `firefox` |
+|   4   | Neovim   | Super + N |                                  `neovim` |
+|   5   | Tmux     | Super + X | `gnome-terminal -- bash -c "tmux attach"` |
+|   6   | VS Code  | Super + C |                                    `code` |
