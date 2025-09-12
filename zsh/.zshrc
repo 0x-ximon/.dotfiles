@@ -29,7 +29,6 @@ export PATH="$PATH:$HOME/.dotnet"
 export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
-export GOPATH=$HOME/.go
 eval "$(zoxide init zsh)"
 
 # Alias Definitions
