@@ -7,5 +7,4 @@ Icon=/opt/emacs/share/icons/hicolor/scalable/apps/emacs.svg
 Type=Application
 Terminal=false
 Categories=Development;TextEditor;Utility;
-StartupNotify=true
 StartupWMClass=Emacs
