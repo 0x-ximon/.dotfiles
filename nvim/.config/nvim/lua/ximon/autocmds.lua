@@ -1,3 +1,25 @@
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {
+        "python",
+        "typescript",
+        "rust",
+        "go",
+        "java",
+        "cpp",
+        "zig",
+        "sql",
+        "assembly",
+        "c",
+        "gleam",
+        "solidity",
+        "haskell",
+        "c_sharp",
+    },
+    callback = function()
+        vim.treesitter.start()
+    end,
+})
+
 -- Highlight yanked text briefly after any yank operation.
 -- This autocmd uses the built-in highlight-on-yank function for visual feedback,
 -- making it easier to see what was just copied.
