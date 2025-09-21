@@ -184,6 +184,7 @@
   "python.analysis.typeCheckingMode": "standard",
   "dotnet.formatting.organizeImportsOnFormat": true,
   "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
 
   "files.associations": {
@@ -191,7 +192,8 @@
   },
   "codeium.enableConfig": {
     "*": true,
-    "markdown": true
+    "markdown": true,
+    "plaintext": true
   },
   "editor.tokenColorCustomizations": {
     "[*Light*]": {
@@ -231,6 +233,9 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

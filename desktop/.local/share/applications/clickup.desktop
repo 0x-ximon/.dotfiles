@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=ClickUp
-Comment=ClickUp
-Exec=clickup --gtk-version=3 %U
-Icon=/opt/clickup/assets/clickup.png
-Type=Application
-Categories=Utility;
-StartupNotify=true
-Terminal=false
