@@ -43,16 +43,16 @@ vim.keymap.set("n", "<leader>_", "<C-W>s", { desc = "Split window below" })
 vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
 
 --  Use CTRL+<hjkl> to switch between windows
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move to window left" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move to window right" })
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move to window below" })
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move to window above" })
+vim.keymap.set("n", "<A-h>", "<C-w><C-h>", { desc = "Move to window left" })
+vim.keymap.set("n", "<A-l>", "<C-w><C-l>", { desc = "Move to window right" })
+vim.keymap.set("n", "<A-j>", "<C-w><C-j>", { desc = "Move to window below" })
+vim.keymap.set("n", "<A-k>", "<C-w><C-k>", { desc = "Move to window above" })
 
 --  Use CTRL+SHIFT+<hjkl> to move the current window
-vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
-vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
-vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the bottom" })
-vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the top" })
+vim.keymap.set("n", "<C-h>", "<C-w>H", { desc = "Move window to the left" })
+vim.keymap.set("n", "<C-l>", "<C-w>L", { desc = "Move window to the right" })
+vim.keymap.set("n", "<C-j>", "<C-w>J", { desc = "Move window to the bottom" })
+vim.keymap.set("n", "<C-k>", "<C-w>K", { desc = "Move window to the top" })
 
 --  Use CTRL+<ArrowKey> to resize the current window
 vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -1<CR>", { desc = "Decrease window width" })

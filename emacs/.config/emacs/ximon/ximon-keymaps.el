@@ -44,16 +44,16 @@
     "|" '(evil-window-vsplit :wk "Split Window Right"))
 
   (general-def 'normal
-    "C-h" '(windmove-left 1 :wk "Move to window left")
-    "C-l" '(windmove-right 1 :wk "Move to window right")
-    "C-j" '(windmove-down 1 :wk "Move to window below")
-    "C-k" '(windmove-up 1 :wk "Move to window above"))
+    "A-h" '(windmove-left 1 :wk "Move to window left")
+    "A-l" '(windmove-right 1 :wk "Move to window right")
+    "A-j" '(windmove-down 1 :wk "Move to window below")
+    "A-k" '(windmove-up 1 :wk "Move to window above"))
 
   (general-def 'normal
-    "C-S-h" '(evil-window-move-far-left :wk "Move window to far left")
-    "C-S-l" '(evil-window-move-far-right :wk "Move window to far right")
-    "C-S-j" '(evil-window-move-very-bottom :wk "Move window to very bottom")
-    "C-S-k" '(evil-window-move-very-top :wk "Move window to very top"))
+    "C-h" '(evil-window-move-far-left :wk "Move window to far left")
+    "C-l" '(evil-window-move-far-right :wk "Move window to far right")
+    "C-j" '(evil-window-move-very-bottom :wk "Move window to very bottom")
+    "C-k" '(evil-window-move-very-top :wk "Move window to very top"))
 
   (general-def 'normal
     "C-<left>" '(evil-window-decrease-width :wk "Decrease window width")
