@@ -181,8 +181,8 @@
   "oil-code.disableVimKeymaps": true,
 
   "dotenv.enableAutocloaking": false,
+  "biome.suggestInstallingGlobally": false,
   "python.analysis.typeCheckingMode": "standard",
-  "dotnet.formatting.organizeImportsOnFormat": true,
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
@@ -221,7 +221,7 @@
 
   // Language Specific Settings
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -237,5 +237,9 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
   }
 }

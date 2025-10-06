@@ -31,6 +31,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.go/bin"
 export PATH="$PATH:$HOME/.dotnet"
 export PATH="$PATH:$HOME/.foundry/bin"
+export PATH="$PATH:$HOME/.solana/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
 eval "$(zoxide init zsh)"
@@ -56,3 +57,5 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y 
 
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f "/home/simon/.ghcup/env" ] && . "/home/simon/.ghcup/env" # ghcup-env
