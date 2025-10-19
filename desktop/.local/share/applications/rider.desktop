@@ -2,7 +2,9 @@
 Name=Rider
 Comment=Rider IDE
 Exec=rider %U
-Icon=/opt/rider/bin/rider.svg
+Icon=rider
 Type=Application
 Categories=TextEditor;Utility;Development;
 Terminal=false
+StartupWMClass=jetbrains-rider
+

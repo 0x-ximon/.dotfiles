@@ -2,7 +2,8 @@
 Name=Idea
 Comment=IntelliJ IDEA
 Exec=idea %U
-Icon=/opt/idea/bin/idea.svg
+Icon=idea
 Type=Application
-Categories=TextEditor;Utility;Development;
 Terminal=false
+Categories=TextEditor;Utility;Development;
+StartupWMClass=jetbrains-idea-ce

@@ -2,7 +2,8 @@
 Name=CLion
 Comment=CLion IDE
 Exec=clion %U
-Icon=/opt/clion/bin/clion.svg
+Icon=clion
 Type=Application
 Categories=TextEditor;Utility;Development;
 Terminal=false
+StartupWMClass=jetbrains-clion

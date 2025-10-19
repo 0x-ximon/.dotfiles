@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Remix
+Comment=Remix IDE 
+Exec=remix %U
+Icon=remix
+Type=Application
+Terminal=false
+Categories=Development;
+MimeType=x-scheme-handler/remix;
+StartupWMClass=Remix-Desktop

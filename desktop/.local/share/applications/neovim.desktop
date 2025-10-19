@@ -2,7 +2,8 @@
 Name=Neovim
 Comment=Neovim GUI 
 Exec=neovim %U
-Icon=/opt/neovim/assets/neovim.svg
+Icon=neovim
 Type=Application
-Categories=TextEditor;Utility;Development;
 Terminal=false
+Categories=TextEditor;Utility;Development;
+StartupWMClass=neovide
