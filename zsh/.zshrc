@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
+source "$HOME/.ghcup/env" 
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
@@ -27,6 +28,7 @@ esac
 
 # PATH Configurations
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.mason/bin"
 export PATH="$PATH:$HOME/.cargo/bin" 
 export PATH="$PATH:$HOME/.go/bin"
 export PATH="$PATH:$HOME/.dotnet"
@@ -57,5 +59,3 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y 
 
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-[ -f "/home/simon/.ghcup/env" ] && . "/home/simon/.ghcup/env" # ghcup-env

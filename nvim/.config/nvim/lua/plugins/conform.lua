@@ -7,7 +7,7 @@ return {
             cpp = { "clang-format" },
             go = { "goimports", "gofmt" },
             rust = { "rustfmt", lsp_format = "fallback" },
-            typescript = { "deno_fmt", "prettierd", "prettier", stop_after_first = true },
+            typescript = { "biome", "deno_fmt", "prettierd", "prettier", stop_after_first = true },
             json = { "deno_fmt", "prettierd", "prettier", stop_after_first = true },
         },
         format_on_save = {

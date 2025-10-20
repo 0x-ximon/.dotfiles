@@ -3,10 +3,10 @@
   "git.autofetch": true,
   "keyboard.dispatch": "keyCode",
   "extensions.autoUpdate": false,
-  "window.restoreWindows": "none",
+  "chat.commandCenter.enabled": false,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 16,
-  "window.autoDetectColorScheme": true,
+  "search.searchEditor.focusResultsOnSearch": true,
 
   "editor.fontSize": 16,
   "editor.fontWeight": "bold",
@@ -19,11 +19,19 @@
   "editor.inlineSuggest.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.fontFamily": "'FiraCode Nerd Font'",
-  "search.searchEditor.focusResultsOnSearch": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+
+  "window.restoreWindows": "none",
+  "window.menuBarVisibility": "toggle",
+  "window.autoDetectColorScheme": true,
 
   "workbench.panel.showLabels": false,
   "workbench.activityBar.location": "top",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.navigationControl.enabled": false,
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
 
@@ -195,6 +203,9 @@
     "markdown": true,
     "plaintext": true
   },
+  "github.copilot.enable": {
+    "*": true
+  },
   "editor.tokenColorCustomizations": {
     "[*Light*]": {
       "textMateRules": [
@@ -224,7 +235,7 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -16,10 +16,13 @@
 (use-package zig-mode
   :ensure t)
 
+(use-package haskell-mode
+  :ensure t)
+
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode go-mode markdown-mode rust-mode solidity-mode text-mode typescript-mode zig-mode) . eglot-ensure)
+  ((c-mode c++-mode go-mode haskell-mode markdown-mode rust-mode solidity-mode text-mode typescript-mode zig-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)      ;; No event buffers (Lsp server logs)
@@ -28,21 +31,23 @@
 
   :config
   (add-to-list 'eglot-server-programs
-               '(text-mode . ("~/.local/share/nvim/mason/bin/harper-ls" "--stdio")))
+               '(text-mode . ("harper-ls" "--stdio")))
   (add-to-list 'eglot-server-programs
-               '(c-mode . ("~/.local/share/nvim/mason/bin/clangd")))
+               '(c-mode . ("clangd")))
   (add-to-list 'eglot-server-programs
-               '(c++-mode . ("~/.local/share/nvim/mason/bin/clangd")))
+               '(c++-mode . ("clangd")))
   (add-to-list 'eglot-server-programs
-               '(go-mode . ("~/.local/share/nvim/mason/bin/gopls")))
+               '(go-mode . ("gopls")))
   (add-to-list 'eglot-server-programs
-               '(rust-mode . ("~/.local/share/nvim/mason/bin/rust-analyzer")))
+               '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
   (add-to-list 'eglot-server-programs
-               '(solidity-mode . ("~/.local/share/nvim/mason/bin/nomicfoundation-solidity-language-server" "--stdio")))
+               '(rust-mode . ("rust-analyzer")))
   (add-to-list 'eglot-server-programs
-               '(typescript-mode . ("~/.local/share/nvim/mason/bin/typescript-language-server" "--stdio")))
+               '(solidity-mode . ("nomicfoundation-solidity-language-server" "--stdio")))
   (add-to-list 'eglot-server-programs
-               '(zig-mode . ("~/.local/share/nvim/mason/bin/zls"))))
+               '(typescript-mode . ("typescript-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs
+               '(zig-mode . ("zls"))))
 
 (setq-default eglot-workspace-configuration
 			  '(:harper-ls (:linters 
