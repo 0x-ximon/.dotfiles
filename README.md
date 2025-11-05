@@ -17,11 +17,11 @@ stow nvim tmux zsh emacs
 
 # Gnome Keyboard Shortcuts
 
-|       | Name     | Shortcut  |                                   Command |
-| :---: | :------- | :-------: | ----------------------------------------: |
-|   1   | Terminal | Super + T |                          `gnome-terminal` |
-|   2   | Emacs    | Super + E |               `emacsclient -c -a "emacs"` |
-|   3   | Firefox  | Super + F |                                 `firefox` |
-|   4   | Neovim   | Super + N |                                  `neovim` |
-|   5   | Tmux     | Super + X | `gnome-terminal -- bash -c "tmux attach"` |
-|   6   | VS Code  | Super + C |                                    `code` |
+| Name     | Shortcut  |                                                        Command |
+| :------- | :-------: | -------------------------------------------------------------: |
+| Terminal | Super + T |                                               `gnome-terminal` |
+| Emacs    | Super + E |                                    `emacsclient -c -a "emacs"` |
+| Firefox  | Super + F |                                                      `firefox` |
+| Neovim   | Super + N |                                           `neovim --maximized` |
+| VS Code  | Super + C |                                                         `code` |
+| Zellij   | Super + Z | `gnome-terminal --maximize -- bash -c "zellij attach -c Home"` |

@@ -6,6 +6,7 @@
   "chat.commandCenter.enabled": false,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 16,
+  "inlineChat.lineNaturalLanguageHint": false,
   "search.searchEditor.focusResultsOnSearch": true,
 
   "editor.fontSize": 16,
@@ -204,7 +205,11 @@
     "plaintext": true
   },
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "mdx": false
   },
   "editor.tokenColorCustomizations": {
     "[*Light*]": {
