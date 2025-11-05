@@ -38,7 +38,7 @@ return {
             desc = "Find File",
         },
         {
-            "<leader>!",
+            "<leader>~",
             function()
                 Snacks.explorer()
             end,

@@ -98,7 +98,7 @@
       "commands": ["workbench.action.createTerminalEditor"]
     },
     {
-      "before": ["<leader>", "!"],
+      "before": ["<leader>", "~"],
       "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     {
@@ -128,7 +128,7 @@
       "commands": ["editor.action.showHover"]
     },
     {
-      "before": ["$"],
+      "before": ["!"],
       "commands": ["editor.action.showHover"]
     },
     {

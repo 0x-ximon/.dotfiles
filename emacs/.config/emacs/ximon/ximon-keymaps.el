@@ -34,7 +34,7 @@
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
 	"."   '(vterm-other-window :wk "Terminal")
-	"!"   '(neotree-toggle :wk "Explorer")
+	"~"   '(neotree-toggle :wk "Explorer")
 	"/"   '(consult-grep :wk "Grep")
 	"%"   '(magit :wk "Magit"))
 
@@ -86,7 +86,7 @@
    :states 'normal 
    :keymaps '(eglot-mode-map override)
    "?"   '(eldoc-box-help-at-point :wk "Hover")
-   "$"   '(eldoc-box-help-at-point :wk "Diagnostic")
+   "!"   '(eldoc-box-help-at-point :wk "Diagnostic")
    "g d" '(xref-find-definitions :wk "Go to Definition")
    "g r" '(xref-find-references :wk "Find References")
    "g e" '(eglot-find-declaration :wk "Go to Declaration")
