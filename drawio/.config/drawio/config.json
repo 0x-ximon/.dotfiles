@@ -1,0 +1,15 @@
+{
+  "defaultFonts": ["Iosevka NF", "FiraCode Nerd Font", "JetBrainsMono NF"],
+  "defaultColors": [
+    "light-dark(#000000,#FFFFFF)",
+    "light-dark(#E0E6EB,#59636E)",
+    "light-dark(#80CCFF,#0969DA)",
+    "light-dark(#6FDD8B,#1A7F37)",
+    "light-dark(#EAC54F,#9A6700)",
+    "light-dark(#FFABA8,#CF222E)",
+    "light-dark(#D8B9FF,#8250DF)"
+  ],
+  "customFonts": [],
+  "presetColors": [],
+  "customPresetColors": []
+}
