@@ -33,8 +33,8 @@
 
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"!"   '(vterm-other-window :wk "Terminal")
-	"."   '(neotree-toggle :wk "Explorer")
+	"."   '(vterm-other-window :wk "Terminal")
+	"!"   '(neotree-toggle :wk "Explorer")
 	"/"   '(consult-grep :wk "Grep")
 	"%"   '(magit :wk "Magit"))
 

@@ -36,7 +36,7 @@ vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 -------------------------------------------------------------------------------
 
 -- Open Terminal
-vim.keymap.set("n", "<leader>!", "<cmd>terminal<CR>", { desc = "Terminal" })
+vim.keymap.set("n", "<leader>.", "<cmd>terminal<CR>", { desc = "Terminal" })
 
 -- Creating and deleting windows
 vim.keymap.set("n", "<leader>_", "<C-W>s", { desc = "Split window below" })

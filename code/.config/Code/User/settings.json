@@ -93,11 +93,11 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["<leader>", "!"],
+      "before": ["<leader>", "."],
       "commands": ["workbench.action.createTerminalEditor"]
     },
     {
-      "before": ["<leader>", "."],
+      "before": ["<leader>", "!"],
       "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     {
