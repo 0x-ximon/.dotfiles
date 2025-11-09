@@ -6,5 +6,6 @@
 (require 'init-evil)
 (require 'init-org)
 (require 'init-completion)
+(require 'init-apheleia)
 
 (provide 'ximon-plugins)

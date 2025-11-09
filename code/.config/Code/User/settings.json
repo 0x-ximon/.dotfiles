@@ -200,7 +200,8 @@
   "codeium.enableConfig": {
     "*": true,
     "markdown": true,
-    "plaintext": true
+    "plaintext": true,
+    "proto": true
   },
   "github.copilot.enable": {
     "*": true,

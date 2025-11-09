@@ -7,7 +7,7 @@ return {
             cpp = { "clang-format" },
             solidity = { "forge_fmt" },
             go = { "goimports", "gofmt" },
-            rust = { "rustfmt", lsp_format = "fallback" },
+            rust = { "rustfmt" },
             typescript = { "biome", "deno_fmt", "prettierd", "prettier", stop_after_first = true },
             json = { "biome", "deno_fmt", "prettierd", "prettier", stop_after_first = true },
         },
