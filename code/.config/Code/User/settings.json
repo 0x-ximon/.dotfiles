@@ -26,6 +26,30 @@
     "source.organizeImports.biome": "explicit"
   },
 
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
+
   "window.restoreWindows": "none",
   "window.menuBarVisibility": "toggle",
   "window.autoDetectColorScheme": true,
@@ -190,6 +214,7 @@
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
 
+  "solidity.formatter": "forge",
   "dotenv.enableAutocloaking": false,
   "biome.suggestInstallingGlobally": false,
   "python.analysis.typeCheckingMode": "standard",
@@ -210,53 +235,7 @@
     "scminput": false,
     "mdx": false
   },
-  "editor.tokenColorCustomizations": {
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
-    },
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
-    },
-    "textMateRules": []
-  },
 
-  // Language Specific Settings
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[mdx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
-  },
   "better-comments.tags": [
     {
       "tag": "TODO",
@@ -278,7 +257,7 @@
     },
     {
       "tag": "WARN",
-      "color": "#FF8C00",
+      "color": "#FBBF24",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -312,5 +291,54 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+
+  // Language Specific Settings
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on"
+  },
+  "workbench.editorAssociations": {
+    "*.png": "editor.excalidraw"
+  },
+  "excalidraw.theme": "auto",
+  "[sql]": {
+    "editor.defaultFormatter": "ms-ossdata.vscode-pgsql"
+  },
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "E8298679-669A-4B62-9BBE-4F6CE1A6231B",
+      "isDefault": true
+    }
+  ],
+  "[yaml]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "scm.repositories.selectionMode": "single",
+  "docker.extension.enableComposeLanguageServer": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }

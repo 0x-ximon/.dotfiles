@@ -43,7 +43,7 @@
   (add-to-list 'eglot-server-programs
                '(rust-mode . ("rust-analyzer")))
   (add-to-list 'eglot-server-programs
-               '(solidity-mode . ("nomicfoundation-solidity-language-server" "--stdio")))
+               '(solidity-mode . ("vscode-solidity-server" "--stdio" )))
   (add-to-list 'eglot-server-programs
                '(typescript-mode . ("typescript-language-server" "--stdio")))
   (add-to-list 'eglot-server-programs
@@ -52,7 +52,7 @@
 (setq-default eglot-workspace-configuration
 			  '(:harper-ls (:linters 
 							(:Spaces :json-false
-							 :LongSentences :json-false))))
+									 :LongSentences :json-false))))
 
 (use-package eldoc-box
   :ensure t
