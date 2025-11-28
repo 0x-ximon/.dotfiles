@@ -16,7 +16,6 @@ vim.keymap.set("n", "K", "{", { desc = "Go to the previous line" })
 
 -- Remap Alt + 'X' similiar to KEYMAPS
 vim.keymap.set("n", "<A-x>", ":", { noremap = true })
-vim.keymap.set("i", "<A-x>", "<C-o>:", { noremap = true })
 
 -- Use Double Escape to exit Terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
@@ -53,19 +52,6 @@ vim.keymap.set("n", "<C-h>", "<C-w>H", { desc = "Move window to the left" })
 vim.keymap.set("n", "<C-l>", "<C-w>L", { desc = "Move window to the right" })
 vim.keymap.set("n", "<C-j>", "<C-w>J", { desc = "Move window to the bottom" })
 vim.keymap.set("n", "<C-k>", "<C-w>K", { desc = "Move window to the top" })
-
---  Use CTRL+<ArrowKey> to resize the current window
-vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -1<CR>", { desc = "Decrease window width" })
-vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +1<CR>", { desc = "Increase window width" })
-vim.keymap.set("n", "<C-Down>", "<cmd>resize -1<CR>", { desc = "Decrease window height" })
-vim.keymap.set("n", "<C-Up>", "<cmd>resize +1<CR>", { desc = "Increase window height" })
-
--------------------------------------------------------------------------------
-------------------------------- BUFFER KEYMAPS --------------------------------
--------------------------------------------------------------------------------
-
-vim.keymap.set("n", "[b", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
-vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 
 -------------------------------------------------------------------------------
 -------------------------------- TABS KEYMAPS ---------------------------------

@@ -55,17 +55,6 @@
     "C-j" '(evil-window-move-very-bottom :wk "Move window to very bottom")
     "C-k" '(evil-window-move-very-top :wk "Move window to very top"))
 
-  (general-def 'normal 
-    "C-<left>" '(evil-window-decrease-width :wk "Decrease window width")
-    "C-<right>" '(evil-window-increase-width :wk "Increase window width")
-    "C-<down>" '(evil-window-decrease-height :wk "Decrease window height")
-    "C-<up>" '(evil-window-increase-height :wk "Increase window height"))
-
-  ;; Buffer Keymaps
-  (general-def 'normal
-    "[b" '(previous-buffer :wk "Previous buffer")
-    "]b" '(next-buffer :wk "Next buffer"))
-
   (ximon/leader
     "b" '(:ignore t :wk "Buffer")
     "b s" '(scratch-buffer :wk "scratch buffer")

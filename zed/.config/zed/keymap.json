@@ -1,0 +1,61 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "space /": "workspace::NewSearch",
+      "space %": "git_panel::ToggleFocus",
+      "space ~": "project_panel::ToggleFocus",
+
+      "space (": "workspace::ToggleLeftDock",
+      "space )": "workspace::ToggleRightDock"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "?": "editor::Hover",
+      "!": "editor::Hover",
+
+      "U": "editor::Redo",
+      "esc": "buffer_search::Dismiss",
+      "alt-x": "command_palette::Toggle",
+
+      "[ tab": "pane::ActivateNextItem",
+      "] tab": "pane::ActivatePreviousItem",
+
+      "H": "editor::MoveToBeginningOfLine",
+      "L": "editor::MoveToEndOfLine",
+      "J": "editor::MoveToEndOfParagraph",
+      "K": "editor::MoveToStartOfParagraph",
+
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-k": "workspace::ActivatePaneUp",
+
+      "ctrl-h": "workspace::MovePaneLeft",
+      "ctrl-l": "workspace::MovePaneRight",
+      "ctrl-j": "workspace::MovePaneDown",
+      "ctrl-k": "workspace::MovePaneUp",
+
+      "space l a": "editor::ToggleCodeActions",
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem",
+      "space space": "file_finder::Toggle",
+
+      "space .": "workspace::NewCenterTerminal",
+      "space |": "pane::SplitRight",
+      "space _": "pane::SplitDown",
+
+      "gd": "editor::GoToDefinition",
+      "ge": "editor::GoToDeclaration",
+      "gr": "editor::FindAllReferences",
+      "gi": "editor::GoToImplementation",
+      "gt": "editor::GoToTypeDefinition"
+    }
+  }
+]
