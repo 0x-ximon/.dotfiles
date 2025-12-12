@@ -214,6 +214,7 @@
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
 
+  "zig.zls.enabled": "on",
   "solidity.formatter": "forge",
   "dotenv.enableAutocloaking": false,
   "biome.suggestInstallingGlobally": false,
@@ -337,8 +338,5 @@
   ],
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": true
-  },
-  "scm.repositories.selectionMode": "single",
-  "docker.extension.enableComposeLanguageServer": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  }
 }

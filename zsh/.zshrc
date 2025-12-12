@@ -26,6 +26,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+export DOTNET_ROOT="$HOME/.dotnet"
+
 # PATH Configurations
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.mason/bin"

@@ -40,7 +40,9 @@ return {
         "stevearc/oil.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         lazy = false,
-        opts = {},
+        opts = {
+            default_file_explorer = false,
+        },
         keys = {
             {
                 "-",
@@ -48,6 +50,25 @@ return {
                 desc = "Oil Explore",
             },
         },
+    },
+    {
+        "mikavilpas/yazi.nvim",
+        version = "*",
+        event = "VeryLazy",
+        dependencies = { { "nvim-lua/plenary.nvim", lazy = true } },
+        opts = {
+            open_for_directories = true,
+        },
+        keys = {
+            {
+                "<leader>=",
+                "<cmd>Yazi<cr>",
+                desc = "Yazi Explore",
+            },
+        },
+        init = function()
+            vim.g.loaded_netrwPlugin = 1
+        end,
     },
 
     {
