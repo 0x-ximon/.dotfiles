@@ -1,17 +1,5 @@
 [
   {
-    "context": "Workspace",
-    "bindings": {
-      "space /": "workspace::NewSearch",
-      "space %": "git_panel::ToggleFocus",
-      "space ~": "project_panel::ToggleFocus",
-
-      "space (": "workspace::ToggleLeftDock",
-      "space )": "workspace::ToggleRightDock"
-    }
-  },
-
-  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "?": "editor::Hover",
@@ -50,6 +38,13 @@
       "space .": "workspace::NewCenterTerminal",
       "space |": "pane::SplitRight",
       "space _": "pane::SplitDown",
+
+      "space /": "workspace::NewSearch",
+      "space %": "git_panel::ToggleFocus",
+      "space ~": "project_panel::ToggleFocus",
+
+      "space (": "workspace::ToggleLeftDock",
+      "space )": "workspace::ToggleRightDock",
 
       "gd": "editor::GoToDefinition",
       "ge": "editor::GoToDeclaration",
