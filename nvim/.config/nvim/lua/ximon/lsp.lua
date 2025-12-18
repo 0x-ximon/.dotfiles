@@ -11,14 +11,14 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.enable({
-    "lua_ls",
-    "ts_ls",
-    "denols",
-    "clangd",
     "rust_analyzer",
-    "zls",
-    "pyright",
-    "ruff",
     "gopls",
-    "solidity_ls",
+    "zls",
+    "solidity_ls_nomicfoundation",
+
+    "ts_ls",
+    "jdtls",
+
+    "lua_ls",
+    "markdown_oxide",
 })
