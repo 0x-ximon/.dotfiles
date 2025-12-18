@@ -29,6 +29,12 @@
   },
 
   "languages": {
-    "MDX": { "formatter": "prettier" }
+    "Zig": {
+      "formatter": {
+        "language_server": {
+          "name": "zls"
+        }
+      }
+    }
   }
 }

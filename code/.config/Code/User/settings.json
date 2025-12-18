@@ -213,7 +213,6 @@
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
 
-  "zig.zls.enabled": "on",
   "solidity.formatter": "forge",
   "dotenv.enableAutocloaking": false,
   "biome.suggestInstallingGlobally": false,
@@ -299,9 +298,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[solidity]": {
-    "editor.defaultFormatter": "JuanBlanco.solidity"
-  },
 
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -330,5 +326,6 @@
     "*": true,
     "postcss": true,
     "markdown": true
-  }
+  },
+  "haskell.manageHLS": "PATH"
 }
