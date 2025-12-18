@@ -41,7 +41,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
         lazy = false,
         opts = {
-            default_file_explorer = false,
+            default_file_explorer = true,
         },
         keys = {
             {
@@ -51,26 +51,6 @@ return {
             },
         },
     },
-    {
-        "mikavilpas/yazi.nvim",
-        version = "*",
-        event = "VeryLazy",
-        dependencies = { { "nvim-lua/plenary.nvim", lazy = true } },
-        opts = {
-            open_for_directories = true,
-        },
-        keys = {
-            {
-                "<leader>=",
-                "<cmd>Yazi<cr>",
-                desc = "Yazi Explore",
-            },
-        },
-        init = function()
-            vim.g.loaded_netrwPlugin = 1
-        end,
-    },
-
     {
         "f-person/auto-dark-mode.nvim",
         opts = {

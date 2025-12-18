@@ -1,20 +1,29 @@
 vim.api.nvim_create_autocmd("FileType", {
     pattern = {
-        "python",
-        "typescript",
         "rust",
         "go",
-        "java",
-        "cpp",
         "zig",
-        "sql",
-        "assembly",
+
+        "cpp",
+        "cs",
         "c",
-        "gleam",
-        "solidity",
+
+        "asm",
+        "sql",
+
+        "java",
         "haskell",
-        "c_sharp",
+
+        "solidity",
+        "gleam",
+
+        "typescript",
+        "python",
+
+        "lua",
+        "lisp",
     },
+
     callback = function()
         vim.treesitter.start()
     end,
