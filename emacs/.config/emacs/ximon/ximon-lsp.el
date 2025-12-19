@@ -1,10 +1,13 @@
 (use-package haskell-mode
   :ensure t)
 
+(use-package move-mode
+  :ensure t)
+
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode csharp-mode haskell-mode text-mode) . eglot-ensure)
+  ((c-mode c++-mode csharp-mode move-mode haskell-mode python-mode text-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)      ;; No event buffers (Lsp server logs)
@@ -18,12 +21,16 @@
                '(csharp-mode . ( "roslyn" "--logLevel" "Information" "--extensionLogDirectory" "/tmp/roslyn/logs" "--stdio" )))
   (add-to-list 'eglot-server-programs
 			   '(c-mode . ("clangd")))
+
   (add-to-list 'eglot-server-programs
-			   '(asm-mode . ("asm-lsp")))
-  (add-to-list 'eglot-server-programs
-			   '(asm-mode . ("ruff" "server")))
+			   '(move-mode . ("move-analyzer")))
+
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
+
+  (add-to-list 'eglot-server-programs
+			   '(python-mode . ("ruff" "server")))
+
   (add-to-list 'eglot-server-programs
 			   '(text-mode . ("harper-ls" "--stdio"))))
 
