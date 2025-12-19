@@ -2,14 +2,12 @@ return {
     "stevearc/conform.nvim",
     opts = {
         formatters_by_ft = {
-            lua = { "stylua" },
-            python = { "ruff" },
-            cpp = { "clang-format" },
             solidity = { "forge_fmt" },
-            go = { "goimports", "gofmt" },
+            go = { "gofmt" },
             rust = { "rustfmt" },
-            typescript = { "biome", "prettierd", "prettier", stop_after_first = true },
-            json = { "biome", "deno_fmt", "prettierd", "prettier", stop_after_first = true },
+            typescript = { "biome" },
+            json = { "biome" },
+            lua = { "stylua" },
         },
         format_on_save = {
             timeout_ms = 500,
