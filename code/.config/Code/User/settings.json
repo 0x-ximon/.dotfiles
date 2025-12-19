@@ -212,9 +212,10 @@
   "oil-code.hasNerdFont": true,
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
-
-  "solidity.formatter": "forge",
   "dotenv.enableAutocloaking": false,
+
+  "haskell.manageHLS": "PATH",
+  "solidity.formatter": "forge",
   "biome.suggestInstallingGlobally": false,
   "python.analysis.typeCheckingMode": "standard",
   "excalidraw.theme": "auto",
@@ -298,7 +299,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -326,6 +329,5 @@
     "*": true,
     "postcss": true,
     "markdown": true
-  },
-  "haskell.manageHLS": "PATH"
+  }
 }
