@@ -1,13 +1,25 @@
+(use-package rust-mode
+  :ensure t)
+
+(use-package go-mode
+  :ensure t)
+
+(use-package zig-mode
+  :ensure t)
+
+(use-package typescript-mode
+  :ensure t)
+
 (use-package haskell-mode
   :ensure t)
 
-(use-package move-mode
+(use-package circom-mode
   :ensure t)
 
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode csharp-mode move-mode haskell-mode python-mode text-mode) . eglot-ensure)
+  ((c-mode c++-mode csharp-mode circom-mode haskell-mode python-mode text-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)      ;; No event buffers (Lsp server logs)
@@ -23,7 +35,7 @@
 			   '(c-mode . ("clangd")))
 
   (add-to-list 'eglot-server-programs
-			   '(move-mode . ("move-analyzer")))
+			   '(circom-mode . ("circom-lsp")))
 
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))

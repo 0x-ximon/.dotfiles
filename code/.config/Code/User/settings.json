@@ -322,8 +322,8 @@
   "[yaml]": {
     "diffEditor.ignoreTrimWhitespace": true
   },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "codeium.enableConfig": {
     "*": true,

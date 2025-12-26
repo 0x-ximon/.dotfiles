@@ -36,6 +36,7 @@ export PATH="$PATH:$HOME/.go/bin"
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$HOME/.solana/bin"
+export PATH="$PATH:$HOME/.bitcoin/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
 eval "$(zoxide init zsh)"
@@ -53,8 +54,8 @@ alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovim . --fork"
 alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && emacsclient -cnqu -a 'emacs' ." 
 
 alias dotfiles="code ~/.dotfiles"
-alias playground="cd ~/Projects/Playground/ && neovim . --fork"
-alias study="cd ~/Notes/Study/ && emacsclient -cnqu -a 'emacs' ."
+alias playground="cd ~/Projects/Personal/playground && neovim . --fork"
+alias study="cd ~/Notes/Personal/study && emacsclient -cnqu -a 'emacs' ."
 alias learn="playground && study && exit"
 
 alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
