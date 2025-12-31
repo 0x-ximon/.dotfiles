@@ -39,4 +39,4 @@
 (elpaca elpaca-use-package 
   (elpaca-use-package-mode)) 
 
-(provide 'ximon-core)
+(provide 'ximon-elpaca)

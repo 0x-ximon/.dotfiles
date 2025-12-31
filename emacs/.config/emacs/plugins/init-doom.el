@@ -14,6 +14,8 @@
   :custom
   (dashboard-center-content t)                            ;; Center the content
   (dashboard-vertically-center-content t)                 ;; Vertically center the content
+  (dashboard-path-style 'truncate-middle)                 ;; How to handle long path names 
+  (dashboard-path-max-length 50)                          ;; Maximum length for path names 
 
   (dashboard-display-icons-p t)                           ;; display icons on both GUI and terminal
   (dashboard-icon-type 'nerd-icons)                       ;; use `nerd-icons' package

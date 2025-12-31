@@ -15,6 +15,7 @@
   (electric-indent-mode nil)                  ;; Turn off the weird indenting that Emacs does by default.
 
   (tab-width 4)                               ;; Set tab width to 4 spaces
+  (indent-tabs-mode nil)                      ;; Configure Tabs to work as expected
   (scroll-margin 10)                          ;; Keep some space at the top and bottom of the window when scrolling
   (scroll-conservatively 10)                  ;; Smooth scrolling
   (global-auto-revert-mode t)                 ;; Automatically reload file and show changes if the file has changed

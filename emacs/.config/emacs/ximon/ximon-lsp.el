@@ -22,10 +22,11 @@
   ((c-mode c++-mode csharp-mode circom-mode haskell-mode python-mode text-mode) . eglot-ensure)
 
   :custom
-  (eglot-events-buffer-size 0)      ;; No event buffers (Lsp server logs)
-  (eglot-autoshutdown t)            ;; Shutdown unused servers.
-  (eglot-report-progress nil)       ;; Disable lsp server logs (Don't show lsp messages at the bottom, java)
-
+  (eglot-events-buffer-size 0)                                 ;; No event buffers (Lsp server logs)
+  (eglot-autoshutdown t)                                       ;; Shutdown unused servers.
+  (eglot-report-progress nil)                                  ;; Disable lsp server logs (Don't show lsp messages at the bottom, java)
+  (eglot-ignored-server-capabilities '(:inlayHintProvider))    ;; Disable Inlay Hints
+  
   :config
   (add-to-list 'eglot-server-programs
                '(c++-mode . ("clangd")))
@@ -35,7 +36,7 @@
 			   '(c-mode . ("clangd")))
 
   (add-to-list 'eglot-server-programs
-			   '(circom-mode . ("circom-lsp")))
+			   '(circom-mode . ("ccls")))
 
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
