@@ -1,6 +1,6 @@
 require("ximon.lazy")
 require("ximon.options")
 require("ximon.keymaps")
-require("ximon.autocmds")
 require("ximon.lsp")
 require("ximon.diagnostics")
+require("ximon.autocmds")

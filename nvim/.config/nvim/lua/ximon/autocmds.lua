@@ -1,3 +1,4 @@
+-- Enable Tree-sitter on all languages
 vim.api.nvim_create_autocmd("FileType", {
     pattern = {
         "rust",
@@ -26,6 +27,32 @@ vim.api.nvim_create_autocmd("FileType", {
 
     callback = function()
         vim.treesitter.start()
+    end,
+})
+
+-- Configure Indent Levels for Different languages
+local indent_group = vim.api.nvim_create_augroup("LanguageIndent", { clear = true })
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "rust", "go", "zig", "c", "cpp", "cs", "solidity" },
+    group = indent_group,
+
+    callback = function()
+        vim.opt_local.shiftwidth = 4
+        vim.opt_local.tabstop = 4
+        vim.opt_local.softtabstop = 4
+        vim.opt_local.expandtab = true
+    end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "typescript", "typescriptreact", "javascript" },
+    group = indent_group,
+    callback = function()
+        vim.opt_local.shiftwidth = 2
+        vim.opt_local.tabstop = 2
+        vim.opt_local.softtabstop = 2
+        vim.opt_local.expandtab = true
     end,
 })
 
