@@ -37,6 +37,7 @@ export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$HOME/.solana/bin"
 export PATH="$PATH:$HOME/.bitcoin/bin"
+export PATH="$PATH:$HOME/.tinytex/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
 eval "$(zoxide init zsh)"
