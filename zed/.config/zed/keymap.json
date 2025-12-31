@@ -1,5 +1,11 @@
 [
   {
+    "bindings": {
+      "ctrl-o": "workspace::Open"
+    }
+  },
+
+  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "?": "editor::Hover",

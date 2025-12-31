@@ -53,6 +53,7 @@
   "window.menuBarVisibility": "toggle",
   "window.autoDetectColorScheme": true,
 
+  "workbench.startupEditor": "none",
   "workbench.panel.showLabels": false,
   "workbench.activityBar.location": "top",
   "workbench.iconTheme": "material-icon-theme",
@@ -227,7 +228,7 @@
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
     "scminput": false,
     "mdx": false
   },
