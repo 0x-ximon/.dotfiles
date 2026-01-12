@@ -1,7 +1,7 @@
 [
   {
     "bindings": {
-      "ctrl-o": "workspace::Open"
+      "ctrl-f": "workspace::Open"
     }
   },
 

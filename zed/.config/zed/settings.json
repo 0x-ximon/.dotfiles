@@ -30,9 +30,12 @@
   },
 
   "languages": {
-    "Circom": {
-      "language_servers": ["ccls"],
-      "formatter": "language_server"
+    "Zig": {
+      "formatter": {
+        "language_server": {
+          "name": "zls"
+        }
+      }
     },
 
     "Solidity": {
@@ -44,10 +47,10 @@
       }
     },
 
-    "Zig": {
+    "Gleam": {
       "formatter": {
         "language_server": {
-          "name": "zls"
+          "name": "gleam"
         }
       }
     }

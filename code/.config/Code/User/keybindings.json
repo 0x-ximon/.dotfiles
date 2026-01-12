@@ -40,7 +40,7 @@
     "command": "workbench.action.moveEditorToBelowGroup"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+f",
     "command": "workbench.action.files.openFolder",
     "when": "true"
   }

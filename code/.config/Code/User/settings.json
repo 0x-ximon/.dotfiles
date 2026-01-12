@@ -6,6 +6,7 @@
   "chat.commandCenter.enabled": false,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 16,
+  "git.openRepositoryInParentFolders": "always",
   "search.searchEditor.focusResultsOnSearch": true,
 
   "editor.fontSize": 16,
@@ -216,15 +217,24 @@
   "dotenv.enableAutocloaking": false,
 
   "haskell.manageHLS": "PATH",
-  "solidity.formatter": "forge",
   "biome.suggestInstallingGlobally": false,
   "python.analysis.typeCheckingMode": "standard",
   "excalidraw.theme": "auto",
-  "svelte.enable-ts-plugin": true,
 
   "files.associations": {
     ".env*": "dotenv"
   },
+
+  // TODO: Remove when material icon theme adds official bruno folder icon
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "bruno-collection",
+      "base": "connection",
+      "color": "orange-500",
+      "lightColor": "light-orange-700",
+      "folderNames": [".bruno", "bruno"]
+    }
+  ],
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -299,6 +309,9 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "[haskell]": {
     "editor.defaultFormatter": "haskell.haskell"
