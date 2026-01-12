@@ -7,6 +7,10 @@
 (use-package zig-mode
   :ensure t)
 
+(use-package gleam-ts-mode
+  :ensure t
+  :mode (rx ".gleam" eos))
+
 (use-package typescript-mode
   :ensure t)
 
@@ -19,7 +23,7 @@
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode csharp-mode circom-mode haskell-mode python-mode text-mode) . eglot-ensure)
+  ((c-mode c++-mode csharp-mode circom-mode haskell-mode python-mode gleam-ts-mode text-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)                                 ;; No event buffers (Lsp server logs)
@@ -37,6 +41,9 @@
 
   (add-to-list 'eglot-server-programs
 			   '(circom-mode . ("ccls")))
+  
+  (add-to-list 'eglot-server-programs
+			   '(gleam-ts-mode . ("gleam" "lsp")))
 
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))

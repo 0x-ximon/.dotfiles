@@ -13,6 +13,7 @@ vim.lsp.config("*", {
 vim.lsp.config("lua_ls", {})
 vim.lsp.config("gopls", {})
 vim.lsp.config("zls", {})
+vim.lsp.config("dartls", {})
 vim.lsp.config("rust_analyzer", {})
 vim.lsp.config("markdown_oxide", {})
 vim.lsp.config("solidity_ls_nomicfoundation", {})
@@ -25,6 +26,7 @@ vim.lsp.enable({
     "rust_analyzer",
     "gopls",
     "zls",
+    "dartls",
 
     "jdtls",
     "solidity_ls_nomicfoundation",

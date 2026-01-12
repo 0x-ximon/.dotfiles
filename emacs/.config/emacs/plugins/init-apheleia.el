@@ -21,6 +21,9 @@
   (setf (alist-get 'ruff apheleia-formatters) '("ruff" "format" "-"))
   (setf (alist-get 'python-mode apheleia-mode-alist) 'ruff)
 
+  (setf (alist-get 'gleam apheleia-formatters) '("gleam" "format"))
+  (setf (alist-get 'gleam-ts-mode apheleia-mode-alist) 'gleam)
+
   (setf (alist-get 'asm-mode apheleia-mode-alist) nil))
 
 (provide 'init-apheleia)

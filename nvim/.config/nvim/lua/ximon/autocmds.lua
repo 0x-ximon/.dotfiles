@@ -4,25 +4,29 @@ vim.api.nvim_create_autocmd("FileType", {
         "rust",
         "go",
         "zig",
+        "solidity",
 
         "cpp",
         "cs",
         "c",
+        "circom",
 
-        "asm",
-        "sql",
-
-        "java",
-        "haskell",
-
-        "solidity",
+        "dart",
         "gleam",
 
         "typescript",
         "python",
 
+        "java",
+        "haskell",
+
+        "asm",
+        "sql",
+
         "lua",
         "lisp",
+
+        "proto",
     },
 
     callback = function()
