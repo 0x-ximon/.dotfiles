@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Ghostty
+Comment=Ghostty Terminal
+Icon=ghostty
+Exec=/opt/ghostty/ghostty.AppImage
+Terminal=false
+Categories=Utility;Development;

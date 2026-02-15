@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
 source "$HOME/.ghcup/env" 
+source "$HOME/.bun/_bun"
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
@@ -38,6 +39,7 @@ export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$HOME/.solana/bin"
 export PATH="$PATH:$HOME/.bitcoin/bin"
 export PATH="$PATH:$HOME/.tinytex/bin"
+export PATH="$PATH:$HOME/.bun/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
 eval "$(zoxide init zsh)"
@@ -63,3 +65,4 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y 
 
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
