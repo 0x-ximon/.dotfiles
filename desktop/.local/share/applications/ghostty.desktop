@@ -7,3 +7,4 @@ Icon=ghostty
 Exec=/opt/ghostty/ghostty.AppImage
 Terminal=false
 Categories=Utility;Development;
+StartupWMClass=com.mitchellh.ghostty
