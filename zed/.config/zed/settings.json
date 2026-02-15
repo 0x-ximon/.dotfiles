@@ -17,8 +17,8 @@
 
   "theme": {
     "mode": "system",
-    "light": "Github Light",
-    "dark": "Github Dark"
+    "light": "GitHub Light",
+    "dark": "GitHub Dark"
   },
 
   "vim": {
@@ -38,11 +38,12 @@
       }
     },
 
-    "Solidity": {
+    "Kotlin": {
+      "language_servers": ["kotlin-lsp"],
       "formatter": {
         "external": {
-          "command": "forge",
-          "arguments": ["fmt", "--raw", "-"]
+          "command": "ktfmt",
+          "arguments": ["--kotlinlang-style", "-"]
         }
       }
     },
@@ -51,6 +52,25 @@
       "formatter": {
         "language_server": {
           "name": "gleam"
+        }
+      }
+    },
+
+    "Python": {
+      "language_servers": ["ty", "!basedpyright"],
+      "formatter": {
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "-"]
+        }
+      }
+    },
+
+    "Solidity": {
+      "formatter": {
+        "external": {
+          "command": "forge",
+          "arguments": ["fmt", "--raw", "-"]
         }
       }
     }
