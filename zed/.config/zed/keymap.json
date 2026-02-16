@@ -15,8 +15,8 @@
       "esc": "buffer_search::Dismiss",
       "alt-x": "command_palette::Toggle",
 
-      "[ tab": "pane::ActivateNextItem",
-      "] tab": "pane::ActivatePreviousItem",
+      "[ tab": "pane::ActivatePreviousItem",
+      "] tab": "pane::ActivateNextItem",
 
       "H": "editor::MoveToBeginningOfLine",
       "L": "editor::MoveToEndOfLine",
