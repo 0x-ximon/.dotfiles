@@ -1,0 +1,12 @@
+# UI
+font-size = 14
+font-family = FiraCode Nerd Font
+theme = dark:GitHub Dark Default,light:GitHub Light Default
+
+# Configurations
+maximize = true
+bell-features = no-system,no-audio,attention,no-title,no-border
+
+# Keymaps
+keybind = ctrl+shift+-=new_split:down
+keybind = ctrl+shift+\=new_split:right
