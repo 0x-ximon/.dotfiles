@@ -1,5 +1,6 @@
 # UI
 font-size = 14
+bold-color = bright
 font-family = FiraCode Nerd Font
 theme = light:Adwaita,dark:Adwaita Dark
 
