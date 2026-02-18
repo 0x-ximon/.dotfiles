@@ -18,6 +18,9 @@
       "[ tab": "pane::ActivatePreviousItem",
       "] tab": "pane::ActivateNextItem",
 
+      "alt-|": "pane::SplitRight",
+      "alt-_": "pane::SplitDown",
+
       "H": "editor::MoveToBeginningOfLine",
       "L": "editor::MoveToEndOfLine",
       "J": "editor::MoveToEndOfParagraph",
@@ -28,10 +31,10 @@
       "alt-j": "workspace::ActivatePaneDown",
       "alt-k": "workspace::ActivatePaneUp",
 
-      "ctrl-h": "workspace::MovePaneLeft",
-      "ctrl-l": "workspace::MovePaneRight",
-      "ctrl-j": "workspace::MovePaneDown",
-      "ctrl-k": "workspace::MovePaneUp",
+      "alt-up": "workspace::MovePaneUp",
+      "alt-down": "workspace::MovePaneDown",
+      "alt-left": "workspace::MovePaneLeft",
+      "alt-right": "workspace::MovePaneRight",
 
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
@@ -42,9 +45,6 @@
       "space space": "file_finder::Toggle",
 
       "space .": "workspace::NewCenterTerminal",
-      "space |": "pane::SplitRight",
-      "space _": "pane::SplitDown",
-
       "space /": "workspace::NewSearch",
       "space %": "git_panel::ToggleFocus",
       "space ~": "project_panel::ToggleFocus",
