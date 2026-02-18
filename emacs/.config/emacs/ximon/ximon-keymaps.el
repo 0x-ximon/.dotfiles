@@ -38,22 +38,24 @@
 	"/"   '(consult-grep :wk "Grep")
 	"%"   '(magit :wk "Magit"))
 
-  ;; Window Keymaps
-  (ximon/leader
-    "_" '(evil-window-split :wk "Split Window Below")
-    "|" '(evil-window-vsplit :wk "Split Window Right"))
+  ;; Split Keymaps
+  (general-def normal
+    "M-_" '(evil-window-split :wk "Split Window Below")
+    "M-|" '(evil-window-vsplit :wk "Split Window Right"))
 
+  ;; Navigation Keymaps 
   (general-def normal 
     "M-h" '(windmove-left :wk "Move to window left")
     "M-l" '(windmove-right :wk "Move to window right")
     "M-j" '(windmove-down :wk "Move to window below")
     "M-k" '(windmove-up :wk "Move to window above"))
 
+  ;; Move Keymaps 
   (general-def 'normal
-    "C-h" '(evil-window-move-far-left :wk "Move window to far left")
-    "C-l" '(evil-window-move-far-right :wk "Move window to far right")
-    "C-j" '(evil-window-move-very-bottom :wk "Move window to very bottom")
-    "C-k" '(evil-window-move-very-top :wk "Move window to very top"))
+    "M-<up>" '(evil-window-move-very-top :wk "Move window to top")
+    "M-<down>" '(evil-window-move-very-bottom :wk "Move window to bottom")
+    "M-<left>" '(evil-window-move-far-left :wk "Move window to far left")
+    "M-<right>" '(evil-window-move-far-right :wk "Move window to far right"))
 
   (ximon/leader
     "b" '(:ignore t :wk "Buffer")
