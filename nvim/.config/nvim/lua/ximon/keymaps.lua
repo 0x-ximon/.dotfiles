@@ -38,20 +38,20 @@ vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 vim.keymap.set("n", "<leader>.", "<cmd>terminal<CR>", { desc = "Terminal" })
 
 -- Creating and deleting windows
-vim.keymap.set("n", "<leader>_", "<C-W>s", { desc = "Split window below" })
-vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
+vim.keymap.set("n", "<A-_>", ":split<CR>", { desc = "Split window below" })
+vim.keymap.set("n", "<A-|>", ":vsplit<CR>", { desc = "Split window right" })
 
 --  Use CTRL+<hjkl> to switch between windows
+vim.keymap.set("n", "<A-k>", "<C-w><C-k>", { desc = "Move to window above" })
+vim.keymap.set("n", "<A-j>", "<C-w><C-j>", { desc = "Move to window below" })
 vim.keymap.set("n", "<A-h>", "<C-w><C-h>", { desc = "Move to window left" })
 vim.keymap.set("n", "<A-l>", "<C-w><C-l>", { desc = "Move to window right" })
-vim.keymap.set("n", "<A-j>", "<C-w><C-j>", { desc = "Move to window below" })
-vim.keymap.set("n", "<A-k>", "<C-w><C-k>", { desc = "Move to window above" })
 
 --  Use CTRL+SHIFT+<hjkl> to move the current window
-vim.keymap.set("n", "<C-h>", "<C-w>H", { desc = "Move window to the left" })
-vim.keymap.set("n", "<C-l>", "<C-w>L", { desc = "Move window to the right" })
-vim.keymap.set("n", "<C-j>", "<C-w>J", { desc = "Move window to the bottom" })
-vim.keymap.set("n", "<C-k>", "<C-w>K", { desc = "Move window to the top" })
+vim.keymap.set("n", "<A-Up>", "<C-w>K", { desc = "Move window to the top" })
+vim.keymap.set("n", "<A-Down>", "<C-w>J", { desc = "Move window to the bottom" })
+vim.keymap.set("n", "<A-Left>", "<C-w>H", { desc = "Move window to the left" })
+vim.keymap.set("n", "<A-Right>", "<C-w>L", { desc = "Move window to the right" })
 
 -------------------------------------------------------------------------------
 -------------------------------- TABS KEYMAPS ---------------------------------
