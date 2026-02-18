@@ -14,8 +14,20 @@ shell-integration = none
 gtk-single-instance = false
 
 # Keymaps
-keybind = ctrl+shift+-=new_split:down
-keybind = ctrl+shift+\=new_split:right
+keybind = ctrl+alt+_=new_split:down
+keybind = ctrl+alt+|=new_split:right
+
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+j=goto_split:down
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+l=goto_split:right
+
+# NOTE: Ghostty currently doesn't support moving splits but if they did, it'd
+# probably look something like this:
+# keybind = ctrl+alt+arrow_up=move_split:up
+# keybind = ctrl+alt+arrow_down=move_split:down
+# keybind = ctrl+alt+arrow_left=move_split:left
+# keybind = ctrl+alt+arrow_right=move_split:right
 
 # Palette
 palette = 0=#000000
