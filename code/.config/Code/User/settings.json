@@ -24,7 +24,7 @@
   "editor.fontFamily": "'FiraCode Nerd Font'",
   "editor.codeActionsOnSave": {
     "source.fixAll.biome": "explicit",
-    "source.organizeImports.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
   },
 
   "editor.tokenColorCustomizations": {
@@ -68,146 +68,138 @@
     // General Keymaps
     {
       "before": ["U"],
-      "after": ["<C-r>"],
+      "after": ["<C-r>"]
     },
     {
       "before": ["H"],
-      "after": ["^"],
+      "after": ["^"]
     },
     {
       "before": ["L"],
-      "after": ["$"],
+      "after": ["$"]
     },
     {
       "before": ["J"],
-      "after": ["}"],
+      "after": ["}"]
     },
     {
       "before": ["K"],
-      "after": ["{"],
+      "after": ["{"]
     },
 
     // Layout Keymaps
     {
-      "before": ["<leader>", "_"],
-      "commands": ["workbench.action.splitEditorDown"],
-    },
-    {
-      "before": ["<leader>", "|"],
-      "commands": ["workbench.action.splitEditorRight"],
-    },
-    {
       "before": ["<leader>", "("],
-      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       "before": ["<leader>", ")"],
-      "commands": ["workbench.action.toggleAuxiliaryBar"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"]
     },
 
     // Quick Keymaps
     {
       "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"],
+      "commands": ["workbench.action.files.save"]
     },
     {
       "before": ["<leader>", "q"],
-      "commands": ["workbench.action.closeActiveEditor"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
 
     // QoL Keymaps
     {
       "before": ["<leader>", "<space>"],
-      "commands": ["workbench.action.quickOpen"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
       "before": ["<leader>", "."],
-      "commands": ["workbench.action.createTerminalEditor"],
+      "commands": ["workbench.action.createTerminalEditor"]
     },
     {
       "before": ["<leader>", "~"],
-      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     {
       "before": ["<leader>", "/"],
-      "commands": ["workbench.action.quickTextSearch"],
+      "commands": ["workbench.action.quickTextSearch"]
     },
     {
       "before": ["<leader>", "%"],
-      "commands": ["workbench.scm.focus"],
+      "commands": ["workbench.scm.focus"]
     },
     {
       "before": ["[", "<tab>"],
-      "commands": ["workbench.action.previousEditorInGroup"],
+      "commands": ["workbench.action.previousEditorInGroup"]
     },
     {
       "before": ["]", "<tab>"],
-      "commands": ["workbench.action.nextEditorInGroup"],
+      "commands": ["workbench.action.nextEditorInGroup"]
     },
     {
       "before": ["<leader>", "<tab>", "n"],
-      "commands": ["workbench.action.files.newUntitledFile"],
+      "commands": ["workbench.action.files.newUntitledFile"]
     },
 
     // LSP Keymaps
     {
       "before": ["?"],
-      "commands": ["editor.action.showHover"],
+      "commands": ["editor.action.showHover"]
     },
     {
       "before": ["!"],
-      "commands": ["editor.action.showHover"],
+      "commands": ["editor.action.showHover"]
     },
     {
       "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"],
+      "commands": ["editor.action.revealDefinition"]
     },
     {
       "before": ["g", "e"],
-      "commands": ["editor.action.revealDeclaration"],
+      "commands": ["editor.action.revealDeclaration"]
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"],
+      "commands": ["editor.action.goToReferences"]
     },
     {
       "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
       "before": ["g", "t"],
-      "commands": ["editor.action.goToTypeDefinition"],
+      "commands": ["editor.action.goToTypeDefinition"]
     },
     {
       "before": ["<leader>", "l", "a"],
-      "commands": ["editor.action.quickFix"],
+      "commands": ["editor.action.quickFix"]
     },
     {
       "before": ["<leader>", "l", "f"],
-      "commands": ["editor.action.format"],
+      "commands": ["editor.action.format"]
     },
     {
       "before": ["<leader>", "l", "r"],
-      "commands": ["editor.action.rename"],
+      "commands": ["editor.action.rename"]
     },
     {
       "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"],
+      "commands": ["editor.action.marker.prev"]
     },
     {
       "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"],
+      "commands": ["editor.action.marker.next"]
     },
 
     // Plugin Keymaps
     {
       "before": ["-"],
-      "commands": ["oil-code.open"],
+      "commands": ["oil-code.open"]
     },
     {
       "before": ["<CR>"],
-      "commands": ["oil-code.select"],
-    },
+      "commands": ["oil-code.select"]
+    }
   ],
 
   // Extensions settings
@@ -232,15 +224,15 @@
       "base": "connection",
       "color": "orange-500",
       "lightColor": "light-orange-700",
-      "folderNames": [".bruno", "bruno"],
-    },
+      "folderNames": [".bruno", "bruno"]
+    }
   ],
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false,
-    "mdx": false,
+    "mdx": false
   },
 
   "better-comments.tags": [
@@ -251,7 +243,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "BUG",
@@ -260,7 +252,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "WARN",
@@ -269,7 +261,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "INFO",
@@ -278,7 +270,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "TEST",
@@ -287,7 +279,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "PERF",
@@ -296,7 +288,7 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
+      "italic": false
     },
     {
       "tag": "HELP",
@@ -305,53 +297,55 @@
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
-      "italic": false,
-    },
+      "italic": false
+    }
   ],
 
   // Language Specific Settings
   "[typescript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome",
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode",
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "[haskell]": {
-    "editor.defaultFormatter": "haskell.haskell",
+    "editor.defaultFormatter": "haskell.haskell"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "on"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on",
-  },
-  "[sql]": {
-    "editor.defaultFormatter": "ms-ossdata.vscode-pgsql",
+    "editor.wordWrap": "on"
   },
   "[yaml]": {
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": true
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[java]": {
-    "editor.defaultFormatter": "josevseb.google-java-format-for-vs-code",
+    "editor.defaultFormatter": "josevseb.google-java-format-for-vs-code"
   },
   "java.format.settings.google.extra": "--aosp",
   "haskell.formattingProvider": "fourmolu",
@@ -361,6 +355,6 @@
     "https://www.schemastore.org/": true,
     "https://json.schemastore.org/": true,
     "https://json-schema.org/": true,
-    "https://biomejs.dev": true,
-  },
+    "https://biomejs.dev": true
+  }
 }

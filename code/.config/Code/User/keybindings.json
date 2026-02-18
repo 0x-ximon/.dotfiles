@@ -3,8 +3,23 @@
     "key": "alt+x",
     "command": "workbench.action.showCommands"
   },
+  {
+    "key": "ctrl+f",
+    "command": "workbench.action.files.openFolder",
+    "when": "true"
+  },
 
-  // Window Navigations
+  // Layout Keymaps
+  {
+    "key": "alt+shift+-",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "alt+shift+\\",
+    "command": "workbench.action.splitEditorRight"
+  },
+
+  // Navigations Keymaps
   {
     "key": "alt+h",
     "command": "workbench.action.navigateLeft"
@@ -24,24 +39,19 @@
 
   // Move Navigations
   {
-    "key": "ctrl+h",
+    "key": "alt+left",
     "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "ctrl+l",
+    "key": "alt+right",
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "ctrl+k",
+    "key": "alt+up",
     "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
-    "key": "ctrl+j",
+    "key": "alt+down",
     "command": "workbench.action.moveEditorToBelowGroup"
-  },
-  {
-    "key": "ctrl+f",
-    "command": "workbench.action.files.openFolder",
-    "when": "true"
   }
 ]
