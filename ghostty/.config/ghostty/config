@@ -8,6 +8,9 @@ theme = light:Adwaita,dark:Adwaita Dark
 maximize = true
 bell-features = no-system,no-audio,attention,no-title,no-border
 
+# NOTE: Disabling because I don't know how I feel about this feature yet.
+shell-integration = none 
+
 # Keymaps
 keybind = ctrl+shift+-=new_split:down
 keybind = ctrl+shift+\=new_split:right
