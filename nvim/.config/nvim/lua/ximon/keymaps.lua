@@ -39,7 +39,7 @@ vim.keymap.set("n", "<leader>.", "<cmd>terminal<CR>", { desc = "Terminal" })
 
 -- Creating and deleting windows
 vim.keymap.set("n", "<A-->", ":split<CR>", { desc = "Split window below" })
-vim.keymap.set("n", "<A-|>", ":vsplit<CR>", { desc = "Split window right" })
+vim.keymap.set("n", "<A-\\>", ":vsplit<CR>", { desc = "Split window right" })
 
 --  Use CTRL+<hjkl> to switch between windows
 vim.keymap.set("n", "<A-k>", "<C-w><C-k>", { desc = "Move to window above" })

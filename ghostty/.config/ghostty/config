@@ -15,7 +15,7 @@ gtk-single-instance = false
 
 # Keymaps
 keybind = ctrl+alt+-=new_split:down
-keybind = ctrl+alt+|=new_split:right
+keybind = ctrl+alt+\=new_split:right
 
 keybind = ctrl+alt+k=goto_split:up
 keybind = ctrl+alt+j=goto_split:down

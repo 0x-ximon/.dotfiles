@@ -18,7 +18,7 @@
       "[ tab": "pane::ActivatePreviousItem",
       "] tab": "pane::ActivateNextItem",
 
-      "alt-|": "pane::SplitRight",
+      "alt-\\": "pane::SplitRight",
       "alt--": "pane::SplitDown",
 
       "H": "editor::MoveToBeginningOfLine",
