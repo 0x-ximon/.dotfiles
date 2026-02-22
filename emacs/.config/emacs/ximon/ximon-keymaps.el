@@ -40,7 +40,7 @@
 
   ;; Split Keymaps
   (general-def normal
-    "M-_" '(evil-window-split :wk "Split Window Below")
+    "M--" '(evil-window-split :wk "Split Window Below")
     "M-|" '(evil-window-vsplit :wk "Split Window Right"))
 
   ;; Navigation Keymaps 

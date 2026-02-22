@@ -14,7 +14,7 @@ shell-integration = none
 gtk-single-instance = false
 
 # Keymaps
-keybind = ctrl+alt+_=new_split:down
+keybind = ctrl+alt+-=new_split:down
 keybind = ctrl+alt+|=new_split:right
 
 keybind = ctrl+alt+k=goto_split:up

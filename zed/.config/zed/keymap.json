@@ -19,7 +19,7 @@
       "] tab": "pane::ActivateNextItem",
 
       "alt-|": "pane::SplitRight",
-      "alt-_": "pane::SplitDown",
+      "alt--": "pane::SplitDown",
 
       "H": "editor::MoveToBeginningOfLine",
       "L": "editor::MoveToEndOfLine",

@@ -38,7 +38,7 @@ vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 vim.keymap.set("n", "<leader>.", "<cmd>terminal<CR>", { desc = "Terminal" })
 
 -- Creating and deleting windows
-vim.keymap.set("n", "<A-_>", ":split<CR>", { desc = "Split window below" })
+vim.keymap.set("n", "<A-->", ":split<CR>", { desc = "Split window below" })
 vim.keymap.set("n", "<A-|>", ":vsplit<CR>", { desc = "Split window right" })
 
 --  Use CTRL+<hjkl> to switch between windows

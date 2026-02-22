@@ -11,11 +11,11 @@
 
   // Layout Keymaps
   {
-    "key": "alt+shift+-",
+    "key": "alt+-",
     "command": "workbench.action.splitEditorDown"
   },
   {
-    "key": "alt+shift+\\",
+    "key": "alt+|",
     "command": "workbench.action.splitEditorRight"
   },
 

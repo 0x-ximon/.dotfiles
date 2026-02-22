@@ -1,7 +1,7 @@
 keybinds {
     normal {
-        bind "Ctrl Shift -"  { NewPane "Down"; }
-        bind "Ctrl Shift \\" { NewPane "Right"; }
+        bind "Ctrl -" { NewPane "Down"; }
+        bind "Ctrl |" { NewPane "Right"; }
 
         bind "Ctrl k" { MoveFocus "Up"; }
         bind "Ctrl j" { MoveFocus "Down"; }
