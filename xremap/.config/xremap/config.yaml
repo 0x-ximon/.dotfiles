@@ -1,0 +1,10 @@
+modmap:
+  - remap:
+      CAPSLOCK: ESC
+      ESC: CAPSLOCK
+
+keymap:
+  - remap:
+      BACKSLASH: SHIFT-BACKSLASH
+      SHIFT-BACKSLASH: BACKSLASH
+    exact_match: true
