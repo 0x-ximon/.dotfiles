@@ -1,7 +1,7 @@
 (use-package doom-themes
   :ensure t
   :custom
-  (doom-themes-org-config))                               ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))                              ;; Corrects (and improves) org-mode's native fontification.
 
 (use-package doom-modeline
   :ensure t
@@ -12,16 +12,17 @@
   :after doom-modeline
 
   :custom
-  (dashboard-center-content t)                            ;; Center the content
-  (dashboard-vertically-center-content t)                 ;; Vertically center the content
-  (dashboard-path-style 'truncate-middle)                 ;; How to handle long path names 
-  (dashboard-path-max-length 50)                          ;; Maximum length for path names 
+  (dashboard-center-content t)                           ;; Center the content
+  (dashboard-vertically-center-content t)                ;; Vertically center the content
+  (dashboard-path-style 'truncate-middle)                ;; How to handle long path names 
+  (dashboard-path-max-length 50)                         ;; Maximum length for path names 
+  (dashboard-projects-switch-function 'dired)            ;; Open new project in dired.
 
-  (dashboard-display-icons-p t)                           ;; display icons on both GUI and terminal
-  (dashboard-icon-type 'nerd-icons)                       ;; use `nerd-icons' package
-  (dashboard-show-shortcuts nil)                          ;; Do not show shortcuts
-  (dashboard-set-heading-icons t)                         ;; Set icons for headings   
-  (dashboard-set-file-icons t)                            ;; Set icons for files
+  (dashboard-display-icons-p t)                          ;; display icons on both GUI and terminal
+  (dashboard-icon-type 'nerd-icons)                      ;; use `nerd-icons' package
+  (dashboard-show-shortcuts nil)                         ;; Do not show shortcuts
+  (dashboard-set-heading-icons t)                        ;; Set icons for headings   
+  (dashboard-set-file-icons t)                           ;; Set icons for files
 
   (dashboard-items '((projects  . 5)
 					 (recents   . 5)))
@@ -34,7 +35,7 @@
                                dashboard-insert-init-info))
   
   :config
-  (dashboard-setup-startup-hook))                             ;; Set up the dashboard on startup
+  (dashboard-setup-startup-hook))                        ;; Set up the dashboard on startup
 
 (use-package hide-mode-line
   :ensure t

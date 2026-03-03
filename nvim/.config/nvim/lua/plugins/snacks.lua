@@ -58,6 +58,11 @@ return {
             end,
             desc = "Lazygit",
         },
+        {
+            "<leader>.",
+            "<cmd>terminal<CR>",
+            desc = "Terminal",
+        },
 
         {
             "<leader>bl",
