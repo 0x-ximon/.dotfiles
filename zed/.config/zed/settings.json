@@ -73,6 +73,15 @@
           "arguments": ["format", "-"]
         }
       }
+    },
+
+    "Lua": {
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
     }
   }
 }
