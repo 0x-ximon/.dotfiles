@@ -6,6 +6,7 @@ theme = light:GitHub Light Default,dark:GitHub Dark Default
 
 # Configurations
 maximize = true
+confirm-close-surface = false
 bell-features = no-system,no-audio,attention,no-title,no-border
 
 # NOTE: Disabling because I don't know how I feel about these features yet.
