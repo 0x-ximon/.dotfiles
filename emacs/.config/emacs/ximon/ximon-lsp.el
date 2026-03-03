@@ -10,7 +10,6 @@
 
 (use-package haskell-mode :ensure t)
 (use-package typescript-mode :ensure t)
-(use-package lisp-mode :ensure t)
 
 (use-package markdown-mode :ensure t)
 
