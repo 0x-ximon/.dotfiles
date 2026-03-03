@@ -6,6 +6,19 @@
   },
 
   {
+    "context": "(Editor && edit_prediction)",
+    "bindings": {
+      "alt-l": null
+    }
+  },
+  {
+    "context": "(Editor && edit_prediction_conflict)",
+    "bindings": {
+      "alt-l": null
+    }
+  },
+
+  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "?": "editor::Hover",

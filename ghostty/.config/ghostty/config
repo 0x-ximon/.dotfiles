@@ -2,7 +2,7 @@
 font-size = 14
 bold-color = bright
 font-family = FiraCode Nerd Font
-theme = light:Adwaita,dark:Adwaita Dark
+theme = light:GitHub Light Default,dark:GitHub Dark Default
 
 # Configurations
 maximize = true
@@ -28,6 +28,10 @@ keybind = ctrl+alt+l=goto_split:right
 # keybind = ctrl+alt+arrow_down=move_split:down
 # keybind = ctrl+alt+arrow_left=move_split:left
 # keybind = ctrl+alt+arrow_right=move_split:right
+
+## Disabled Keybinds
+keybind = ctrl++=unbind
+keybind = ctrl+-=unbind
 
 # Palette
 palette = 0=#000000

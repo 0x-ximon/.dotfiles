@@ -16,6 +16,7 @@
   "editor.fontLigatures": true,
   "editor.cursorStyle": "line",
   "editor.inlayHints.enabled": "off",
+  "editor.stickyScroll.enabled": false,
 
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
@@ -58,6 +59,7 @@
   "workbench.startupEditor": "none",
   "workbench.panel.showLabels": false,
   "workbench.activityBar.location": "top",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.navigationControl.enabled": false,
   "workbench.preferredDarkColorTheme": "GitHub Dark Default",
