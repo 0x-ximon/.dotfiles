@@ -11,22 +11,15 @@ vim.api.nvim_create_autocmd("FileType", {
         "c",
         "circom",
 
-        "dart",
+        "kotlin",
         "gleam",
-
-        "typescript",
         "python",
+        "lua",
 
         "java",
         "haskell",
-
-        "asm",
-        "sql",
-
-        "lua",
+        "typescript",
         "lisp",
-
-        "proto",
     },
 
     callback = function()
@@ -38,7 +31,7 @@ vim.api.nvim_create_autocmd("FileType", {
 local indent_group = vim.api.nvim_create_augroup("LanguageIndent", { clear = true })
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "rust", "go", "zig", "c", "cpp", "cs", "solidity" },
+    pattern = { "rust", "go", "zig", "c", "cpp", "cs", "solidity", "kotlin" },
     group = indent_group,
 
     callback = function()
