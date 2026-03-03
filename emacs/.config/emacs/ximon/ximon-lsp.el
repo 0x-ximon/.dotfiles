@@ -1,29 +1,23 @@
-(use-package rust-mode
-  :ensure t)
+(use-package rust-mode :ensure t)
+(use-package go-mode :ensure t)
+(use-package zig-mode :ensure t)
+(use-package solidity-mode :ensure t)
 
-(use-package go-mode
-  :ensure t)
+(use-package circom-mode :ensure t)
 
-(use-package zig-mode
-  :ensure t)
+(use-package kotlin-mode :ensure t)
+(use-package gleam-ts-mode :ensure t :mode (rx ".gleam" eos))
 
-(use-package gleam-ts-mode
-  :ensure t
-  :mode (rx ".gleam" eos))
+(use-package haskell-mode :ensure t)
+(use-package typescript-mode :ensure t)
+(use-package lisp-mode :ensure t)
 
-(use-package typescript-mode
-  :ensure t)
-
-(use-package haskell-mode
-  :ensure t)
-
-(use-package circom-mode
-  :ensure t)
+(use-package markdown-mode :ensure t)
 
 (use-package eglot
   :ensure nil
   :hook
-  ((c-mode c++-mode csharp-mode circom-mode haskell-mode python-mode gleam-ts-mode text-mode) . eglot-ensure)
+  ((c++-mode csharp-mode c-mode java-mode haskell-mode typescript-mode markdown-mode text-mode) . eglot-ensure)
 
   :custom
   (eglot-events-buffer-size 0)                                 ;; No event buffers (Lsp server logs)
@@ -40,17 +34,14 @@
 			   '(c-mode . ("clangd")))
 
   (add-to-list 'eglot-server-programs
-			   '(circom-mode . ("ccls")))
-  
-  (add-to-list 'eglot-server-programs
-			   '(gleam-ts-mode . ("gleam" "lsp")))
-
+			   '(java-mode . ("jdtls")))
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
+  (add-to-list 'eglot-server-programs
+			   '(typescript-mode . ("typescript-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
-			   '(python-mode . ("ruff" "server")))
-
+			   '(markdown-mode . ("markdown-oxide")))
   (add-to-list 'eglot-server-programs
 			   '(text-mode . ("harper-ls" "--stdio"))))
 
