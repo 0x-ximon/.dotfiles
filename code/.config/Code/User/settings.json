@@ -3,7 +3,6 @@
   "git.autofetch": true,
   "keyboard.dispatch": "keyCode",
   "extensions.autoUpdate": false,
-  "chat.commandCenter.enabled": false,
   "files.autoSave": "onFocusChange",
   "terminal.integrated.fontSize": 16,
   "git.openRepositoryInParentFolders": "always",

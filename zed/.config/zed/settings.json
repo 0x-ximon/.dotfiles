@@ -38,6 +38,15 @@
       }
     },
 
+    "Solidity": {
+      "formatter": {
+        "external": {
+          "command": "forge",
+          "arguments": ["fmt", "--raw", "-"]
+        }
+      }
+    },
+
     "Kotlin": {
       "language_servers": ["kotlin-lsp"],
       "formatter": {
@@ -62,15 +71,6 @@
         "external": {
           "command": "ruff",
           "arguments": ["format", "-"]
-        }
-      }
-    },
-
-    "Solidity": {
-      "formatter": {
-        "external": {
-          "command": "forge",
-          "arguments": ["fmt", "--raw", "-"]
         }
       }
     }
