@@ -16,7 +16,7 @@ vim.lsp.config("zls", {})
 vim.lsp.enable("solidity_ls_nomicfoundation")
 
 vim.lsp.config("kotlin_lsp", {})
-vim.lsp.config("gleam", {})
+vim.lsp.config("sourcekit", {})
 vim.lsp.config("ty", {})
 vim.lsp.config("lua_ls", {})
 
@@ -27,7 +27,7 @@ vim.lsp.enable({
     "solidity_ls_nomicfoundation",
 
     "kotlin_lsp",
-    "gleam",
+    "sourcekit",
     "ty",
     "lua_ls",
 

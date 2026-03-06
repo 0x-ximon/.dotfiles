@@ -12,7 +12,7 @@ vim.api.nvim_create_autocmd("FileType", {
         "circom",
 
         "kotlin",
-        "gleam",
+        "swift",
         "python",
         "lua",
 

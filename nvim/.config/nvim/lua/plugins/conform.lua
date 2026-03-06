@@ -8,9 +8,8 @@ return {
             solidity = { "forge_fmt" },
 
             kotlin = { "ktfmt" },
-            gleam = { "gleam" },
+            swift = { "swift-format" },
             python = { "ruff_format", "ruff_fix" },
-
             lua = { "stylua" },
         },
 
