@@ -52,6 +52,9 @@ alias la="eza -a"
 alias ll="eza -l"
 alias cat="batcat"
 
+alias em="emacsclient -cqna 'emacs'"
+alias nv="neovim --fork"
+
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
 alias tmuxconfig="cd ~/.dotfiles/tmux/ && nvim .tmux.conf"
 alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovim . --fork"
