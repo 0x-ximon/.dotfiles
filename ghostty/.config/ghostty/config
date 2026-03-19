@@ -2,10 +2,11 @@
 font-size = 14
 bold-color = bright
 font-family = FiraCode Nerd Font
-theme = light:GitHub Light Default,dark:GitHub Dark Default
+theme = light:Adwaita,dark:Adwaita Dark
 
 # Configurations
 maximize = true
+unfocused-split-opacity = 1
 confirm-close-surface = false
 bell-features = no-system,no-audio,attention,no-title,no-border
 
