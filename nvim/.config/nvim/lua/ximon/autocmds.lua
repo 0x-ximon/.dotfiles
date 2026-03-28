@@ -20,6 +20,8 @@ vim.api.nvim_create_autocmd("FileType", {
         "haskell",
         "typescript",
         "lisp",
+
+        "markdown",
     },
 
     callback = function()
