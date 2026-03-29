@@ -11,6 +11,8 @@ return {
             swift = { "swift-format" },
             python = { "ruff_format", "ruff_fix" },
             lua = { "stylua" },
+
+            markdown = { "prettierd" },
         },
 
         format_on_save = {
