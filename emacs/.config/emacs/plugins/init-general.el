@@ -1,3 +1,6 @@
+(use-package gruber-darker-theme
+  :ensure t)
+
 ;; Auto Dark Mode Configuration
 (use-package auto-dark
   :ensure t
@@ -9,7 +12,7 @@
   :ensure nil 
   :init (which-key-mode 1)
   :diminish
- 
+  
   :custom
   (which-key-side-window-location 'bottom)
   (which-key-sort-uppercase-first nil)

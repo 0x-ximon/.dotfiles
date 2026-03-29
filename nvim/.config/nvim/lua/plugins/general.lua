@@ -50,6 +50,12 @@ return {
             },
         },
     },
+    {
+        "blazkowolf/gruber-darker.nvim",
+        name = "gruber-darker",
+        lazy = false,
+        priority = 1000,
+    },
     --  TODO:: Eventually remove this theme
     {
         "projekt0n/github-nvim-theme",
