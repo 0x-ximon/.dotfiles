@@ -38,7 +38,6 @@ return {
     {
 
         "stevearc/oil.nvim",
-        dependencies = { "nvim-tree/nvim-web-devicons" },
         lazy = false,
         opts = {
             default_file_explorer = true,
@@ -51,16 +50,42 @@ return {
             },
         },
     },
+    --  TODO:: Eventually remove this theme
+    {
+        "projekt0n/github-nvim-theme",
+        name = "github-theme",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require("github-theme").setup({
+                options = {
+                    transparent = false,
+                    darken = {
+                        floats = true,
+                    },
+                },
+            })
+
+            vim.cmd("colorscheme github_light_default")
+        end,
+    },
+    {
+        -- "0x-ximon/acario.nvim",
+        name = "acario",
+        lazy = false,
+        priority = 1000,
+    },
+
     {
         "f-person/auto-dark-mode.nvim",
         opts = {
             set_dark_mode = function()
                 vim.api.nvim_set_option_value("background", "dark", {})
-                vim.cmd("colorscheme github_dark_default")
+                vim.cmd("colorscheme acario_dark")
             end,
             set_light_mode = function()
                 vim.api.nvim_set_option_value("background", "light", {})
-                vim.cmd("colorscheme github_light_default")
+                vim.cmd("colorscheme acario_light")
             end,
         },
     },
