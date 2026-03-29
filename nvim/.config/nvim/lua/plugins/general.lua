@@ -56,7 +56,6 @@ return {
         lazy = false,
         priority = 1000,
     },
-    --  TODO:: Eventually remove this theme
     {
         "projekt0n/github-nvim-theme",
         name = "github-theme",
@@ -71,12 +70,10 @@ return {
                     },
                 },
             })
-
-            vim.cmd("colorscheme github_light_default")
         end,
     },
     {
-        -- "0x-ximon/acario.nvim",
+        "0x-ximon/acario.nvim",
         name = "acario",
         lazy = false,
         priority = 1000,
