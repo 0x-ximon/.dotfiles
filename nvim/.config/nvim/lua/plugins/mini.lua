@@ -1,6 +1,5 @@
 return {
     "nvim-mini/mini.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
     version = false,
 
     config = function()
