@@ -16,9 +16,12 @@ vim.lsp.config("zls", {})
 vim.lsp.enable("solidity_ls_nomicfoundation")
 
 vim.lsp.config("kotlin_lsp", {})
-vim.lsp.config("sourcekit", {})
+vim.lsp.config("sourcekit", { filetypes = { "swift", "objc", "objcpp" } })
 vim.lsp.config("ty", {})
 vim.lsp.config("lua_ls", {})
+
+vim.lsp.config("harper_ls", { filetypes = { "markdown" } })
+vim.lsp.config("markdown_oxide", {})
 
 vim.lsp.enable({
     "rust_analyzer",
@@ -31,5 +34,6 @@ vim.lsp.enable({
     "ty",
     "lua_ls",
 
+    "harper_ls",
     "markdown_oxide",
 })
