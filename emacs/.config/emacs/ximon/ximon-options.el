@@ -2,58 +2,71 @@
 
 (use-package emacs
   :custom
-  (menu-bar-mode nil)                         ;; Disable the menu bar
-  (tool-bar-mode nil)                         ;; Disable the tool bar
-  (scroll-bar-mode nil)                       ;; Disable the scroll bar
-  (blink-cursor-mode nil)                     ;; Don't blink cursor
-  (inhibit-startup-screen t)                  ;; Disable welcome screen
+  (menu-bar-mode nil)                                   ;; Disable the menu bar
+  (tool-bar-mode nil)                                   ;; Disable the tool bar
+  (scroll-bar-mode nil)                                 ;; Disable the scroll bar
+  (fringe-mode 0)                                       ;; Disable fringes to remove side borders
+  (blink-cursor-mode nil)                               ;; Don't blink cursor
+  (inhibit-startup-screen t)                            ;; Disable welcome screen
 
-  (make-backup-files nil)                     ;; Stop creating ~ backup files
-  (auto-save-default nil)                     ;; Stop creating # auto save files
-  (create-lockfiles nil)                      ;; Stop creating .# lock files
-  (electric-pair-mode t)                      ;; Turns on automatic parens pairing
-  (electric-indent-mode nil)                  ;; Turn off the weird indenting that Emacs does by default.
+  (make-backup-files nil)                               ;; Stop creating ~ backup files
+  (auto-save-default nil)                               ;; Stop creating # auto save files
+  (create-lockfiles nil)                                ;; Stop creating .# lock files
+  (electric-pair-mode t)                                ;; Turns on automatic parens pairing
+  (electric-indent-mode nil)                            ;; Turn off the weird indenting that Emacs does by default.
 
-  (tab-width 4)                               ;; Set tab width to 4 spaces
-  (indent-tabs-mode nil)                      ;; Configure Tabs to work as expected
-  (scroll-margin 10)                          ;; Keep some space at the top and bottom of the window when scrolling
-  (scroll-conservatively 10)                  ;; Smooth scrolling
-  (global-auto-revert-mode t)                 ;; Automatically reload file and show changes if the file has changed
-  (mouse-wheel-progressive-speed nil)         ;; Disable progressive speed when scrolling
+  (tab-width 4)                                         ;; Set tab width to 4 spaces
+  (indent-tabs-mode nil)                                ;; Configure Tabs to work as expected
+  (scroll-margin 10)                                    ;; Keep some space at the top and bottom of the window when scrolling
+  (scroll-conservatively 10)                            ;; Smooth scrolling
+  (global-auto-revert-mode t)                           ;; Automatically reload file and show changes if the file has changed
+  (mouse-wheel-progressive-speed nil)                   ;; Disable progressive speed when scrolling
 
-  (ring-bell-function 'ignore)                ;; Disable the bell sound
-  (visible-bell nil)                          ;; Disable visible bell
-  (truncate-lines t)                          ;; Enable line truncate by default
-  (org-startup-indented t)                    ;; Activate org-indent-mode in all org files 
+  (ring-bell-function 'ignore)                          ;; Disable the bell sound
+  (visible-bell nil)                                    ;; Disable visible bell
+  (truncate-lines t)                                    ;; Enable line truncate by default
+  (org-startup-indented t)                              ;; Activate org-indent-mode in all org files 
 
-  (global-display-line-numbers-mode t)                    ;; Display line numbers
-  (display-line-numbers-type 'relative)                   ;; Relative line numbers
-  (dired-kill-when-opening-new-dired-buffer t)            ;; Dired don't create new buffer
-  (initial-frame-alist '((fullscreen . maximized)))       ;; Start Emacs in maximized mode
+  (global-display-line-numbers-mode t)                  ;; Display line numbers
+  (display-line-numbers-type 'relative)                 ;; Relative line numbers
+  (dired-kill-when-opening-new-dired-buffer t)          ;; Dired don't create new buffer
+  
+  ;; Set initial frame to be maximized and remove internal borders
+  (initial-frame-alist '((fullscreen . maximized)
+                         (internal-border-width . 0)
+                         (right-divider-width . 0)
+                         (bottom-divider-width . 0)))
 
   :hook
-  (dired-mode . dired-hide-details-mode)                  ;; Hide details in Dired mode
-  (text-mode . visual-line-mode)                          ;; Enable visual line mode in text modes
+  (dired-mode . dired-hide-details-mode)                ;; Hide details in Dired mode
+  (text-mode . visual-line-mode)                        ;; Enable visual line mode in text modes
 
   :config
-  (setq custom-safe-themes t)                             ;; Allow all themes to be loaded safely
+  (setq custom-safe-themes t)                           ;; Allow all themes to be loaded safely
 
-  (setq custom-file                                       ;; Custom file location
+  (setq custom-file                                     ;; Custom file location
 		(expand-file-name "custom.el" user-emacs-directory))  
 
-  (when (file-exists-p custom-file) (load custom-file))   ;; Load custom file if it exists
+  (when (file-exists-p custom-file) (load custom-file)) ;; Load custom file if it exists
 
   (setq initial-buffer-choice 
 		(lambda () (get-buffer-create dashboard-buffer-name)))
   
-  (set-face-attribute 'default nil                        ;; Set default face attributes   
+  (set-face-attribute 'default nil                      ;; Set default face attributes   
 					  :font "Iosevka Nerd Font"
 					  :height 140)
 
+  ;; Ensure all future frames are borderless and use the correct font
   (add-to-list 'default-frame-alist '(font . "Iosevka Nerd Font-14")) 
-  (add-to-list 'default-frame-alist '(fullscreen . maximized)) ;; Ensure new frames are maximized
+  (add-to-list 'default-frame-alist '(fullscreen . maximized))
+  (add-to-list 'default-frame-alist '(internal-border-width . 0))
+  (add-to-list 'default-frame-alist '(right-divider-width . 0))
+  (add-to-list 'default-frame-alist '(bottom-divider-width . 0))
+
+  ;; Match fringe background to the theme background to hide any leftover lines
+  (set-face-background 'fringe (face-background 'default))
 
   :bind
-  ([escape] . keyboard-escape-quit))                      ;; Use Escape to quit
+  ([escape] . keyboard-escape-quit))                    ;; Use Escape to quit
 
 (provide 'ximon-options)
