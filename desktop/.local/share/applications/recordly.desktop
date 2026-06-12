@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Recordly
+Comment=Recordly.dev
+Exec=recordly %U
+Icon=recordly
+Type=Application
+Categories=Utility;Development;
+Terminal=false
