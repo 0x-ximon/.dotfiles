@@ -1,4 +1,4 @@
-(use-package gruber-darker-theme
+(use-package compat
   :ensure t)
 
 ;; Auto Dark Mode Configuration

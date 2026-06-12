@@ -14,15 +14,16 @@
   (setf (alist-get 'fourmolu apheleia-formatters) '("fourmolu" "--stdin-input-file" "-"))
   (setf (alist-get 'biome apheleia-formatters) '("biome" "format" "--fix" "--stdin-file-path" filepath))
   (setf (alist-get 'prettierd apheleia-formatters) '("prettierd" "invoke" "-"))
+  (setf (alist-get 'ruff-isort apheleia-formatters) '("ruff" "check" "--select" "I" "--fix" "--stdin-filename" filepath "-"))
+  (setf (alist-get 'ruff apheleia-formatters) '("ruff" "format" "-"))
 
   (setf (alist-get 'c++-mode apheleia-mode-alist) 'clang-format)
   (setf (alist-get 'csharp-mode apheleia-mode-alist) 'csharpier)
   (setf (alist-get 'c-mode apheleia-mode-alist) 'clang-format)
 
-  (setf (alist-get 'java-mode apheleia-mode-alist) 'java-format)
-  (setf (alist-get 'haskell-mode apheleia-mode-alist) 'fourmolu)
   (setf (alist-get 'typescript-mode apheleia-mode-alist) 'biome)
-
-  (setf (alist-get 'markdown-mode apheleia-mode-alist) 'prettierd))
+  (setf (alist-get 'python-mode apheleia-mode-alist) '(ruff-isort ruff))
+  (setf (alist-get 'java-mode apheleia-mode-alist) 'java-format)
+  (setf (alist-get 'haskell-mode apheleia-mode-alist) 'fourmolu))
 
 (provide 'init-apheleia)
