@@ -3,6 +3,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export TERM=xterm-256color
+
 # ZSH configuration
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -14,7 +16,6 @@ source $ZSH/oh-my-zsh.sh
 source "$HOME/.cargo/env"
 source "$HOME/.deno/env"
 source "$HOME/.ghcup/env" 
-source "$HOME/.bun/_bun"
 
 # Environment Variables
 export NVM_DIR="$HOME/.nvm"
@@ -23,8 +24,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 
 export DOTNET_ROOT="$HOME/.dotnet"
@@ -40,7 +41,6 @@ export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$HOME/.solana/bin"
 export PATH="$PATH:$HOME/.bitcoin/bin"
 export PATH="$PATH:$HOME/.tinytex/bin"
-export PATH="$PATH:$HOME/.bun/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
 eval "$(zoxide init zsh)"
