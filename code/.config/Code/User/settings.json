@@ -1,361 +1,389 @@
 {
-  // Core settings
-  "git.autofetch": true,
-  "keyboard.dispatch": "keyCode",
-  "extensions.autoUpdate": false,
-  "files.autoSave": "onFocusChange",
-  "terminal.integrated.fontSize": 16,
-  "git.openRepositoryInParentFolders": "always",
-  "search.searchEditor.focusResultsOnSearch": true,
+	// Core settings
+	"git.autofetch": true,
+	"keyboard.dispatch": "keyCode",
+	"extensions.autoUpdate": false,
+	"files.autoSave": "onFocusChange",
+	"terminal.integrated.fontSize": 16,
+	"extensions.ignoreRecommendations": true,
+	"scm.repositories.selectionMode": "single",
+	"git.openRepositoryInParentFolders": "always",
+	"search.searchEditor.focusResultsOnSearch": true,
 
-  "editor.tabSize": 4,
-  "editor.fontSize": 16,
-  "editor.fontWeight": "bold",
-  "editor.formatOnSave": true,
-  "editor.fontLigatures": true,
-  "editor.cursorStyle": "line",
-  "editor.inlayHints.enabled": "off",
-  "editor.stickyScroll.enabled": false,
+	"window.commandCenter": false,
+	"window.restoreWindows": "none",
+	"window.autoDetectColorScheme": true,
+	"window.menuBarVisibility": "toggle",
 
-  "editor.lineNumbers": "relative",
-  "editor.minimap.enabled": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.fontFamily": "'FiraCode Nerd Font'",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
-  },
+	"workbench.startupEditor": "none",
+	"workbench.navigationControl.enabled": false,
+	"workbench.panel.showLabels": false,
+	"workbench.activityBar.location": "top",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.browser.showInTitleBar": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
+	"workbench.preferredLightColorTheme": "GitHub Light Default",
 
-  "editor.tokenColorCustomizations": {
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
-    },
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
-    },
-    "textMateRules": []
-  },
+	"editor.tabSize": 4,
+	"editor.fontSize": 16,
+	"editor.fontWeight": "bold",
+	"editor.formatOnSave": true,
+	"editor.fontLigatures": true,
+	"editor.cursorStyle": "line",
+	"editor.inlayHints.enabled": "off",
+	"editor.stickyScroll.enabled": false,
 
-  "window.restoreWindows": "none",
-  "window.menuBarVisibility": "toggle",
-  "window.autoDetectColorScheme": true,
+	"editor.lineNumbers": "relative",
+	"editor.minimap.enabled": false,
+	"editor.inlineSuggest.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.fontFamily": "'FiraCode Nerd Font'",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit",
 
-  "workbench.startupEditor": "none",
-  "workbench.panel.showLabels": false,
-  "workbench.activityBar.location": "top",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.navigationControl.enabled": false,
-  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
-  "workbench.preferredLightColorTheme": "GitHub Light Default",
+		"source.fixAll.ruff": "explicit",
+		"source.organizeImports.ruff": "explicit"
+	},
 
-  // Keymaps settings
-  "vim.normalModeKeyBindings": [
-    // General Keymaps
-    {
-      "before": ["U"],
-      "after": ["<C-r>"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["J"],
-      "after": ["}"]
-    },
-    {
-      "before": ["K"],
-      "after": ["{"]
-    },
+	"editor.tokenColorCustomizations": {
+		"[*Light*]": {
+			"textMateRules": [
+				{
+					"scope": "ref.matchtext",
+					"settings": {
+						"foreground": "#000"
+					}
+				}
+			]
+		},
+		"[*Dark*]": {
+			"textMateRules": [
+				{
+					"scope": "ref.matchtext",
+					"settings": {
+						"foreground": "#fff"
+					}
+				}
+			]
+		},
+		"textMateRules": []
+	},
 
-    // Layout Keymaps
-    {
-      "before": ["<leader>", "("],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
-      "before": ["<leader>", ")"],
-      "commands": ["workbench.action.toggleAuxiliaryBar"]
-    },
+	// Keymaps settings
+	"vim.normalModeKeyBindings": [
+		// General Keymaps
+		{
+			"before": ["U"],
+			"after": ["<C-r>"]
+		},
+		{
+			"before": ["H"],
+			"after": ["^"]
+		},
+		{
+			"before": ["L"],
+			"after": ["$"]
+		},
+		{
+			"before": ["J"],
+			"after": ["}"]
+		},
+		{
+			"before": ["K"],
+			"after": ["{"]
+		},
 
-    // Quick Keymaps
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "q"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    },
+		// Layout Keymaps
+		{
+			"before": ["<leader>", "("],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", ")"],
+			"commands": ["workbench.action.toggleAuxiliaryBar"]
+		},
 
-    // QoL Keymaps
-    {
-      "before": ["<leader>", "<space>"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["<leader>", "."],
-      "commands": ["workbench.action.createTerminalEditor"]
-    },
-    {
-      "before": ["<leader>", "~"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
-    },
-    {
-      "before": ["<leader>", "/"],
-      "commands": ["workbench.action.quickTextSearch"]
-    },
-    {
-      "before": ["<leader>", "%"],
-      "commands": ["workbench.scm.focus"]
-    },
-    {
-      "before": ["[", "<tab>"],
-      "commands": ["workbench.action.previousEditorInGroup"]
-    },
-    {
-      "before": ["]", "<tab>"],
-      "commands": ["workbench.action.nextEditorInGroup"]
-    },
-    {
-      "before": ["<leader>", "<tab>", "n"],
-      "commands": ["workbench.action.files.newUntitledFile"]
-    },
+		// Quick Keymaps
+		{
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
 
-    // LSP Keymaps
-    {
-      "before": ["?"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["!"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"]
-    },
-    {
-      "before": ["g", "e"],
-      "commands": ["editor.action.revealDeclaration"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
-    },
-    {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["editor.action.goToTypeDefinition"]
-    },
-    {
-      "before": ["<leader>", "l", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["<leader>", "l", "f"],
-      "commands": ["editor.action.format"]
-    },
-    {
-      "before": ["<leader>", "l", "r"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    },
+		// QoL Keymaps
+		{
+			"before": ["<leader>", "<space>"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<leader>", "."],
+			"commands": ["workbench.action.createTerminalEditor"]
+		},
+		{
+			"before": ["<leader>", "~"],
+			"commands": ["workbench.files.action.focusFilesExplorer"]
+		},
+		{
+			"before": ["<leader>", "/"],
+			"commands": ["workbench.action.quickTextSearch"]
+		},
+		{
+			"before": ["<leader>", "%"],
+			"commands": ["workbench.scm.focus"]
+		},
+		{
+			"before": ["[", "<tab>"],
+			"commands": ["workbench.action.previousEditorInGroup"]
+		},
+		{
+			"before": ["]", "<tab>"],
+			"commands": ["workbench.action.nextEditorInGroup"]
+		},
+		{
+			"before": ["<leader>", "<tab>", "n"],
+			"commands": ["workbench.action.files.newUntitledFile"]
+		},
 
-    // Plugin Keymaps
-    {
-      "before": ["-"],
-      "commands": ["oil-code.open"]
-    },
-    {
-      "before": ["<CR>"],
-      "commands": ["oil-code.select"]
-    }
-  ],
+		// LSP Keymaps
+		{
+			"before": ["?"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["!"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["g", "d"],
+			"commands": ["editor.action.revealDefinition"]
+		},
+		{
+			"before": ["g", "e"],
+			"commands": ["editor.action.revealDeclaration"]
+		},
+		{
+			"before": ["g", "r"],
+			"commands": ["editor.action.goToReferences"]
+		},
+		{
+			"before": ["g", "i"],
+			"commands": ["editor.action.goToImplementation"]
+		},
+		{
+			"before": ["g", "t"],
+			"commands": ["editor.action.goToTypeDefinition"]
+		},
+		{
+			"before": ["<leader>", "l", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<leader>", "l", "f"],
+			"commands": ["editor.action.format"]
+		},
+		{
+			"before": ["<leader>", "l", "r"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["[", "d"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["]", "d"],
+			"commands": ["editor.action.marker.next"]
+		},
 
-  // Extensions settings
-  "vim.leader": "<space>",
-  "oil-code.hasNerdFont": true,
-  "vim.useSystemClipboard": true,
-  "oil-code.disableVimKeymaps": true,
-  "dotenv.enableAutocloaking": false,
+		// Plugin Keymaps
+		{
+			"before": ["-"],
+			"commands": ["oil-code.open"]
+		},
+		{
+			"before": ["<CR>"],
+			"commands": ["oil-code.select"]
+		}
+	],
 
-  "haskell.manageHLS": "PATH",
-  "biome.suggestInstallingGlobally": false,
-  "excalidraw.theme": "auto",
+	// Extensions settings
+	"vim.leader": "<space>",
+	"oil-code.hasNerdFont": true,
+	"vim.useSystemClipboard": true,
+	"oil-code.disableVimKeymaps": true,
+	"dotenv.enableAutocloaking": false,
 
-  "files.associations": {
-    ".env*": "dotenv"
-  },
+	"haskell.manageHLS": "PATH",
+	"biome.suggestInstallingGlobally": false,
+	"ruff.lineLength": 120,
 
-  // TODO: Remove when material icon theme adds official bruno folder icon
-  "material-icon-theme.folders.customClones": [
-    {
-      "name": "bruno-collection",
-      "base": "connection",
-      "color": "orange-500",
-      "lightColor": "light-orange-700",
-      "folderNames": [".bruno", "bruno"]
-    }
-  ],
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false,
-    "mdx": false
-  },
+	"files.associations": {
+		".env*": "dotenv"
+	},
 
-  "better-comments.tags": [
-    {
-      "tag": "TODO",
-      "color": "#2563EB",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "BUG",
-      "color": "#DC2626",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "WARN",
-      "color": "#FBBF24",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "INFO",
-      "color": "#10B981",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "TEST",
-      "color": "#7C3AED",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "PERF",
-      "color": "#FF00FF",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "HELP",
-      "color": "#00FFFF",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
+	// TODO: Remove when material icon theme adds official bruno folder icon
+	"material-icon-theme.folders.customClones": [
+		{
+			"name": "tui-folder",
+			"base": "ui",
+			"color": "green-500",
+			"lightColor": "light-green-700",
+			"folderNames": [".tui", "tui"]
+		},
+		{
+			"name": "bruno-collection",
+			"base": "connection",
+			"color": "orange-500",
+			"lightColor": "light-orange-700",
+			"folderNames": [".bruno", "bruno"]
+		},
+		{
+			"name": "diagram-collection",
+			"base": "images",
+			"color": "blue-500",
+			"lightColor": "light-blue-700",
+			"folderNames": [".diagrams", ".drawings", "diagrams", "drawings"]
+		}
+	],
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": true,
+		"scminput": false,
+		"mdx": false
+	},
 
-  // Language Specific Settings
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescriptreact]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[javascriptreact]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
-  },
-  "[haskell]": {
-    "editor.defaultFormatter": "haskell.haskell"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[mdx]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
-  },
-  "[yaml]": {
-    "diffEditor.ignoreTrimWhitespace": true
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "java.format.settings.google.extra": "--aosp",
-  "haskell.formattingProvider": "fourmolu",
-  "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
-    "https://biomejs.dev": true
-  }
+	"better-comments.tags": [
+		{
+			"tag": "TODO",
+			"color": "#2563EB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "BUG",
+			"color": "#DC2626",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "WARN",
+			"color": "#FBBF24",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "INFO",
+			"color": "#10B981",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "TEST",
+			"color": "#7C3AED",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "PERF",
+			"color": "#FF00FF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "HELP",
+			"color": "#00FFFF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+
+	// Language Specific Settings
+	"[cpp]": {
+		"editor.tabSize": 4
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "csharpier.csharpier-vscode"
+	},
+	"[c]": {
+		"editor.tabSize": 4
+	},
+	"[sql]": {},
+	"[asm]": {},
+
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
+	"[haskell]": {
+		"editor.defaultFormatter": "haskell.haskell"
+	},
+	"[typescript]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[python]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"[lisp]": {},
+
+	"[javascript]": {
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"[mdx]": {
+		"editor.wordWrap": "on",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.wordWrap": "on",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	}
 }
