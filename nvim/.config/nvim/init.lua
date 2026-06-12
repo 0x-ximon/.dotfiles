@@ -1,4 +1,4 @@
-require("ximon.lazy")
+require("ximon.pack")
 require("ximon.options")
 require("ximon.keymaps")
 require("ximon.lsp")

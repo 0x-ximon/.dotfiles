@@ -2,6 +2,25 @@
 local indent_group = vim.api.nvim_create_augroup("LanguageIndent", { clear = true })
 
 vim.api.nvim_create_autocmd("FileType", {
+    pattern = "lua",
+    callback = function()
+        local name = "lazydev"
+        local ok, module = pcall(require, name)
+
+        if not ok then
+            vim.notify(string.format("%s not found", name), vim.log.levels.WARN)
+            return
+        end
+
+        module.setup({
+            library = {
+                { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+            },
+        })
+    end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
     pattern = { "rust", "go", "zig", "c", "cpp", "cs", "solidity", "kotlin" },
     group = indent_group,
 
