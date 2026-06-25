@@ -1,7 +1,8 @@
 {
-	"auto_update": false,
 	"vim_mode": true,
+	"auto_update": false,
 	"cursor_shape": "bar",
+	"format_on_save": "on",
 	"vertical_scroll_margin": 5,
 	"diff_view_style": "split",
 	"restore_on_startup": "launchpad",
@@ -13,6 +14,7 @@
 	"buffer_font_weight": 600,
 	"relative_line_numbers": "enabled",
 	"icon_theme": "Material Icon Theme",
+	"cli_default_open_behavior": "new_window",
 	"buffer_font_family": "FiraCode Nerd Font",
 
 	"search": { "button": false },
@@ -22,7 +24,7 @@
 	"project_panel": { "dock": "left" },
 	"outline_panel": { "dock": "left" },
 	"edit_predictions": { "mode": "eager" },
-	"global_lsp_settings": { "button": false },
+	"global_lsp_settings": { "button": true },
 	"terminal": { "dock": "right", "font_size": 16.0 },
 	"collaboration_panel": { "button": false, "dock": "right" },
 
@@ -117,7 +119,18 @@
 			"formatter": {
 				"external": {
 					"command": "biome",
-					"arguments": ["-"]
+					"arguments": ["format", "--stdin-file-path", "document.json"]
+				}
+			}
+		},
+
+		"MDX": {
+			"soft_wrap": "editor_width",
+			"language_servers": ["mdx-analyzer"],
+			"formatter": {
+				"external": {
+					"command": "prettierd",
+					"arguments": ["--stdin-filepath", "{buffer_path}"]
 				}
 			}
 		}
@@ -127,6 +140,7 @@
 		"...",
 		"!eslint",
 		"!vtsls",
+		"!prettier",
 		"!tailwindcss-language-server",
 		"!typescript-language-server"
 	],

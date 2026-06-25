@@ -29,11 +29,11 @@
   ;; Quick Keymaps
   (ximon/leader
     "w" '(evil-update :wk "Quick Write")
-    "q" '(evil-quit :wk "Quick Quit"))
+    "q" '(evil-quit :wk "Quick Quit")
+	  "t" '(vterm :wk "Quick Terminal"))
 
   (ximon/leader
 	"SPC" '(project-find-file :wk "Find File")
-	"."   '(vterm :wk "Terminal")
 	"~"   '(neotree-toggle :wk "Explorer")
 	"/"   '(consult-grep :wk "Grep")
 	"%"   '(magit :wk "Magit"))

@@ -1,8 +1,9 @@
 {
 	// Core settings
 	"git.autofetch": true,
+	"update.titleBar": false,
 	"keyboard.dispatch": "keyCode",
-	"extensions.autoUpdate": false,
+	"extensions.autoUpdate": "off",
 	"files.autoSave": "onFocusChange",
 	"terminal.integrated.fontSize": 16,
 	"extensions.ignoreRecommendations": true,
@@ -114,15 +115,15 @@
 			"before": ["<leader>", "q"],
 			"commands": ["workbench.action.closeActiveEditor"]
 		},
+		{
+			"before": ["<leader>", "t"],
+			"commands": ["workbench.action.createTerminalEditor"]
+		},
 
 		// QoL Keymaps
 		{
 			"before": ["<leader>", "<space>"],
 			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<leader>", "."],
-			"commands": ["workbench.action.createTerminalEditor"]
 		},
 		{
 			"before": ["<leader>", "~"],
@@ -216,10 +217,11 @@
 	"vim.useSystemClipboard": true,
 	"oil-code.disableVimKeymaps": true,
 	"dotenv.enableAutocloaking": false,
+	"docker.extension.enableComposeLanguageServer": false,
 
+	"ruff.lineLength": 120,
 	"haskell.manageHLS": "PATH",
 	"biome.suggestInstallingGlobally": false,
-	"ruff.lineLength": 120,
 
 	"files.associations": {
 		".env*": "dotenv"

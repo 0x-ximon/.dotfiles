@@ -30,6 +30,9 @@ vim.keymap.set("n", "<leader>w", "<cmd>update<CR>", { desc = "Quick Write" })
 -- Quick Quit
 vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quick Exit" })
 
+-- Quick Quit
+vim.keymap.set("n", "<leader>t", "<cmd>terminal<CR>", { desc = "Quick Terminal" })
+
 -------------------------------------------------------------------------------
 ------------------------------- WINDOW KEYMAPS --------------------------------
 -------------------------------------------------------------------------------
