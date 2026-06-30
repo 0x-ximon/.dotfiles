@@ -52,7 +52,7 @@ alias la="eza -a"
 alias ll="eza -l"
 alias cat="batcat"
 
-alias em="emacsclient -cqna 'emacs'"
+alias em="emacsclient -cqna ''"
 alias nv="neovim --fork"
 
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
@@ -69,4 +69,3 @@ alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y 
 
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
