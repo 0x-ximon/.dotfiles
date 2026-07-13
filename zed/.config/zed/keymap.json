@@ -8,13 +8,13 @@
 	{
 		"context": "(Editor && edit_prediction)",
 		"bindings": {
-			"alt-l": null
-		}
-	},
-	{
-		"context": "(Editor && edit_prediction_conflict)",
-		"bindings": {
-			"alt-l": null
+			"alt-l": null,
+			"alt-j": null,
+			"alt-k": null,
+			"alt-tab": null,
+			"tab": "editor::Tab",
+			"shift-space": "editor::AcceptEditPrediction",
+			"alt-space": "editor::AcceptNextWordEditPrediction"
 		}
 	},
 

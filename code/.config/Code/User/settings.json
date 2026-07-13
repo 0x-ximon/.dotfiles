@@ -219,6 +219,8 @@
 	"dotenv.enableAutocloaking": false,
 	"docker.extension.enableComposeLanguageServer": false,
 
+	"ty.path": ["ty"],
+	"ruff.path": ["ruff"],
 	"ruff.lineLength": 120,
 	"haskell.manageHLS": "PATH",
 	"biome.suggestInstallingGlobally": false,

@@ -26,7 +26,7 @@
 	"edit_predictions": { "mode": "eager" },
 	"global_lsp_settings": { "button": true },
 	"terminal": { "dock": "right", "font_size": 16.0 },
-	"collaboration_panel": { "button": false, "dock": "right" },
+	"collaboration_panel": { "button": false, "dock": "left" },
 
 	"theme": {
 		"mode": "system",

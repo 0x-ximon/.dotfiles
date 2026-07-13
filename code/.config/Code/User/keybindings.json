@@ -1,57 +1,99 @@
 [
-  {
-    "key": "alt+x",
-    "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+f",
-    "command": "workbench.action.files.openFolder",
-    "when": "true"
-  },
+	{
+		"key": "alt+x",
+		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "workbench.action.files.openFolder",
+		"when": "true"
+	},
 
-  // Layout Keymaps
-  {
-    "key": "alt+-",
-    "command": "workbench.action.splitEditorDown"
-  },
-  {
-    "key": "alt+\\",
-    "command": "workbench.action.splitEditorRight"
-  },
+	// Layout Keymaps
+	{
+		"key": "alt+-",
+		"command": "workbench.action.splitEditorDown"
+	},
+	{
+		"key": "alt+\\",
+		"command": "workbench.action.splitEditorRight"
+	},
 
-  // Navigations Keymaps
-  {
-    "key": "alt+h",
-    "command": "workbench.action.navigateLeft"
-  },
-  {
-    "key": "alt+l",
-    "command": "workbench.action.navigateRight"
-  },
-  {
-    "key": "alt+k",
-    "command": "workbench.action.navigateUp"
-  },
-  {
-    "key": "alt+j",
-    "command": "workbench.action.navigateDown"
-  },
+	// Navigations Keymaps
+	{
+		"key": "alt+h",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "alt+l",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "alt+k",
+		"command": "workbench.action.navigateUp"
+	},
+	{
+		"key": "alt+j",
+		"command": "workbench.action.navigateDown"
+	},
 
-  // Move Navigations
-  {
-    "key": "alt+left",
-    "command": "workbench.action.moveEditorToLeftGroup"
-  },
-  {
-    "key": "alt+right",
-    "command": "workbench.action.moveEditorToRightGroup"
-  },
-  {
-    "key": "alt+up",
-    "command": "workbench.action.moveEditorToAboveGroup"
-  },
-  {
-    "key": "alt+down",
-    "command": "workbench.action.moveEditorToBelowGroup"
-  }
+	// Move Navigations
+	{
+		"key": "alt+left",
+		"command": "workbench.action.moveEditorToLeftGroup"
+	},
+	{
+		"key": "alt+right",
+		"command": "workbench.action.moveEditorToRightGroup"
+	},
+	{
+		"key": "alt+up",
+		"command": "workbench.action.moveEditorToAboveGroup"
+	},
+	{
+		"key": "alt+down",
+		"command": "workbench.action.moveEditorToBelowGroup"
+	},
+
+	// AI Autocomplete
+	{
+		"key": "shift+space",
+		"command": "editor.action.inlineSuggest.commit",
+		"when": "inlineSuggestionVisible && !editorHoverFocused"
+	},
+	{
+		"key": "shift+space",
+		"command": "editor.action.inlineSuggest.commitAlternativeAction",
+		"when": "inInlineEditsPreviewEditor"
+	},
+	{
+		"key": "alt+space",
+		"command": "editor.action.inlineSuggest.acceptNextWord",
+		"when": "inlineSuggestionVisible && !editorHoverFocused"
+	},
+	{
+		"key": "shift+space",
+		"command": "editor.action.inlineSuggest.commit",
+		"when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+	},
+	{
+		"key": "tab",
+		"command": "-editor.action.inlineSuggest.commit",
+		"when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+	},
+	{
+		"key": "tab",
+		"command": "-editor.action.inlineSuggest.commit",
+		"when": "inInlineEditsPreviewEditor"
+	},
+	{
+		"key": "shift+tab",
+		"command": "-editor.action.inlineSuggest.commitAlternativeAction",
+		"when": "inInlineEditsPreviewEditor"
+	},
+	{
+		"key": "shift+tab",
+		"command": "-editor.action.inlineSuggest.commitAlternativeAction",
+		"when": "inlineEditIsVisible && inlineSuggestionAlternativeActionVisible"
+	}
 ]
