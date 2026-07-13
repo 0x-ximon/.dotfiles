@@ -41,9 +41,12 @@ export PATH="$PATH:$HOME/.foundry/bin"
 export PATH="$PATH:$HOME/.solana/bin"
 export PATH="$PATH:$HOME/.bitcoin/bin"
 export PATH="$PATH:$HOME/.tinytex/bin"
+export PATH="$PATH:$HOME/.opencode/bin"
 export PATH="$PATH:$(npm config get prefix)/bin"
 
+# Evals Setup
 eval "$(zoxide init zsh)"
+eval "$(luarocks path)"
 
 # Alias Definitions
 alias cd="z"
@@ -61,8 +64,8 @@ alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && neovim . --fork"
 alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && emacsclient -cnqu -a 'emacs' ." 
 
 alias dotfiles="code ~/.dotfiles"
-alias playground="cd ~/Projects/Personal/playground && neovim . --fork"
-alias study="cd ~/Notes/Personal/study && emacsclient -cnqu -a 'emacs' ."
+alias playground="cd ~/Projects/Personal/playground && nv ."
+alias study="cd ~/Notes/Personal/study && em ."
 alias learn="playground && study && exit"
 
 alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"

@@ -10,7 +10,7 @@ module.setup({
     formatters_by_ft = {
         rust = { "rustfmt" },
         go = { "gofmt", "goimports" },
-        zig = { "zig" },
+        zig = { "zigfmt" },
         solidity = { "forge_fmt" },
 
         kotlin = { "ktfmt" },

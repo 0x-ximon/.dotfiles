@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Helium
+Comment=Helium Browser
+Exec=helium %U
+Icon=helium
+Type=Application
+Categories=Utility;
+Terminal=false
