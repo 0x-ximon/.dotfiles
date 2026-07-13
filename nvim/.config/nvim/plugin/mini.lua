@@ -2,6 +2,7 @@ local mini_modules = {
     "mini.statusline",
     "mini.sessions",
     "mini.pairs",
+    "mini.misc",
     "mini.icons",
     "mini.diff",
     "mini.git",
@@ -15,5 +16,9 @@ for _, name in ipairs(mini_modules) do
     end
 
     module.setup()
+    if name == "mini.misc" then
+        module.setup_termbg_sync()
+    end
+
     ::continue::
 end
