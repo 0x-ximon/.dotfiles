@@ -31,8 +31,7 @@
    (expand-file-name "banner.txt" user-emacs-directory)) ;; Use a custom banner file
 
   (dashboard-startupify-list '(dashboard-insert-banner
-                               dashboard-insert-items
-                               dashboard-insert-init-info))
+                               dashboard-insert-items))
   
   :config
   (dashboard-setup-startup-hook))                        ;; Set up the dashboard on startup
