@@ -6,6 +6,7 @@
 	"extensions.autoUpdate": "off",
 	"files.autoSave": "onFocusChange",
 	"terminal.integrated.fontSize": 16,
+	"diffEditor.ignoreTrimWhitespace": false,
 	"extensions.ignoreRecommendations": true,
 	"scm.repositories.selectionMode": "single",
 	"git.openRepositoryInParentFolders": "always",

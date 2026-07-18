@@ -20,8 +20,8 @@
   (setf (alist-get 'c++-mode apheleia-mode-alist) 'clang-format)
   (setf (alist-get 'csharp-mode apheleia-mode-alist) 'csharpier)
   (setf (alist-get 'c-mode apheleia-mode-alist) 'clang-format)
-
-  (setf (alist-get 'typescript-mode apheleia-mode-alist) 'biome)
+  (setf (alist-get 'typescript-ts-mode apheleia-mode-alist) 'biome)
+  (setf (alist-get 'tsx-ts-mode apheleia-mode-alist) 'biome)
   (setf (alist-get 'python-mode apheleia-mode-alist) '(ruff-isort ruff))
   (setf (alist-get 'java-mode apheleia-mode-alist) 'java-format)
   (setf (alist-get 'haskell-mode apheleia-mode-alist) 'fourmolu))

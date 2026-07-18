@@ -1,7 +1,6 @@
 (use-package compat
   :ensure t)
 
-;; Auto Dark Mode Configuration
 (use-package auto-dark
   :ensure t
   :init (auto-dark-mode)
@@ -25,7 +24,6 @@
 (use-package neotree
   :ensure t)
 
-;; Use the inbuilt project management plugin
 (use-package project
   :ensure nil)
 
@@ -33,7 +31,6 @@
   :ensure t
   :config (global-wakatime-mode))
 
-;; Version Control Plugin 
 (use-package transient
   :ensure t)
 
