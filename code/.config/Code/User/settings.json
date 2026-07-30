@@ -225,6 +225,7 @@
 	"ruff.path": ["ruff"],
 	"ruff.lineLength": 120,
 	"haskell.manageHLS": "PATH",
+	"solidity.formatter": "forge",
 	"biome.suggestInstallingGlobally": false,
 
 	"files.associations": {

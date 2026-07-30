@@ -15,7 +15,7 @@
 (use-package eglot
   :ensure nil
   :hook
-  ((c++-mode csharp-mode c-mode circom-mode java-mode haskell-mode markdown-mode text-mode typescript-ts-mode tsx-ts-mode python-mode) . eglot-ensure)
+  ((c++-mode csharp-mode c-mode circom-mode java-mode haskell-mode markdown-mode solidity-mode text-mode typescript-ts-mode tsx-ts-mode python-mode) . eglot-ensure)
   
   :custom
   (eglot-events-buffer-size 0)
@@ -30,15 +30,18 @@
                '(csharp-mode . ( "roslyn" "--logLevel" "Information" "--extensionLogDirectory" "/tmp/roslyn/logs" "--stdio" )))
   (add-to-list 'eglot-server-programs
 			   '(c-mode . ("clangd")))
+  
+  (add-to-list 'eglot-server-programs
+			   '((solidity-mode) . ("nomicfoundation-solidity-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs
+			   '((python-mode) . ("ty" "server")))
+  (add-to-list 'eglot-server-programs
+			   '((typescript-ts-mode tsx-ts-mode) . ("typescript-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
 			   '(java-mode . ("jdtls")))
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
-  (add-to-list 'eglot-server-programs
-			   '((typescript-ts-mode tsx-ts-mode) . ("typescript-language-server" "--stdio")))
-  (add-to-list 'eglot-server-programs
-			   '((python-mode) . ("ty" "server")))
 
   (add-to-list 'eglot-server-programs
 			   '(markdown-mode . ("markdown-oxide")))
