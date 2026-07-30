@@ -11,6 +11,7 @@
 	"scm.repositories.selectionMode": "single",
 	"git.openRepositoryInParentFolders": "always",
 	"search.searchEditor.focusResultsOnSearch": true,
+	"chat.titleBar.openInAgentsWindow.enabled": false,
 
 	"window.commandCenter": false,
 	"window.restoreWindows": "none",
