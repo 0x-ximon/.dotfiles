@@ -1,15 +1,10 @@
 (use-package rust-mode :ensure t)
 (use-package go-mode :ensure t)
 (use-package zig-mode :ensure t)
+
 (use-package solidity-mode :ensure t)
 
-(use-package circom-mode :ensure t)
-
-(use-package kotlin-mode :ensure t)
-(use-package gleam-ts-mode :ensure t :mode (rx ".gleam" eos))
-
 (use-package haskell-mode :ensure t)
-
 (use-package markdown-mode :ensure t)
 
 (use-package eglot
