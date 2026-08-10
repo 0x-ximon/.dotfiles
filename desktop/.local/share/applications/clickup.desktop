@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ClickUp
+Comment=ClickUp
+Exec=clickup %U
+Icon=clickup
+Type=Application
+Categories=Utility;
+Terminal=false

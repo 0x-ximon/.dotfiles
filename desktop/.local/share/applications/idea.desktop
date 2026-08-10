@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Idea
-Comment=IntelliJ IDEA
-Exec=idea %U
-Icon=idea
-Type=Application
-Terminal=false
-Categories=TextEditor;Utility;Development;
-StartupWMClass=jetbrains-idea-ce
