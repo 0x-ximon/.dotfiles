@@ -59,15 +59,10 @@ alias em="emacsclient -cqna ''"
 alias nv="neovim --fork"
 
 alias zshconfig="cd ~/.dotfiles/zsh/ && nvim .zshrc"
-alias tmuxconfig="cd ~/.dotfiles/tmux/ && nvim .tmux.conf"
 alias nvimconfig="cd ~/.dotfiles/nvim/.config/nvim/ && nv ."
 alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && em ." 
 
 alias dotfiles="code ~/.dotfiles"
-alias playground="cd ~/Projects/Personal/playground && nv ."
-alias study="cd ~/Notes/Personal/study && em ."
-alias learn="playground && study && exit"
-
 alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
 
 # Keep at the end of ~/.zshrc
