@@ -1,20 +1,33 @@
+(use-package circom-mode :ensure t)
+(use-package haskell-mode :ensure t)
+(use-package markdown-mode :ensure t)
+(use-package just-mode :ensure t)
+
 (use-package rust-mode :ensure t)
 (use-package go-mode :ensure t)
 (use-package zig-mode :ensure t)
-
 (use-package solidity-mode :ensure t)
 
-(use-package haskell-mode :ensure t)
-(use-package markdown-mode :ensure t)
+(defun ximon/jdtls-command (_interactive)
+  "Run jdtls with a persistent per-project workspace directory."
+  (let* ((root (expand-file-name
+                (if-let* ((proj (project-current)))
+                    (project-root proj)
+                  default-directory)))
+         (data (expand-file-name (md5 root)
+                                 (locate-user-emacs-file "jdtls-workspaces/"))))
+    (list "jdtls" "-data" data)))
+
 
 (use-package eglot
   :ensure nil
   :hook
-  ((c++-mode csharp-mode c-mode circom-mode java-mode haskell-mode markdown-mode solidity-mode text-mode typescript-ts-mode tsx-ts-mode python-mode) . eglot-ensure)
+  ((c++-mode csharp-mode c-mode circom-mode java-mode haskell-mode markdown-mode text-mode typescript-ts-mode tsx-ts-mode python-mode) . eglot-ensure)
   
   :custom
   (eglot-events-buffer-size 0)
   (eglot-autoshutdown t)
+  (eglot-connect-timeout 120)
   (eglot-report-progress nil)
   (eglot-ignored-server-capabilities '(:inlayHintProvider))
   
@@ -27,14 +40,10 @@
 			   '(c-mode . ("clangd")))
   
   (add-to-list 'eglot-server-programs
-			   '((solidity-mode) . ("nomicfoundation-solidity-language-server" "--stdio")))
-  (add-to-list 'eglot-server-programs
-			   '((python-mode) . ("ty" "server")))
-  (add-to-list 'eglot-server-programs
 			   '((typescript-ts-mode tsx-ts-mode) . ("typescript-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
-			   '(java-mode . ("jdtls")))
+               '((java-mode java-ts-mode) . ximon/jdtls-command))
   (add-to-list 'eglot-server-programs
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
 

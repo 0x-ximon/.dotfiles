@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Rad Debugger
+Comment=Rad Debugger
+Icon=raddbg
+Exec=/opt/raddbg/raddbg
+Terminal=false
+Categories=Utility;Development;

@@ -11,10 +11,12 @@ module.setup({
         rust = { "rustfmt" },
         go = { "gofmt", "goimports" },
         zig = { "zigfmt" },
+        solidity = { "forge_fmt" },
 
+        lua = { "stylua" },
         kotlin = { "ktfmt" },
         swift = { "swift-format" },
-        lua = { "stylua" },
+        python = { "ruff_format", "ruff_fix" },
 
         markdown = { "prettierd" },
     },
