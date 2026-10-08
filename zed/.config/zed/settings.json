@@ -1,140 +1,158 @@
 {
-	"vim_mode": true,
-	"auto_update": false,
-	"cursor_shape": "bar",
-	"format_on_save": "on",
-	"vertical_scroll_margin": 5,
-	"diff_view_style": "split",
-	"restore_on_startup": "launchpad",
-	"autosave": "on_focus_change",
-	"show_edit_predictions": true,
+  "disable_ai": false,
+  "vim_mode": true,
+  "auto_update": false,
+  "cursor_shape": "bar",
+  "format_on_save": "on",
+  "vertical_scroll_margin": 5,
+  "diff_view_style": "split",
+  "restore_on_startup": "launchpad",
+  "autosave": "on_focus_change",
+  "show_edit_predictions": true,
 
-	"ui_font_size": 16,
-	"buffer_font_size": 16.0,
-	"buffer_font_weight": 600,
-	"relative_line_numbers": "enabled",
-	"icon_theme": "Material Icon Theme",
-	"cli_default_open_behavior": "new_window",
-	"buffer_font_family": "FiraCode Nerd Font",
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "buffer_font_weight": 600,
+  "relative_line_numbers": "enabled",
+  "icon_theme": "Material Icon Theme",
+  "cli_default_open_behavior": "new_window",
+  "buffer_font_family": "FiraCode Nerd Font",
 
-	"search": { "button": false },
-	"minimap": { "show": "never" },
-	"debugger": { "dock": "right" },
-	"git_panel": { "dock": "left" },
-	"project_panel": { "dock": "left" },
-	"outline_panel": { "dock": "left" },
-	"edit_predictions": { "mode": "eager" },
-	"global_lsp_settings": { "button": true },
-	"terminal": { "dock": "right", "font_size": 16.0 },
-	"collaboration_panel": { "button": false, "dock": "left" },
+  "search": { "button": false },
+  "minimap": { "show": "never" },
+  "debugger": { "button": false, "dock": "right" },
+  "git_panel": { "dock": "left" },
+  "project_panel": { "dock": "left" },
+  "outline_panel": { "dock": "right" },
+  "edit_predictions": { "provider": "copilot", "mode": "eager" },
+  "global_lsp_settings": { "button": true },
+  "terminal": { "button": false, "dock": "right", "font_size": 16.0 },
+  "collaboration_panel": { "button": false, "dock": "left" },
 
-	"theme": {
-		"mode": "system",
-		"light": "GitHub Light",
-		"dark": "GitHub Dark"
-	},
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Light",
+    "dark": "GitHub Dark"
+  },
 
-	"agent": {
-		"dock": "right",
-		"sidebar_side": "right",
-		"favorite_models": [],
-		"model_parameters": []
-	},
+  "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
 
-	"vim": {
-		"use_system_clipboard": "always"
-	},
+  "vim": {
+    "use_system_clipboard": "always"
+  },
 
-	"file_types": {
-		"dotenv": [".env*"]
-	},
+  "file_types": {
+    "dotenv": [".env*"]
+  },
 
-	"languages": {
-		"Rust": {
-			"formatter": {
-				"external": {
-					"command": "rustfmt"
-				}
-			}
-		},
+  "languages": {
+    "Rust": {
+      "formatter": {
+        "external": {
+          "command": "rustfmt"
+        }
+      }
+    },
 
-		"Zig": {
-			"formatter": {
-				"language_server": {
-					"name": "zls"
-				}
-			},
-			"code_actions_on_format": {
-				"source.organizeImports.zls": true,
-				"source.fixAll.zls": true
-			}
-		},
+    "Zig": {
+      "formatter": {
+        "language_server": {
+          "name": "zls"
+        }
+      },
+      "code_actions_on_format": {
+        "source.organizeImports.zls": true,
+        "source.fixAll.zls": true
+      }
+    },
 
-		"Kotlin": {
-			"language_servers": ["kotlin-lsp"],
-			"formatter": {
-				"external": {
-					"command": "ktfmt",
-					"arguments": ["--kotlinlang-style", "-"]
-				}
-			}
-		},
+    "Solidity": {
+      "formatter": {
+        "external": {
+          "command": "forge",
+          "arguments": ["fmt", "--raw", "-"]
+        }
+      }
+    },
 
-		"Swift": {
-			"formatter": {
-				"external": {
-					"command": "swift-format",
-					"arguments": ["-"]
-				}
-			}
-		},
+    "Kotlin": {
+      "language_servers": ["kotlin-lsp"],
+      "formatter": {
+        "external": {
+          "command": "ktfmt",
+          "arguments": ["--kotlinlang-style", "-"]
+        }
+      }
+    },
 
-		"Lua": {
-			"formatter": {
-				"external": {
-					"command": "stylua",
-					"arguments": ["-"]
-				}
-			}
-		},
+    "Swift": {
+      "formatter": {
+        "external": {
+          "command": "swift-format",
+          "arguments": ["-"]
+        }
+      }
+    },
 
-		"TypeScript": {
-			"enable_language_server": false
-		},
+    "Lua": {
+      "formatter": {
+        "external": {
+          "command": "stylua",
+          "arguments": ["-"]
+        }
+      }
+    },
 
-		"Python": {
-			"enable_language_server": false
-		},
+    "Python": {
+      "language_servers": ["ty"],
+      "formatter": {
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "-"]
+        }
+      }
+    },
 
-		"JSON": {
-			"formatter": {
-				"external": {
-					"command": "biome",
-					"arguments": ["format", "--stdin-file-path", "document.json"]
-				}
-			}
-		},
+    "JSON": {
+      "formatter": {
+        "external": {
+          "command": "oxfmt",
+          "arguments": ["--stdin-filepath", "-"]
+        }
+      }
+    },
 
-		"MDX": {
-			"soft_wrap": "editor_width",
-			"language_servers": ["mdx-analyzer"],
-			"formatter": {
-				"external": {
-					"command": "prettierd",
-					"arguments": ["--stdin-filepath", "{buffer_path}"]
-				}
-			}
-		}
-	},
+    "MDX": {
+      "soft_wrap": "editor_width",
+      "language_servers": ["mdx-analyzer"],
+      "formatter": {
+        "external": {
+          "command": "prettierd",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
 
-	"language_servers": [
-		"...",
-		"!eslint",
-		"!vtsls",
-		"!prettier",
-		"!tailwindcss-language-server",
-		"!typescript-language-server"
-	],
+    "TypeScript": {
+      "enable_language_server": false
+    }
+  },
 
-	"lsp": {}
+  "language_servers": [
+    "...",
+    "!eslint",
+    "!vtsls",
+    "!prettier",
+    "!tailwindcss-language-server",
+    "!typescript-language-server"
+  ],
+
+  "lsp": {}
 }

@@ -1,396 +1,351 @@
 {
-	// Core settings
-	"git.autofetch": true,
-	"update.titleBar": false,
-	"keyboard.dispatch": "keyCode",
-	"extensions.autoUpdate": "off",
-	"files.autoSave": "onFocusChange",
-	"terminal.integrated.fontSize": 16,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"extensions.ignoreRecommendations": true,
-	"scm.repositories.selectionMode": "single",
-	"git.openRepositoryInParentFolders": "always",
-	"search.searchEditor.focusResultsOnSearch": true,
-	"chat.titleBar.openInAgentsWindow.enabled": false,
+  // Core settings
+  "git.autofetch": true,
+  "update.titleBar": false,
+  "keyboard.dispatch": "keyCode",
+  "extensions.autoUpdate": "off",
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.fontSize": 16,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "extensions.ignoreRecommendations": true,
+  "scm.repositories.selectionMode": "single",
+  "git.openRepositoryInParentFolders": "always",
+  "search.searchEditor.focusResultsOnSearch": true,
+  "chat.titleBar.openInAgentsWindow.enabled": false,
 
-	"window.commandCenter": false,
-	"window.restoreWindows": "none",
-	"window.autoDetectColorScheme": true,
-	"window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "window.restoreWindows": "none",
+  "window.autoDetectColorScheme": true,
+  "window.menuBarVisibility": "toggle",
 
-	"workbench.startupEditor": "none",
-	"workbench.navigationControl.enabled": false,
-	"workbench.panel.showLabels": false,
-	"workbench.activityBar.location": "bottom",
-	"workbench.editor.empty.hint": "hidden",
-	"workbench.browser.showInTitleBar": false,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.preferredDarkColorTheme": "GitHub Dark Default",
-	"workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.startupEditor": "none",
+  "workbench.navigationControl.enabled": false,
+  "workbench.panel.showLabels": false,
+  "workbench.activityBar.location": "bottom",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.browser.showInTitleBar": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
 
-	"editor.tabSize": 4,
-	"editor.fontSize": 16,
-	"editor.fontWeight": "bold",
-	"editor.formatOnSave": true,
-	"editor.fontLigatures": true,
-	"editor.cursorStyle": "line",
-	"editor.inlayHints.enabled": "off",
-	"editor.stickyScroll.enabled": false,
+  "editor.tabSize": 4,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "bold",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.inlayHints.enabled": "off",
+  "editor.stickyScroll.enabled": false,
+  "editor.rename.enablePreview": false,
 
-	"editor.lineNumbers": "relative",
-	"editor.minimap.enabled": false,
-	"editor.inlineSuggest.enabled": true,
-	"editor.guides.bracketPairs": "active",
-	"editor.fontFamily": "'FiraCode Nerd Font'",
-	"editor.codeActionsOnSave": {
-		"source.fixAll.biome": "explicit",
-		"source.organizeImports.biome": "explicit",
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.fontFamily": "'FiraCode Nerd Font'",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
 
-		"source.fixAll.ruff": "explicit",
-		"source.organizeImports.ruff": "explicit"
-	},
+    "source.fixAll.ruff": "explicit",
+    "source.organizeImports.ruff": "explicit"
+  },
 
-	"editor.tokenColorCustomizations": {
-		"[*Light*]": {
-			"textMateRules": [
-				{
-					"scope": "ref.matchtext",
-					"settings": {
-						"foreground": "#000"
-					}
-				}
-			]
-		},
-		"[*Dark*]": {
-			"textMateRules": [
-				{
-					"scope": "ref.matchtext",
-					"settings": {
-						"foreground": "#fff"
-					}
-				}
-			]
-		},
-		"textMateRules": []
-	},
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
 
-	// Keymaps settings
-	"vim.normalModeKeyBindings": [
-		// General Keymaps
-		{
-			"before": ["U"],
-			"after": ["<C-r>"]
-		},
-		{
-			"before": ["H"],
-			"after": ["^"]
-		},
-		{
-			"before": ["L"],
-			"after": ["$"]
-		},
-		{
-			"before": ["J"],
-			"after": ["}"]
-		},
-		{
-			"before": ["K"],
-			"after": ["{"]
-		},
+  // Keymaps settings
+  "vim.normalModeKeyBindings": [
+    // General Keymaps
+    {
+      "before": ["U"],
+      "after": ["<C-r>"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
 
-		// Layout Keymaps
-		{
-			"before": ["<leader>", "("],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
-		},
-		{
-			"before": ["<leader>", ")"],
-			"commands": ["workbench.action.toggleAuxiliaryBar"]
-		},
+    // Layout Keymaps
+    {
+      "before": ["<leader>", "("],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", ")"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"]
+    },
 
-		// Quick Keymaps
-		{
-			"before": ["<leader>", "w"],
-			"commands": ["workbench.action.files.save"]
-		},
-		{
-			"before": ["<leader>", "q"],
-			"commands": ["workbench.action.closeActiveEditor"]
-		},
-		{
-			"before": ["<leader>", "t"],
-			"commands": ["workbench.action.createTerminalEditor"]
-		},
+    // Quick Keymaps
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.createTerminalEditor"]
+    },
 
-		// QoL Keymaps
-		{
-			"before": ["<leader>", "<space>"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<leader>", "~"],
-			"commands": ["workbench.files.action.focusFilesExplorer"]
-		},
-		{
-			"before": ["<leader>", "/"],
-			"commands": ["workbench.action.quickTextSearch"]
-		},
-		{
-			"before": ["<leader>", "%"],
-			"commands": ["workbench.scm.focus"]
-		},
-		{
-			"before": ["[", "<tab>"],
-			"commands": ["workbench.action.previousEditorInGroup"]
-		},
-		{
-			"before": ["]", "<tab>"],
-			"commands": ["workbench.action.nextEditorInGroup"]
-		},
-		{
-			"before": ["<leader>", "<tab>", "n"],
-			"commands": ["workbench.action.files.newUntitledFile"]
-		},
+    // QoL Keymaps
+    {
+      "before": ["<leader>", "<space>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "~"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.action.quickTextSearch"]
+    },
+    {
+      "before": ["<leader>", "%"],
+      "commands": ["workbench.scm.focus"]
+    },
+    {
+      "before": ["[", "<tab>"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["]", "<tab>"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["<leader>", "<tab>", "n"],
+      "commands": ["workbench.action.files.newUntitledFile"]
+    },
 
-		// LSP Keymaps
-		{
-			"before": ["?"],
-			"commands": ["editor.action.showHover"]
-		},
-		{
-			"before": ["!"],
-			"commands": ["editor.action.showHover"]
-		},
-		{
-			"before": ["g", "d"],
-			"commands": ["editor.action.revealDefinition"]
-		},
-		{
-			"before": ["g", "e"],
-			"commands": ["editor.action.revealDeclaration"]
-		},
-		{
-			"before": ["g", "r"],
-			"commands": ["editor.action.goToReferences"]
-		},
-		{
-			"before": ["g", "i"],
-			"commands": ["editor.action.goToImplementation"]
-		},
-		{
-			"before": ["g", "t"],
-			"commands": ["editor.action.goToTypeDefinition"]
-		},
-		{
-			"before": ["<leader>", "l", "a"],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
-			"before": ["<leader>", "l", "f"],
-			"commands": ["editor.action.format"]
-		},
-		{
-			"before": ["<leader>", "l", "r"],
-			"commands": ["editor.action.rename"]
-		},
-		{
-			"before": ["[", "d"],
-			"commands": ["editor.action.marker.prev"]
-		},
-		{
-			"before": ["]", "d"],
-			"commands": ["editor.action.marker.next"]
-		},
+    // LSP Keymaps
+    {
+      "before": ["?"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["!"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.revealDeclaration"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "l", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.format"]
+    },
+    {
+      "before": ["<leader>", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
 
-		// Plugin Keymaps
-		{
-			"before": ["-"],
-			"commands": ["oil-code.open"]
-		},
-		{
-			"before": ["<CR>"],
-			"commands": ["oil-code.select"]
-		}
-	],
+    // Plugin Keymaps
+    {
+      "before": ["-"],
+      "commands": ["oil-code.open"]
+    },
+    {
+      "before": ["<CR>"],
+      "commands": ["oil-code.select"]
+    }
+  ],
 
-	// Extensions settings
-	"vim.leader": "<space>",
-	"oil-code.hasNerdFont": true,
-	"vim.useSystemClipboard": true,
-	"oil-code.disableVimKeymaps": true,
-	"dotenv.enableAutocloaking": false,
-	"docker.extension.enableComposeLanguageServer": false,
+  // Extensions settings
+  "vim.leader": "<space>",
+  "oil-code.hasNerdFont": true,
+  "vim.useSystemClipboard": true,
+  "oil-code.disableVimKeymaps": true,
+  "dotenv.enableAutocloaking": false,
+  "docker.extension.enableComposeLanguageServer": false,
 
-	"ty.path": ["ty"],
-	"ruff.path": ["ruff"],
-	"ruff.lineLength": 120,
-	"haskell.manageHLS": "PATH",
-	"solidity.formatter": "forge",
-	"biome.suggestInstallingGlobally": false,
+  "ty.path": ["ty"],
+  "ruff.path": ["ruff"],
+  "ruff.lineLength": 120,
+  "haskell.manageHLS": "PATH",
+  "solidity.formatter": "forge",
+  "js/ts.experimental.useTsgo": true,
 
-	"files.associations": {
-		".env*": "dotenv"
-	},
+  "files.associations": {
+    ".env*": "dotenv"
+  },
 
-	// TODO: Remove when material icon theme adds official bruno folder icon
-	"material-icon-theme.folders.customClones": [
-		{
-			"name": "tui-folder",
-			"base": "ui",
-			"color": "green-500",
-			"lightColor": "light-green-700",
-			"folderNames": [".tui", "tui"]
-		},
-		{
-			"name": "bruno-collection",
-			"base": "connection",
-			"color": "orange-500",
-			"lightColor": "light-orange-700",
-			"folderNames": [".bruno", "bruno"]
-		},
-		{
-			"name": "diagram-collection",
-			"base": "images",
-			"color": "blue-500",
-			"lightColor": "light-blue-700",
-			"folderNames": [".diagrams", ".drawings", "diagrams", "drawings"]
-		}
-	],
-	"github.copilot.enable": {
-		"*": true,
-		"plaintext": false,
-		"markdown": true,
-		"scminput": false,
-		"mdx": false
-	},
+  // TODO: Remove when material icon theme adds official bruno folder icon
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "tui-folder",
+      "base": "ui",
+      "color": "green-500",
+      "lightColor": "light-green-700",
+      "folderNames": [".tui", "tui"]
+    },
+    {
+      "name": "bruno-collection",
+      "base": "connection",
+      "color": "orange-500",
+      "lightColor": "light-orange-700",
+      "folderNames": [".bruno", "bruno"]
+    },
+    {
+      "name": "diagram-collection",
+      "base": "images",
+      "color": "blue-500",
+      "lightColor": "light-blue-700",
+      "folderNames": [".diagrams", ".drawings", "diagrams", "drawings"]
+    }
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "mdx": false
+  },
 
-	"better-comments.tags": [
-		{
-			"tag": "TODO",
-			"color": "#2563EB",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "BUG",
-			"color": "#DC2626",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "WARN",
-			"color": "#FBBF24",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "INFO",
-			"color": "#10B981",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "TEST",
-			"color": "#7C3AED",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "PERF",
-			"color": "#FF00FF",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},
-		{
-			"tag": "HELP",
-			"color": "#00FFFF",
-			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		}
-	],
+  // Language Specific Settings
+  "[cpp]": {
+    "editor.tabSize": 4
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  },
+  "[c]": {
+    "editor.tabSize": 4
+  },
 
-	// Language Specific Settings
-	"[cpp]": {
-		"editor.tabSize": 4
-	},
-	"[csharp]": {
-		"editor.defaultFormatter": "csharpier.csharpier-vscode"
-	},
-	"[c]": {
-		"editor.tabSize": 4
-	},
-	"[sql]": {},
-	"[asm]": {},
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[lisp]": {},
 
-	"[java]": {
-		"editor.defaultFormatter": "redhat.java"
-	},
-	"[haskell]": {
-		"editor.defaultFormatter": "haskell.haskell"
-	},
-	"[typescript]": {
-		"editor.tabSize": 4,
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[python]": {
-		"editor.tabSize": 4,
-		"editor.defaultFormatter": "charliermarsh.ruff"
-	},
-	"[lisp]": {},
+  "[javascript]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
 
-	"[javascript]": {
-		"editor.tabSize": 2,
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescriptreact]": {
-		"editor.tabSize": 2,
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[javascriptreact]": {
-		"editor.tabSize": 2,
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
 
-	"[mdx]": {
-		"editor.wordWrap": "on",
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[markdown]": {
-		"editor.wordWrap": "on",
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-
-	"[json]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[github-actions-workflow]": {
-		"editor.defaultFormatter": "redhat.vscode-yaml"
-	}
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[just]": {
+    "editor.defaultFormatter": "nefrob.vscode-just-syntax"
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://openapi.vercel.sh": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schema.tauri.app": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://spec.openapis.org/": true,
+    "https://ui.shadcn.com": true,
+    "https://www.schemastore.org/": true
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "update.mode": "manual",
+  "window.density.layout": "compact",
+  "editor.bracketPairColorization.enabled": false
 }
