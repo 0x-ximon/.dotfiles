@@ -11,6 +11,7 @@
   :config
   (setf (alist-get 'clang-format apheleia-formatters) '("clang-format" "-"))
   (setf (alist-get 'csharpier apheleia-formatters) '("csharpier" "format"))
+  (setf (alist-get 'c3-format apheleia-formatters) '("c3fmt" "--stdin"))
   (setf (alist-get 'java-format apheleia-formatters) '("google-java-format" "--aosp" "-"))
   (setf (alist-get 'fourmolu apheleia-formatters) '("fourmolu" "--stdin-input-file" "-"))
   (setf (alist-get 'oxfmt apheleia-formatters) '("oxfmt" "--stdin-filepath" filepath))
@@ -18,6 +19,7 @@
   (setf (alist-get 'c-mode apheleia-mode-alist) 'clang-format)
   (setf (alist-get 'c++-mode apheleia-mode-alist) 'clang-format)
   (setf (alist-get 'csharp-mode apheleia-mode-alist) 'csharpier)
+  (setf (alist-get 'c3-ts-mode apheleia-mode-alist) 'c3-format)
 
   (setf (alist-get 'typescript-ts-mode apheleia-mode-alist) 'oxfmt)
   (setf (alist-get 'tsx-ts-mode apheleia-mode-alist) 'oxfmt)

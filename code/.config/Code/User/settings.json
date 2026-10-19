@@ -222,11 +222,10 @@
   "dotenv.enableAutocloaking": false,
   "docker.extension.enableComposeLanguageServer": false,
 
-  "ty.path": ["ty"],
-  "ruff.path": ["ruff"],
-  "ruff.lineLength": 120,
+  "c3.lsp.path": "c3lsp",
+  "c3.format.path": "c3fmt",
+
   "haskell.manageHLS": "PATH",
-  "solidity.formatter": "forge",
   "js/ts.experimental.useTsgo": true,
 
   "files.associations": {
@@ -274,6 +273,12 @@
   },
   "[c]": {
     "editor.tabSize": 4
+  },
+  "[c3]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.formatOnSave": true
   },
 
   "[java]": {
@@ -347,5 +352,6 @@
   "chat.viewSessions.orientation": "stacked",
   "update.mode": "manual",
   "window.density.layout": "compact",
-  "editor.bracketPairColorization.enabled": false
+  "editor.bracketPairColorization.enabled": false,
+  "c3.tools.checkForUpdate": false
 }

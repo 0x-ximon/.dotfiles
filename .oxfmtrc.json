@@ -1,0 +1,9 @@
+{
+  "printWidth": 120,
+  "sortImports": {
+    "newlinesBetween": false
+  },
+  "useTabs": false,
+  "tabWidth": 2,
+  "ignorePatterns": []
+}

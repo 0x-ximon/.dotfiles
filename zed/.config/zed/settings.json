@@ -36,6 +36,7 @@
   },
 
   "agent": {
+    "button": true,
     "threads_sidebar": {
       "position": "right"
     },
