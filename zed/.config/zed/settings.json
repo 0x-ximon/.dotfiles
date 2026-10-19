@@ -74,15 +74,6 @@
       }
     },
 
-    "Solidity": {
-      "formatter": {
-        "external": {
-          "command": "forge",
-          "arguments": ["fmt", "--raw", "-"]
-        }
-      }
-    },
-
     "Kotlin": {
       "language_servers": ["kotlin-lsp"],
       "formatter": {
@@ -103,12 +94,7 @@
     },
 
     "Lua": {
-      "formatter": {
-        "external": {
-          "command": "stylua",
-          "arguments": ["-"]
-        }
-      }
+      "enable_language_server": false
     },
 
     "Python": {
@@ -125,7 +111,16 @@
       "formatter": {
         "external": {
           "command": "oxfmt",
-          "arguments": ["--stdin-filepath", "-"]
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+
+    "JSONC": {
+      "formatter": {
+        "external": {
+          "command": "oxfmt",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
         }
       }
     },

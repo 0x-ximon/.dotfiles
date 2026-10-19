@@ -235,7 +235,8 @@
   "solidity.formatter": "forge",
 
   "files.associations": {
-    ".env*": "dotenv"
+    ".env*": "dotenv",
+    "*.elisp": "lisp"
   },
 
   // TODO: Remove when material icon theme adds official bruno folder icon
@@ -296,10 +297,6 @@
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "oxc.oxc-vscode"
-  },
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[lisp]": {},
 

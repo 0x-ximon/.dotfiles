@@ -20,7 +20,7 @@
 (use-package eglot
   :ensure nil
   :hook
-  ((c++-mode csharp-mode c-mode c3-ts-mode typescript-ts-mode java-mode haskell-mode solidity-mode tsx-ts-mode markdown-mode text-mode) . eglot-ensure)
+  ((c++-mode csharp-mode c-mode c3-ts-mode asm-mode typescript-ts-mode java-mode haskell-mode solidity-mode tsx-ts-mode markdown-mode text-mode) . eglot-ensure)
   
   :custom
   (eglot-events-buffer-size 0)
