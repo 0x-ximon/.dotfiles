@@ -1,6 +1,7 @@
 {
   // Core settings
   "git.autofetch": true,
+  "update.mode": "manual",
   "update.titleBar": false,
   "keyboard.dispatch": "keyCode",
   "extensions.autoUpdate": "off",
@@ -8,6 +9,7 @@
   "terminal.integrated.fontSize": 16,
   "diffEditor.ignoreTrimWhitespace": false,
   "extensions.ignoreRecommendations": true,
+  "chat.viewSessions.orientation": "stacked",
   "scm.repositories.selectionMode": "single",
   "git.openRepositoryInParentFolders": "always",
   "search.searchEditor.focusResultsOnSearch": true,
@@ -17,6 +19,7 @@
   "window.restoreWindows": "none",
   "window.autoDetectColorScheme": true,
   "window.menuBarVisibility": "toggle",
+  "window.density.layout": "compact",
 
   "workbench.startupEditor": "none",
   "workbench.navigationControl.enabled": false,
@@ -37,6 +40,7 @@
   "editor.inlayHints.enabled": "off",
   "editor.stickyScroll.enabled": false,
   "editor.rename.enablePreview": false,
+  "editor.bracketPairColorization.enabled": false,
 
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
@@ -224,9 +228,11 @@
 
   "c3.lsp.path": "c3lsp",
   "c3.format.path": "c3fmt",
+  "c3.tools.checkForUpdate": false,
 
-  "haskell.manageHLS": "PATH",
   "js/ts.experimental.useTsgo": true,
+  "haskell.manageHLS": "PATH",
+  "solidity.formatter": "forge",
 
   "files.associations": {
     ".env*": "dotenv"
@@ -348,10 +354,5 @@
     "https://spec.openapis.org/": true,
     "https://ui.shadcn.com": true,
     "https://www.schemastore.org/": true
-  },
-  "chat.viewSessions.orientation": "stacked",
-  "update.mode": "manual",
-  "window.density.layout": "compact",
-  "editor.bracketPairColorization.enabled": false,
-  "c3.tools.checkForUpdate": false
+  }
 }

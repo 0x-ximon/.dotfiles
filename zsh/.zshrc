@@ -43,6 +43,7 @@ export PATH="$PATH:$HOME/.bitcoin/bin"
 export PATH="$PATH:$HOME/.tinytex/bin"
 export PATH="$PATH:$HOME/.opencode/bin"
 export PATH="$PATH:$HOME/.nargo/bin"
+export PATH="$PATH:$HOME/.bb"
 
 # Evals Setup
 eval "$(zoxide init zsh)"

@@ -20,7 +20,7 @@
 (use-package eglot
   :ensure nil
   :hook
-  ((c++-mode csharp-mode c-mode c3-ts-mode java-mode haskell-mode typescript-ts-mode tsx-ts-mode markdown-mode text-mode) . eglot-ensure)
+  ((c++-mode csharp-mode c-mode c3-ts-mode typescript-ts-mode java-mode haskell-mode solidity-mode tsx-ts-mode markdown-mode text-mode) . eglot-ensure)
   
   :custom
   (eglot-events-buffer-size 0)
@@ -45,11 +45,12 @@
 			   '(haskell-mode . ("haskell-language-server-wrapper" "--lsp")))
   (add-to-list 'eglot-server-programs
 			   '((typescript-ts-mode tsx-ts-mode) . ("typescript-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs
+			   '((solidity-mode) . ("nomicfoundation-solidity-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
-			   '(markdown-mode . ("harper-ls" "--stdio")))
-  (add-to-list 'eglot-server-programs
-			   '(org-mode . ("harper-ls" "--stdio"))))
+			   '(markdown-mode org-mode . ("harper-ls" "--stdio"))))
+
 
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . tsx-ts-mode))

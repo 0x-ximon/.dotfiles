@@ -11,6 +11,7 @@ vim.pack.add({
     { src = gh("stevearc/conform.nvim") },
     { src = gh("mason-org/mason.nvim") },
     { src = gh("neovim/nvim-lspconfig") },
+    { src = gh("noir-lang/noir-nvim") },
     { src = gh("folke/lazy.nvim") },
     { src = gh("folke/lazydev.nvim") },
     { src = gh("folke/which-key.nvim") },

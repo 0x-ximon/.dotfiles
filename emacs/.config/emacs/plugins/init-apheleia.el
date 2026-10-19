@@ -1,4 +1,3 @@
-
 (use-package apheleia
   :ensure t
   :init 
@@ -15,6 +14,7 @@
   (setf (alist-get 'java-format apheleia-formatters) '("google-java-format" "--aosp" "-"))
   (setf (alist-get 'fourmolu apheleia-formatters) '("fourmolu" "--stdin-input-file" "-"))
   (setf (alist-get 'oxfmt apheleia-formatters) '("oxfmt" "--stdin-filepath" filepath))
+  (setf (alist-get 'forge-format apheleia-formatters) '("forge" "fmt" "--raw" "-"))
 
   (setf (alist-get 'c-mode apheleia-mode-alist) 'clang-format)
   (setf (alist-get 'c++-mode apheleia-mode-alist) 'clang-format)
@@ -24,6 +24,7 @@
   (setf (alist-get 'typescript-ts-mode apheleia-mode-alist) 'oxfmt)
   (setf (alist-get 'tsx-ts-mode apheleia-mode-alist) 'oxfmt)
   (setf (alist-get 'java-mode apheleia-mode-alist) 'java-format)
-  (setf (alist-get 'haskell-mode apheleia-mode-alist) 'fourmolu))
+  (setf (alist-get 'haskell-mode apheleia-mode-alist) 'fourmolu)
+  (setf (alist-get 'solidity-mode apheleia-mode-alist) 'forge-format))
 
 (provide 'init-apheleia)
