@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (use-package solidity-mode :ensure t)
 
 (use-package haskell-mode :ensure t)

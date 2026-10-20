@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (use-package apheleia
   :ensure t
   :init 

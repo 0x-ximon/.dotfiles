@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (setq user-full-name "Simon Samuel")
 
 (use-package emacs
