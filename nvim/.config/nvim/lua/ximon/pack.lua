@@ -15,7 +15,6 @@ vim.pack.add({
     { src = gh("folke/lazy.nvim") },
     { src = gh("folke/lazydev.nvim") },
     { src = gh("folke/which-key.nvim") },
-    { src = gh("folke/todo-comments.nvim") },
     { src = gh("nvim-lua/plenary.nvim") },
     { src = gh("0x-ximon/acario.nvim") },
     { src = gh("f-person/auto-dark-mode.nvim") },

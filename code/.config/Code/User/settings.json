@@ -229,6 +229,8 @@
   "c3.lsp.path": "c3lsp",
   "c3.format.path": "c3fmt",
   "c3.tools.checkForUpdate": false,
+  "C_Cpp.default.cStandard": "c23",
+  "C_Cpp.default.cppStandard": "c++23",
 
   "js/ts.experimental.useTsgo": true,
   "haskell.manageHLS": "PATH",

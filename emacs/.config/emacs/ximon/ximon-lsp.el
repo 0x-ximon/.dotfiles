@@ -29,6 +29,7 @@
   (eglot-autoshutdown t)
   (eglot-connect-timeout 120)
   (eglot-report-progress nil)
+  (eglot-code-action-indications nil)
   (eglot-ignored-server-capabilities '(:inlayHintProvider))
 
   :config
@@ -51,7 +52,7 @@
 			   '((solidity-mode) . ("nomicfoundation-solidity-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
-			   '(markdown-mode org-mode . ("harper-ls" "--stdio"))))
+			   '((markdown-mode org-mode) . ("harper-ls" "--stdio"))))
 
 
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
