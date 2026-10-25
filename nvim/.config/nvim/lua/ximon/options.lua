@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = ";"
 vim.g.have_nerd_font = true
+vim.g.neovide_progress_bar_enabled = false -- TODO: Disable this
 
 vim.o.mouse = "a" -- Enable mouse support in all modes
 vim.o.wrap = false -- Disable line wrapping
