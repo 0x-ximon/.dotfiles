@@ -11,7 +11,6 @@ module.setup({
         rust = { "rustfmt" },
         go = { "gofmt", "goimports" },
         zig = { "zigfmt" },
-        solidity = { "forge_fmt" },
 
         lua = { "stylua" },
         kotlin = { "ktfmt" },

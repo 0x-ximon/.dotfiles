@@ -5,8 +5,9 @@
 
 (require 'ximon-elpaca)
 (require 'ximon-options)
+(require 'ximon-treesit)
+(require 'ximon-modes)
 (require 'ximon-keymaps)
 (require 'ximon-plugins)
-(require 'ximon-modes)
 (require 'ximon-lsp)
 (require 'ximon-hooks)

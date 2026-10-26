@@ -1,13 +1,5 @@
 ;;; -*- lexical-binding: t -*-
 
-(use-package solidity-mode :ensure t)
-
-(use-package haskell-mode :ensure t)
-
-;; General Purpose Modes
-(use-package markdown-mode :ensure t)
-(use-package just-mode :ensure t)
-
 (defun ximon/jdtls-command (_interactive)
   "Run jdtls with a persistent per-project workspace directory."
   (let* ((root (expand-file-name
@@ -18,12 +10,11 @@
                                  (locate-user-emacs-file "jdtls-workspaces/"))))
     (list "jdtls" "-data" data)))
 
-
 (use-package eglot
   :ensure nil
   :hook
-  ((c++-mode csharp-mode c-mode c3-ts-mode asm-mode typescript-ts-mode java-mode haskell-mode solidity-mode tsx-ts-mode markdown-mode text-mode) . eglot-ensure)
-  
+  ((c++-mode csharp-mode c-mode c3-ts-mode asm-mode typescript-ts-mode java-mode haskell-mode solidity-mode tsx-ts-mode markdown-ts-mode text-mode) . eglot-ensure)
+
   :custom
   (eglot-events-buffer-size 0)
   (eglot-autoshutdown t)
@@ -52,13 +43,7 @@
 			   '((solidity-mode) . ("nomicfoundation-solidity-language-server" "--stdio")))
 
   (add-to-list 'eglot-server-programs
-			   '((markdown-mode org-mode) . ("harper-ls" "--stdio"))))
-
-
-(add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . tsx-ts-mode))
-(add-to-list 'treesit-language-source-alist '(c3 "https://github.com/c3lang/tree-sitter-c3"))
-
+			   '((markdown-ts-mode org-mode) . ("harper-ls" "--stdio"))))
 
 (setq-default eglot-workspace-configuration
 			  '(:harper-ls (:linters

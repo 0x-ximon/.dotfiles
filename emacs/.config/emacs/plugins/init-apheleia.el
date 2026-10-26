@@ -2,7 +2,8 @@
 
 (use-package apheleia
   :ensure t
-  :init 
+  :init
+  (add-hook 'apheleia-inhibit-functions #'ximon/neovim-mode-p)
   (apheleia-global-mode +1)
   
   :custom

@@ -1,3 +1,7 @@
+local dir = function(path)
+    return "file://" .. path
+end
+
 local gh = function(repo)
     return "https://github.com/" .. repo
 end
