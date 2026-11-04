@@ -17,7 +17,8 @@ module.setup({
         swift = { "swift-format" },
         python = { "ruff_format", "ruff_fix" },
 
-        markdown = { "prettierd" },
+        markdown = { "oxfmt" },
+        json = { "oxfmt" },
     },
 
     formatters = {
