@@ -38,7 +38,7 @@
     (let ((load-source-file-function nil)) (load "./elpaca-autoloads"))))
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
-(elpaca elpaca-use-package 
-  (elpaca-use-package-mode)) 
+(elpaca elpaca-use-package
+  (elpaca-use-package-mode))
 
 (provide 'ximon-elpaca)

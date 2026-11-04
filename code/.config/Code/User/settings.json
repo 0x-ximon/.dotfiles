@@ -55,6 +55,20 @@
     "source.organizeImports.ruff": "explicit"
   },
 
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://openapi.vercel.sh": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schema.tauri.app": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://spec.openapis.org/": true,
+    "https://ui.shadcn.com": true,
+    "https://www.schemastore.org/": true
+  },
+
   "editor.tokenColorCustomizations": {
     "[*Light*]": {
       "textMateRules": [
@@ -223,7 +237,7 @@
   "oil-code.hasNerdFont": true,
   "vim.useSystemClipboard": true,
   "oil-code.disableVimKeymaps": true,
-  "dotenv.enableAutocloaking": false,
+  "harper.linters.SpellCheck": false,
   "docker.extension.enableComposeLanguageServer": false,
 
   "c3.lsp.path": "c3lsp",
@@ -232,7 +246,7 @@
   "C_Cpp.default.cStandard": "c23",
   "C_Cpp.default.cppStandard": "c++23",
 
-  "js/ts.experimental.useTsgo": true,
+  "js/ts.experimental.useTsgo": false,
   "haskell.manageHLS": "PATH",
   "solidity.formatter": "forge",
 
@@ -320,10 +334,12 @@
 
   "[mdx]": {
     "editor.wordWrap": "on",
+    "harper.linters.SpellCheck": true,
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
   "[markdown]": {
     "editor.wordWrap": "on",
+    "harper.linters.SpellCheck": true,
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },
 
@@ -340,18 +356,5 @@
   },
   "[just]": {
     "editor.defaultFormatter": "nefrob.vscode-just-syntax"
-  },
-  "json.schemaDownload.trustedDomains": {
-    "https://developer.microsoft.com/json-schemas/": true,
-    "https://json-schema.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://openapi.vercel.sh": true,
-    "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://raw.githubusercontent.com/microsoft/vscode/": true,
-    "https://schema.tauri.app": true,
-    "https://schemastore.azurewebsites.net/": true,
-    "https://spec.openapis.org/": true,
-    "https://ui.shadcn.com": true,
-    "https://www.schemastore.org/": true
   }
 }

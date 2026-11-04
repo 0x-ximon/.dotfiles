@@ -43,9 +43,12 @@
 (require 'c3-ts-mode)
 (use-package solidity-mode :ensure t)
 (use-package haskell-mode :ensure t)
+(use-package nasm-mode :ensure t)
+(use-package yul-mode :ensure t)
 
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . tsx-ts-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(asm\\|s\\)$" . nasm-mode))
 
 ;; General Purpose Modes
 (use-package just-mode :ensure t)

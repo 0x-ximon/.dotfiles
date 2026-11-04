@@ -65,6 +65,15 @@ alias emacsconfig="cd ~/.dotfiles/emacs/.config/emacs/ && em ."
 
 alias dotfiles="code ~/.dotfiles"
 alias refresh="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
+commit() {
+  local diff msg
+  diff=$(git diff --staged) || return
+  [[ -z $diff ]] && { echo "Nothing staged." >&2; return 1; }
+  msg=$(printf '%s' "$diff" | claude -p --model haiku "Write a Conventional Commits message for this staged diff. \
+Output ONLY the raw message: a subject line under 72 chars, optionally a blank line and a short body. \
+No code fences, no commentary.") || return
+  git commit -e -m "$msg"
+}
 
 # Keep at the end of ~/.zshrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
